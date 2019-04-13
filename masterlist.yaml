@@ -9,4 +9,8 @@ globals: []
 
 groups: []
 
-plugins: []
+plugins:
+# Official DLC
+  - name: 'Bloodmoon.esm'
+    after:
+      - 'Tribunal.esm'
