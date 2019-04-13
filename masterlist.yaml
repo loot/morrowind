@@ -5,7 +5,28 @@ common: []
 
 bash_tags: []
 
-globals: []
+globals:
+  - type: say
+    content:
+      - lang: en
+        text: '[Latest LOOT thread](%1%).'
+      - lang: ru
+        text: '[Обсуждение LOOT "(Eng)"](%1%).'
+      - lang: es
+        text: '[Forum de LOOT](%1%).'
+      - lang: ko
+        text: '[최신 LOOT 스레드](%1%).'
+      - lang: zh_CN
+        text: '[最新的LOOT版本](%1%)。'
+      - lang: da
+        text: '[Seneste LOOT-tråd](%1%).'
+      - lang: ja
+        text: '[LOOTの最新スレッドを開く](%1%)（英語）'
+      - lang: de
+        text: '[Aktueller LOOT-Thread](%1%).'
+      - lang: pt
+        text: '[Postagem mais recente do LOOT](%1%).'
+    subs: [ 'https://loot.github.io/latest-thread/' ]
 
 groups: []
 
