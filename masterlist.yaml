@@ -31,17 +31,17 @@ globals:
 groups:
 - name: &dlcGroup DLC
 
-- name: &unofficialPatches
+- name: &unofficialPatches Unofficial Patches
   after:
   - *dlcGroup
 
-- name: &otherMods Other Mods
+- name: &default Default
   after: 
   - *unofficialPatches
 
 - name: &dynamicPatchGroup Dynamic Patches
   after:
-  - *otherMods
+  - *default
 
 plugins:
 # Official DLC
