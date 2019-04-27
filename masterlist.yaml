@@ -75,7 +75,7 @@ plugins:
             text: 'Patch for Purists is incompatible with Script Improvements, and already implements the real fixes it provides to scripts'
       - type: error
         condition: 'active("Morrowind Patch v1.2.2.esm") or active("Morrowind Patch v1.6.3.esm") or active("Morrowind Patch v1.6.4.esm") or active("Morrowind Patch v1.6.5-BETA.esm") or active("Morrowind Patch 1.6.5 Beta (BTB Edit).esm") or active("Morrowind Patch v1.6.5d_beta.esm") or active("Morrowind Patch v1.6.5d_beta.esm") or active("Morrowind Patch v1.6.6_beta.esm")'
-        conent:
+        content:
           - lang: en
             text: 'Patch for Purists is incompatible with the Unofficial Morrowind Patch (UMP) and Morrowind Patch Project (MPP)'
 
