@@ -28,10 +28,99 @@ globals:
         text: '[Postagem mais recente do LOOT](%1%).'
     subs: [ 'https://loot.github.io/latest-thread/' ]
 
-groups: []
+groups:
+- name: &dlcGroup DLC
+
+- name: &unofficialPatches Unofficial Patches
+  after:
+  - *dlcGroup
+
+- name: &default default
+  after: 
+  - *unofficialPatches
+
+- name: &dynamicPatchGroup Dynamic Patches
+  after:
+  - *default
 
 plugins:
 # Official DLC
+  - name: 'Tribunal.esm'
+    group: *dlcGroup
+
   - name: 'Bloodmoon.esm'
+    group: *dlcGroup
     after:
       - 'Tribunal.esm'
+      
+# Unofficial Patches
+
+  - name: 'Patch for Purists - Dialogue Typos.esm'
+    group: *unofficialPatches
+
+  - name: 'Patch for Purists - Base Patch.esm'
+    group: *unofficialPatches
+    after:
+      - name: 'Patch for Purists - Dialogue Typos.esm'
+    msg:
+      - type: error
+        condition: 'active("Morrowind Rebirth [Main].ESP")'
+        content:
+          - lang: en
+            text: 'Morrowind Rebirth is not compatible with Patch of Purists. Instead, "Morrowind Patch Project 1.6.5 [For Rebirth].esm" which comes with it should be used.'
+      - type: error
+        condition: 'active("gr_ScriptImprovements.esp") or active("gr_ScriptImprovements.esm")'
+        content:
+          - lang: en
+            text: 'Patch for Purists is incompatible with Script Improvements, and already implements the real fixes it provides to scripts'
+      - type: error
+        condition: 'active("Morrowind Patch v1.2.2.esm") or active("Morrowind Patch v1.6.3.esm") or active("Morrowind Patch v1.6.4.esm") or active("Morrowind Patch v1.6.5-BETA.esm") or active("Morrowind Patch 1.6.5 Beta (BTB Edit).esm") or active("Morrowind Patch v1.6.5d_beta.esm") or active("Morrowind Patch v1.6.5d_beta.esm") or active("Morrowind Patch v1.6.6_beta.esm")'
+        content:
+          - lang: en
+            text: 'Patch for Purists is incompatible with the Unofficial Morrowind Patch (UMP) and Morrowind Patch Project (MPP)'
+
+  - name: 'Patch for Purists - Book Typos.esm'
+    group: *unofficialPatches
+    after:
+      - name: 'Patch for Purists - Dialogue Typos.esm'
+      - name: 'Patch for Purists - Base Patch.esm'
+
+  - name: 'Patch for Purists - Floating Rocks.esm'
+    group: *unofficialPatches
+    after:
+      - name: 'Patch for Purists - Dialogue Typos.esm'
+      - name: 'Patch for Purists - Base Patch.esm'
+      - name: 'Patch for Purists - Book Typos.esm'
+
+  - name: 'Patch for Purists - Expansion Implementation.esm'
+    group: *unofficialPatches
+    after:
+      - name: 'Patch for Purists - Dialogue Typos.esm'
+      - name: 'Patch for Purists - Base Patch.esm'
+      - name: 'Patch for Purists - Book Typos.esm'
+      - name: 'Patch for Purists - Floating Rocks.esm'
+
+  - name: 'Patch for Purists - Dialogue Inconsistencies.esm'
+    group: *unofficialPatches
+    after:
+      - name: 'Patch for Purists - Dialogue Typos.esm'
+      - name: 'Patch for Purists - Base Patch.esm'
+      - name: 'Patch for Purists - Book Typos.esm'
+      - name: 'Patch for Purists - Floating Rocks.esm'
+      - name: 'Patch for Purists - Expansion Implementation.esm'
+
+  - name: 'Patch for Purists - Statistic Typos.esm'
+    group: *unofficialPatches
+    after:
+      - name: 'Patch for Purists - Dialogue Typos.esm'
+      - name: 'Patch for Purists - Base Patch.esm'
+      - name: 'Patch for Purists - Book Typos.esm'
+      - name: 'Patch for Purists - Floating Rocks.esm'
+      - name: 'Patch for Purists - Expansion Implementation.esm'
+      - name: 'Patch for Purists - Dialogue Inconsistencies.esm'
+
+#Any dynamic patches (not sure if multipatch is the  only one)
+  - name: 'multipatch.esp'
+    group: *dynamicPatchGroup
+ 
+     
