@@ -35,7 +35,7 @@ groups:
   after:
   - *dlcGroup
 
-- name: &default Default
+- name: &default default
   after: 
   - *unofficialPatches
 
@@ -82,26 +82,41 @@ plugins:
   - name: 'Patch for Purists - Book Typos.esm'
     group: *unofficialPatches
     after:
+      - name: 'Patch for Purists - Dialogue Typos.esm'
       - name: 'Patch for Purists - Base Patch.esm'
 
   - name: 'Patch for Purists - Floating Rocks.esm'
     group: *unofficialPatches
     after:
+      - name: 'Patch for Purists - Dialogue Typos.esm'
+      - name: 'Patch for Purists - Base Patch.esm'
       - name: 'Patch for Purists - Book Typos.esm'
 
   - name: 'Patch for Purists - Expansion Implementation.esm'
     group: *unofficialPatches
     after:
+      - name: 'Patch for Purists - Dialogue Typos.esm'
+      - name: 'Patch for Purists - Base Patch.esm'
+      - name: 'Patch for Purists - Book Typos.esm'
       - name: 'Patch for Purists - Floating Rocks.esm'
 
   - name: 'Patch for Purists - Dialogue Inconsistencies.esm'
     group: *unofficialPatches
     after:
+      - name: 'Patch for Purists - Dialogue Typos.esm'
+      - name: 'Patch for Purists - Base Patch.esm'
+      - name: 'Patch for Purists - Book Typos.esm'
+      - name: 'Patch for Purists - Floating Rocks.esm'
       - name: 'Patch for Purists - Expansion Implementation.esm'
 
   - name: 'Patch for Purists - Statistic Typos.esm'
     group: *unofficialPatches
     after:
+      - name: 'Patch for Purists - Dialogue Typos.esm'
+      - name: 'Patch for Purists - Base Patch.esm'
+      - name: 'Patch for Purists - Book Typos.esm'
+      - name: 'Patch for Purists - Floating Rocks.esm'
+      - name: 'Patch for Purists - Expansion Implementation.esm'
       - name: 'Patch for Purists - Dialogue Inconsistencies.esm'
 
 #Any dynamic patches (not sure if multipatch is the  only one)
