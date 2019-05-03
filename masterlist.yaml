@@ -178,18 +178,18 @@ plugins:
       - name: 'Patch for Purists - Floating Rocks.esm'
       - name: 'Patch for Purists - Expansion Implementation.esm'
       - name: 'Patch for Purists - Dialogue Inconsistencies.esm'
-      
+
 #Other Mods (default)
   - name: 'Improved Argonians.esp'
-    inc: 
+    inc:
       - 'Wey_New_Argonians.ESP'
       - 'Slof''s Civilised Beasts.esp'
       - 'Slof''s Better Beasts b.esp'
       - 'Slof''s Better Beasts a.esp'
       - 'Slof''s BB neck fix.esp'
-      
+
   - name: 'correctUV Ore Replacer_fixed.esp'
-    inc: 
+    inc:
       - 'correctUV Ore Replacer_respawning.esp'
       - 'Graphic Herbalism Extra (Correct UV).esp'
       - 'correctUV Ore Replacer 1.0.esp'
@@ -197,9 +197,9 @@ plugins:
       - 'Graphic Herbalism Extra.esp'
       - 'Graphic Herbalism TR.ESP'
       - 'Graphic Herbalism TR Extra.ESP'
-  
+
   - name: 'correctUV Ore Replacer_respawning.esp'
-    inc: 
+    inc:
       - 'correctUV Ore Replacer_fixed.esp'
       - 'Graphic Herbalism Extra (Correct UV).esp'
       - 'correctUV Ore Replacer 1.0.esp'
@@ -211,5 +211,3 @@ plugins:
 #Any dynamic patches (not sure if multipatch is the  only one)
   - name: 'multipatch.esp'
     group: *dynamicPatchGroup
- 
-     
