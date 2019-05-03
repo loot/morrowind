@@ -121,7 +121,6 @@ plugins:
       
 #Other Mods (default)
   - name: 'Improved Argonians.esp'
-    group: *default
     inc: 
       - 'Wey_New_Argonians.ESP'
       - 'Slof''s Civilised Beasts.esp'
@@ -130,7 +129,6 @@ plugins:
       - 'Slof''s BB neck fix.esp'
       
   - name: 'correctUV Ore Replacer_fixed.esp'
-    group: *default
     inc: 
       - 'correctUV Ore Replacer_respawning.esp'
       - 'Graphic Herbalism Extra (Correct UV).esp'
@@ -141,7 +139,6 @@ plugins:
       - 'Graphic Herbalism TR Extra.ESP'
   
   - name: 'correctUV Ore Replacer_respawning.esp'
-    group: *default
     inc: 
       - 'correctUV Ore Replacer_fixed.esp'
       - 'Graphic Herbalism Extra (Correct UV).esp'
@@ -150,9 +147,6 @@ plugins:
       - 'Graphic Herbalism Extra.esp'
       - 'Graphic Herbalism TR.ESP'
       - 'Graphic Herbalism TR Extra.ESP'
-      
-    
-      
 
 #Any dynamic patches (not sure if multipatch is the  only one)
   - name: 'multipatch.esp'
