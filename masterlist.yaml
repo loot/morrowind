@@ -34,8 +34,11 @@ groups:
   - name: &unofficialPatches Unofficial Patches
     after: [ *dlcGroup ]
 
-  - name: &default default
+  - name: &earlyLoadersGroup Early Loaders
     after: [ *unofficialPatches ]
+
+  - name: &default default
+    after: [ *earlyLoadersGroup ]
 
   - name: &dynamicPatchGroup Dynamic Patches
     after: [ *default ]
