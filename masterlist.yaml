@@ -52,7 +52,32 @@ plugins:
     group: *dlcGroup
     after:
       - 'Tribunal.esm'
-      
+
+# Official Mods
+  - name: 'adamantiumarmor.esp'
+    group: *earlyLoadersGroup
+
+  - name: 'AreaEffectArrows.esp'
+    group: *earlyLoadersGroup
+
+  - name: 'bcsounds.esp'
+    group: *earlyLoadersGroup
+
+  - name: 'EBQ_Artifact.esp'
+    group: *earlyLoadersGroup
+
+  - name: 'entertainers.esp'
+    group: *earlyLoadersGroup
+
+  - name: 'LeFemmArmor.esp'
+    group: *earlyLoadersGroup
+
+  - name: 'master_index.esp'
+    group: *earlyLoadersGroup
+
+  - name: 'Siege at Firemoth.esp'
+    group: *earlyLoadersGroup
+
 # Unofficial Patches
 
   - name: 'Patch for Purists - Dialogue Typos.esm'
