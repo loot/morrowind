@@ -56,27 +56,62 @@ plugins:
 # Official Mods
   - name: 'adamantiumarmor.esp'
     group: *earlyLoadersGroup
+    after:
+      - 'AreaEffectArrows.esp'
+      - 'bcsounds.esp'
+      - 'EBQ_Artifact.esp'
+      - 'entertainers.esp'
+      - 'LeFemmArmor.esp'
+      - 'master_index.esp'
 
   - name: 'AreaEffectArrows.esp'
     group: *earlyLoadersGroup
+    after:
+      - 'bcsounds.esp'
+      - 'entertainers.esp'
 
   - name: 'bcsounds.esp'
     group: *earlyLoadersGroup
+    after:
+      - 'entertainers.esp'
 
   - name: 'EBQ_Artifact.esp'
     group: *earlyLoadersGroup
+    after:
+      - 'AreaEffectArrows.esp'
+      - 'bcsounds.esp'
+      - 'entertainers.esp'
 
   - name: 'entertainers.esp'
     group: *earlyLoadersGroup
 
   - name: 'LeFemmArmor.esp'
     group: *earlyLoadersGroup
+    after:
+      - 'AreaEffectArrows.esp'
+      - 'bcsounds.esp'
+      - 'EBQ_Artifact.esp'
+      - 'entertainers.esp'
+      - 'master_index.esp'
 
   - name: 'master_index.esp'
     group: *earlyLoadersGroup
+    after:
+      - 'AreaEffectArrows.esp'
+      - 'bcsounds.esp'
+      - 'EBQ_Artifact.esp'
+      - 'entertainers.esp'
 
   - name: 'Siege at Firemoth.esp'
     group: *earlyLoadersGroup
+    after:
+      - 'adamantiumarmor.esp'
+      - 'AreaEffectArrows.esp'
+      - 'bcsounds.esp'
+      - 'EBQ_Artifact.esp'
+      - 'entertainers.esp'
+      - 'LeFemmArmor.esp'
+      - 'master_index.esp'
 
 # Unofficial Patches
 
