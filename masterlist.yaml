@@ -29,19 +29,16 @@ globals:
     subs: [ 'https://loot.github.io/latest-thread/' ]
 
 groups:
-- name: &dlcGroup DLC
+  - name: &dlcGroup DLC
 
-- name: &unofficialPatches Unofficial Patches
-  after:
-  - *dlcGroup
+  - name: &unofficialPatches Unofficial Patches
+    after: [ *dlcGroup ]
 
-- name: &default default
-  after: 
-  - *unofficialPatches
+  - name: &default default
+    after: [ *unofficialPatches ]
 
-- name: &dynamicPatchGroup Dynamic Patches
-  after:
-  - *default
+  - name: &dynamicPatchGroup Dynamic Patches
+    after: [ *default ]
 
 plugins:
 # Official DLC
