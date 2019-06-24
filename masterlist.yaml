@@ -54,6 +54,15 @@ plugins:
       - 'Tribunal.esm'
 
 # Official Mods
+  - name: '(adamantiumarmor|AreaEffectArrows|bcsounds|EBQ_Artifact|entertainers|LeFemmArmor|master_index|Siege at Firemoth).esp'
+    url:
+      - link: 'https://en.m.uesp.net/wiki/Morrowind:Plugins'
+        name: 'Morrowind Official Plugins on UESP.net'
+      - link: 'http://download.fliggerty.com/download-13-1079'
+        name: 'Morrowind Official Plugins on fliggerty.com'
+      - link: 'https://www.nexusmods.com/morrowind/mods/43931'
+        name: 'Unofficial Morrowind Official Plugins Patched'
+
   - name: 'adamantiumarmor.esp'
     group: *earlyLoadersGroup
     after:
@@ -86,6 +95,9 @@ plugins:
     group: *earlyLoadersGroup
 
   - name: 'LeFemmArmor.esp'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/42560'
+        name: 'Expanded LeFemm Armor'
     group: *earlyLoadersGroup
     after:
       - 'AreaEffectArrows.esp'
