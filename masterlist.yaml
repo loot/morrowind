@@ -153,6 +153,10 @@ plugins:
       - '[Official]Helm of Tohan.esp'
       - '[Official]LeFemm Armor.esp'
       - '[Official]Master Index.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"Adamantium Armor"' ]
+        condition: 'many("(adamantiumarmor|[Official]Adamantium Armor)\.esp")'
 
   - name: '(AreaEffectArrows|[Official]Area Effect Arrows)\.esp'
     after:
@@ -160,11 +164,19 @@ plugins:
       - 'entertainers.esp'
       - '[Official]Bitter Coast Sounds.esp'
       - '[Official]Entertainers.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"Area Effect Arrows"' ]
+        condition: 'many("(AreaEffectArrows|[Official]Area Effect Arrows)\.esp")'
 
   - name: '(bcsounds|[Official]Bitter Coast Sounds)\.esp'
     after:
       - 'entertainers.esp'
       - '[Official]Entertainers.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"Bitter Coast Sounds"' ]
+        condition: 'many("(bcsounds|[Official]Bitter Coast Sounds)\.esp")'
 
   - name: '(EBQ_Artifact|[Official]Helm of Tohan)\.esp'
     after:
@@ -174,8 +186,16 @@ plugins:
       - '[Official]Area Effect Arrows.esp'
       - '[Official]Bitter Coast Sounds.esp'
       - '[Official]Entertainers.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"EBQ_Artifact" or "Helm of Tohan"' ]
+        condition: 'many("(EBQ_Artifact|[Official]Helm of Tohan)\.esp")'
 
   - name: '(entertainers|[Official]Entertainers)\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"Entertainers"' ]
+        condition: 'many("(entertainers|[Official]Entertainers)\.esp")'
 
   - name: 'LeFemmArmor.esp'
     url:
@@ -193,6 +213,10 @@ plugins:
       - '[Official]Entertainers.esp'
       - '[Official]Helm of Tohan.esp'
       - '[Official]Master Index.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"LeFemm Armor"' ]
+        condition: 'many("(LeFemmArmor|[Official]LeFemm Armor)\.esp")'
 
   - name: '(master_index|[Official]Master Index)\.esp'
     after:
@@ -204,6 +228,10 @@ plugins:
       - '[Official]Bitter Coast Sounds.esp'
       - '[Official]Entertainers.esp'
       - '[Official]Helm of Tohan.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"Master Index"' ]
+        condition: 'many("(master_index|[Official]Master Index)\.esp")'
 
   - name: '(Siege at Firemoth|[Official]Siege at Firemoth)\.esp'
     after:
@@ -221,6 +249,10 @@ plugins:
       - '[Official]Helm of Tohan.esp'
       - '[Official]LeFemm Armor.esp'
       - '[Official]Master Index.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"Siege at Firemoth"' ]
+        condition: 'many("(Siege at Firemoth|[Official]Siege at Firemoth)\.esp")'
 
 # Unofficial Patches
 
