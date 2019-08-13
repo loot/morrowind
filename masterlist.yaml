@@ -150,6 +150,17 @@ plugins:
 
   - name: 'Patch for Purists.esm'
     group: *unofficialPatches
+    inc:
+      - 'gr_ScriptImprovements.esm'
+      - 'gr_ScriptImprovements.esp'
+      - 'Morrowind Patch v1.2.2.esm'
+      - 'Morrowind Patch v1.6.3.esm'
+      - 'Morrowind Patch v1.6.4.esm'
+      - 'Morrowind Patch v1.6.5-BETA.esm'
+      - 'Morrowind Patch 1.6.5 Beta (BTB Edit).esm'
+      - 'Morrowind Patch v1.6.5d_beta.esm'
+      - 'Morrowind Patch v1.6.6_beta.esm'
+      - 'Morrowind Rebirth [Main].ESP'
     msg:
       - <<: *obsolete
         condition: 'version("Patch for Purists.esm", "3.1.2", <)'
@@ -168,6 +179,17 @@ plugins:
     group: *unofficialPatches
     after:
       - name: 'Patch for Purists - Dialogue Typos.esm'
+    inc:
+      - 'gr_ScriptImprovements.esm'
+      - 'gr_ScriptImprovements.esp'
+      - 'Morrowind Patch v1.2.2.esm'
+      - 'Morrowind Patch v1.6.3.esm'
+      - 'Morrowind Patch v1.6.4.esm'
+      - 'Morrowind Patch v1.6.5-BETA.esm'
+      - 'Morrowind Patch 1.6.5 Beta (BTB Edit).esm'
+      - 'Morrowind Patch v1.6.5d_beta.esm'
+      - 'Morrowind Patch v1.6.6_beta.esm'
+      - 'Morrowind Rebirth [Main].ESP'
     msg:
       - *obsolete
       - type: say
@@ -176,17 +198,12 @@ plugins:
         condition: 'active("Morrowind Rebirth [Main].ESP")'
         content:
           - lang: en
-            text: 'Morrowind Rebirth is not compatible with Patch of Purists. Instead, "Morrowind Patch Project 1.6.5 [For Rebirth].esm" which comes with it should be used.'
+            text: 'Use "Morrowind Patch Project 1.6.5 [For Rebirth].esm" instead for Patch for Purists.'
       - type: error
         condition: 'active("gr_ScriptImprovements.esp") or active("gr_ScriptImprovements.esm")'
         content:
           - lang: en
-            text: 'Patch for Purists is incompatible with Script Improvements, and already implements the real fixes it provides to scripts'
-      - type: error
-        condition: 'active("Morrowind Patch v1.2.2.esm") or active("Morrowind Patch v1.6.3.esm") or active("Morrowind Patch v1.6.4.esm") or active("Morrowind Patch v1.6.5-BETA.esm") or active("Morrowind Patch 1.6.5 Beta (BTB Edit).esm") or active("Morrowind Patch v1.6.5d_beta.esm") or active("Morrowind Patch v1.6.5d_beta.esm") or active("Morrowind Patch v1.6.6_beta.esm")'
-        content:
-          - lang: en
-            text: 'Patch for Purists is incompatible with the Unofficial Morrowind Patch (UMP) and Morrowind Patch Project (MPP)'
+            text: 'Patch for Purists already implements the real fixes Script Improvements provides to scripts'
 
   - name: 'Patch for Purists - Book Typos.esm'
     group: *unofficialPatches
