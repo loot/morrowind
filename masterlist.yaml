@@ -153,6 +153,9 @@ plugins:
         name: 'Unofficial Morrowind Official Plugins Patched'
     group: *earlyLoadersGroup
     msg:
+      - <<: *alreadyInX
+        subs: [ 'Unofficial Morrowind Official Plugins Patched' ]
+        condition: 'active("Unofficial Morrowind Official Plugins Patched.ESP")'
       - <<: *deletePlugin
         subs: [ '"Unofficial Morrowind Official Plugins Patched.ESP"' ]
         condition: 'active("Unofficial Morrowind Official Plugins Patched.ESP")'
@@ -164,6 +167,10 @@ plugins:
     group: *earlyLoadersGroup
     inc:
       - 'Unofficial Morrowind Official Plugins Patched.ESP'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Unofficial Morrowind Official Plugins Patched' ]
+        condition: 'active("Unofficial Morrowind Official Plugins Patched.ESP")'
 
   - name: '(adamantiumarmor|\[Official\]Adamantium Armor)\.esp'
     after:
