@@ -156,6 +156,8 @@ plugins:
 
 # Unofficial Patches
 
+  - name: 'Patch for Purists.*\.es(m|p)'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/45096' ]
   - name: 'Patch for Purists.esm'
     group: *unofficialPatches
     inc:
