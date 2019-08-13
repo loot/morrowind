@@ -158,8 +158,8 @@ plugins:
 
   - name: 'Patch for Purists.*\.es(m|p)'
     url: [ 'https://www.nexusmods.com/morrowind/mods/45096' ]
-  - name: 'Patch for Purists.esm'
     group: *unofficialPatches
+  - name: 'Patch for Purists( - Base Patch)?\.esm'
     inc:
       - 'gr_ScriptImprovements.esm'
       - 'gr_ScriptImprovements.esp'
@@ -171,6 +171,13 @@ plugins:
       - 'Morrowind Patch v1.6.5d_beta.esm'
       - 'Morrowind Patch v1.6.6_beta.esm'
       - 'Morrowind Rebirth [Main].ESP'
+    msg:
+      - <<: *useInstead
+        type: error
+        subs: [ 'Morrowind Patch Project 1.6.5 [For Rebirth].esm' ]
+        condition: 'active("Morrowind Rebirth [Main].ESP")'
+
+  - name: 'Patch for Purists.esm'
     msg:
       - <<: *obsolete
         condition: 'version("Patch for Purists.esm", "3.1.2", <)'
@@ -178,85 +185,43 @@ plugins:
         content: 'Legacy version. Only recommended for old saves.'
         condition: 'version("Patch for Purists.esm", "3.1.2", <)'
 
-  - name: 'Patch for Purists - Dialogue Typos.esm'
-    group: *unofficialPatches
+  - name: 'Patch for Purists - (Base Patch|(Book|Dialogue|Statistic) Typos|Floating Rocks|Expansion Implementation|Dialogue Inconsistencies)\.esm'
     msg:
       - *obsolete
       - type: say
         content: 'Legacy version. Only recommended for old saves.'
 
   - name: 'Patch for Purists - Base Patch.esm'
-    group: *unofficialPatches
     after:
       - name: 'Patch for Purists - Dialogue Typos.esm'
-    inc:
-      - 'gr_ScriptImprovements.esm'
-      - 'gr_ScriptImprovements.esp'
-      - 'Morrowind Patch v1.2.2.esm'
-      - 'Morrowind Patch v1.6.3.esm'
-      - 'Morrowind Patch v1.6.4.esm'
-      - 'Morrowind Patch v1.6.5-BETA.esm'
-      - 'Morrowind Patch 1.6.5 Beta (BTB Edit).esm'
-      - 'Morrowind Patch v1.6.5d_beta.esm'
-      - 'Morrowind Patch v1.6.6_beta.esm'
-      - 'Morrowind Rebirth [Main].ESP'
-    msg:
-      - *obsolete
-      - type: say
-        content: 'Legacy version. Only recommended for old saves.'
-      - <<: *useInstead
-        type: error
-        subs: [ 'Morrowind Patch Project 1.6.5 [For Rebirth].esm' ]
-        condition: 'active("Morrowind Rebirth [Main].ESP")'
 
   - name: 'Patch for Purists - Book Typos.esm'
-    group: *unofficialPatches
     after:
       - name: 'Patch for Purists - Dialogue Typos.esm'
       - name: 'Patch for Purists - Base Patch.esm'
-    msg:
-      - *obsolete
-      - type: say
-        content: 'Legacy version. Only recommended for old saves.'
 
   - name: 'Patch for Purists - Floating Rocks.esm'
-    group: *unofficialPatches
     after:
       - name: 'Patch for Purists - Dialogue Typos.esm'
       - name: 'Patch for Purists - Base Patch.esm'
       - name: 'Patch for Purists - Book Typos.esm'
-    msg:
-      - *obsolete
-      - type: say
-        content: 'Legacy version. Only recommended for old saves.'
 
   - name: 'Patch for Purists - Expansion Implementation.esm'
-    group: *unofficialPatches
     after:
       - name: 'Patch for Purists - Dialogue Typos.esm'
       - name: 'Patch for Purists - Base Patch.esm'
       - name: 'Patch for Purists - Book Typos.esm'
       - name: 'Patch for Purists - Floating Rocks.esm'
-    msg:
-      - *obsolete
-      - type: say
-        content: 'Legacy version. Only recommended for old saves.'
 
   - name: 'Patch for Purists - Dialogue Inconsistencies.esm'
-    group: *unofficialPatches
     after:
       - name: 'Patch for Purists - Dialogue Typos.esm'
       - name: 'Patch for Purists - Base Patch.esm'
       - name: 'Patch for Purists - Book Typos.esm'
       - name: 'Patch for Purists - Floating Rocks.esm'
       - name: 'Patch for Purists - Expansion Implementation.esm'
-    msg:
-      - *obsolete
-      - type: say
-        content: 'Legacy version. Only recommended for old saves.'
 
   - name: 'Patch for Purists - Statistic Typos.esm'
-    group: *unofficialPatches
     after:
       - name: 'Patch for Purists - Dialogue Typos.esm'
       - name: 'Patch for Purists - Base Patch.esm'
@@ -264,10 +229,6 @@ plugins:
       - name: 'Patch for Purists - Floating Rocks.esm'
       - name: 'Patch for Purists - Expansion Implementation.esm'
       - name: 'Patch for Purists - Dialogue Inconsistencies.esm'
-    msg:
-      - *obsolete
-      - type: say
-        content: 'Legacy version. Only recommended for old saves.'
 
 #Other Mods (default)
   - name: 'Improved Argonians.esp'
