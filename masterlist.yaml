@@ -131,9 +131,9 @@ plugins:
         name: 'Morrowind Official Plugins on UESP.net'
       - link: 'https://www.nexusmods.com/morrowind/mods/43931'
         name: 'Unofficial Morrowind Official Plugins Patched'
+    group: *earlyLoadersGroup
 
   - name: 'adamantiumarmor.esp'
-    group: *earlyLoadersGroup
     after:
       - 'AreaEffectArrows.esp'
       - 'bcsounds.esp'
@@ -143,31 +143,26 @@ plugins:
       - 'master_index.esp'
 
   - name: 'AreaEffectArrows.esp'
-    group: *earlyLoadersGroup
     after:
       - 'bcsounds.esp'
       - 'entertainers.esp'
 
   - name: 'bcsounds.esp'
-    group: *earlyLoadersGroup
     after:
       - 'entertainers.esp'
 
   - name: 'EBQ_Artifact.esp'
-    group: *earlyLoadersGroup
     after:
       - 'AreaEffectArrows.esp'
       - 'bcsounds.esp'
       - 'entertainers.esp'
 
   - name: 'entertainers.esp'
-    group: *earlyLoadersGroup
 
   - name: 'LeFemmArmor.esp'
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/42560'
         name: 'Expanded LeFemm Armor'
-    group: *earlyLoadersGroup
     after:
       - 'AreaEffectArrows.esp'
       - 'bcsounds.esp'
@@ -176,7 +171,6 @@ plugins:
       - 'master_index.esp'
 
   - name: 'master_index.esp'
-    group: *earlyLoadersGroup
     after:
       - 'AreaEffectArrows.esp'
       - 'bcsounds.esp'
@@ -184,7 +178,6 @@ plugins:
       - 'entertainers.esp'
 
   - name: 'Siege at Firemoth.esp'
-    group: *earlyLoadersGroup
     after:
       - 'adamantiumarmor.esp'
       - 'AreaEffectArrows.esp'
@@ -198,9 +191,9 @@ plugins:
     url:
       - link: 'http://download.fliggerty.com/download-13-1079'
         name: 'Morrowind Official Plugins on fliggerty.com'
+    group: *earlyLoadersGroup
 
   - name: '[Official]Adamantium Armor.esp'
-    group: *earlyLoadersGroup
     after:
       - '[Official]Area Effect Arrows.esp'
       - '[Official]Bitter Coast Sounds.esp'
@@ -210,28 +203,23 @@ plugins:
       - '[Official]Master Index.esp'
 
   - name: '[Official]Area Effect Arrows.esp'
-    group: *earlyLoadersGroup
     after:
       - '[Official]Bitter Coast Sounds.esp'
       - '[Official]Entertainers.esp'
 
   - name: '[Official]Bitter Coast Sounds.esp'
-    group: *earlyLoadersGroup
     after:
       - '[Official]Entertainers.esp'
 
   - name: '[Official]Entertainers.esp'
-    group: *earlyLoadersGroup
 
   - name: '[Official]Helm of Tohan.esp'
-    group: *earlyLoadersGroup
     after:
       - '[Official]Area Effect Arrows.esp'
       - '[Official]Bitter Coast Sounds.esp'
       - '[Official]Entertainers.esp'
 
   - name: '[Official]LeFemm Armor.esp'
-    group: *earlyLoadersGroup
     after:
       - '[Official]Area Effect Arrows.esp'
       - '[Official]Bitter Coast Sounds.esp'
@@ -240,7 +228,6 @@ plugins:
       - '[Official]Master Index.esp'
 
   - name: '[Official]Master Index.esp'
-    group: *earlyLoadersGroup
     after:
       - '[Official]Area Effect Arrows.esp'
       - '[Official]Bitter Coast Sounds.esp'
@@ -248,7 +235,6 @@ plugins:
       - '[Official]Helm of Tohan.esp'
 
   - name: '[Official]Siege at Firemoth.esp'
-    group: *earlyLoadersGroup
     after:
       - '[Official]Adamantium Armor.esp'
       - '[Official]Area Effect Arrows.esp'
