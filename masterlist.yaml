@@ -129,8 +129,6 @@ plugins:
     url:
       - link: 'https://en.m.uesp.net/wiki/Morrowind:Plugins'
         name: 'Morrowind Official Plugins on UESP.net'
-      - link: 'http://download.fliggerty.com/download-13-1079'
-        name: 'Morrowind Official Plugins on fliggerty.com'
       - link: 'https://www.nexusmods.com/morrowind/mods/43931'
         name: 'Unofficial Morrowind Official Plugins Patched'
 
@@ -195,6 +193,70 @@ plugins:
       - 'entertainers.esp'
       - 'LeFemmArmor.esp'
       - 'master_index.esp'
+
+  - name: '[Official](Adamantium Armor|Area Effect Arrows|Bitter Coast Sounds|Helm of Tohan|Entertainers|LeFemm Armor|Master Index|Siege at Firemoth).esp'
+    url:
+      - link: 'http://download.fliggerty.com/download-13-1079'
+        name: 'Morrowind Official Plugins on fliggerty.com'
+
+  - name: '[Official]Adamantium Armor.esp'
+    group: *earlyLoadersGroup
+    after:
+      - '[Official]Area Effect Arrows.esp'
+      - '[Official]Bitter Coast Sounds.esp'
+      - '[Official]Entertainers.esp'
+      - '[Official]Helm of Tohan.esp'
+      - '[Official]LeFemm Armor.esp'
+      - '[Official]Master Index.esp'
+
+  - name: '[Official]Area Effect Arrows.esp'
+    group: *earlyLoadersGroup
+    after:
+      - '[Official]Bitter Coast Sounds.esp'
+      - '[Official]Entertainers.esp'
+
+  - name: '[Official]Bitter Coast Sounds.esp'
+    group: *earlyLoadersGroup
+    after:
+      - '[Official]Entertainers.esp'
+
+  - name: '[Official]Entertainers.esp'
+    group: *earlyLoadersGroup
+
+  - name: '[Official]Helm of Tohan.esp'
+    group: *earlyLoadersGroup
+    after:
+      - '[Official]Area Effect Arrows.esp'
+      - '[Official]Bitter Coast Sounds.esp'
+      - '[Official]Entertainers.esp'
+
+  - name: '[Official]LeFemm Armor.esp'
+    group: *earlyLoadersGroup
+    after:
+      - '[Official]Area Effect Arrows.esp'
+      - '[Official]Bitter Coast Sounds.esp'
+      - '[Official]Entertainers.esp'
+      - '[Official]Helm of Tohan.esp'
+      - '[Official]Master Index.esp'
+
+  - name: '[Official]Master Index.esp'
+    group: *earlyLoadersGroup
+    after:
+      - '[Official]Area Effect Arrows.esp'
+      - '[Official]Bitter Coast Sounds.esp'
+      - '[Official]Entertainers.esp'
+      - '[Official]Helm of Tohan.esp'
+
+  - name: '[Official]Siege at Firemoth.esp'
+    group: *earlyLoadersGroup
+    after:
+      - '[Official]Adamantium Armor.esp'
+      - '[Official]Area Effect Arrows.esp'
+      - '[Official]Bitter Coast Sounds.esp'
+      - '[Official]Entertainers.esp'
+      - '[Official]Helm of Tohan.esp'
+      - '[Official]LeFemm Armor.esp'
+      - '[Official]Master Index.esp'
 
 # Unofficial Patches
 
