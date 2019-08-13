@@ -3,6 +3,28 @@
 # re-used.
 common:
 # Messages
+  - &alreadyInX
+    type: error
+    content:
+      - lang: en
+        text: 'Delete. Already included in %1%.'
+      - lang: ru
+        text: 'Удалите. Уже включено в %1%.'
+      - lang: es
+        text: 'Borrar. Esta incluido en %1%.'
+      - lang: ko
+        text: '삭제하십시오. 이미 %1%에 포함되어 있습니다.'
+      - lang: zh_CN
+        text: '删除。已包含在%1%中。'
+      - lang: da
+        text: 'Slet. Allerede inkluderet i %1%.'
+      - lang: ja
+        text: '削除してください。既に%1%に含まれています。'
+      - lang: de
+        text: 'Löschen. Bereits in %1% enthalten.'
+      - lang: pt
+        text: 'Apagar. Já incluído em %1%.'
+
   - &obsolete
     type: say
     content:
@@ -229,6 +251,14 @@ plugins:
       - name: 'Patch for Purists - Floating Rocks.esm'
       - name: 'Patch for Purists - Expansion Implementation.esm'
       - name: 'Patch for Purists - Dialogue Inconsistencies.esm'
+
+# Other Fixes
+  - name: 'gr_ScriptImprovements.es(m|p)'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/43828' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Patch for Purists' ]
+        condition: 'active("Patch for Purists.esm") or active("Patch for Purists - Base Patch.esm")'
 
 #Other Mods (default)
   - name: 'Improved Argonians.esp'
