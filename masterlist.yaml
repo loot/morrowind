@@ -206,11 +206,6 @@ plugins:
         type: error
         subs: [ 'Morrowind Patch Project 1.6.5 [For Rebirth].esm' ]
         condition: 'active("Morrowind Rebirth [Main].ESP")'
-      - type: error
-        condition: 'active("gr_ScriptImprovements.esp") or active("gr_ScriptImprovements.esm")'
-        content:
-          - lang: en
-            text: 'Patch for Purists already implements the real fixes Script Improvements provides to scripts'
 
   - name: 'Patch for Purists - Book Typos.esm'
     group: *unofficialPatches
