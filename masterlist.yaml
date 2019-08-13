@@ -133,13 +133,13 @@ plugins:
         name: 'Unofficial Morrowind Official Plugins Patched'
     group: *earlyLoadersGroup
 
-  - name: '[Official](Adamantium Armor|Area Effect Arrows|Bitter Coast Sounds|Helm of Tohan|Entertainers|LeFemm Armor|Master Index|Siege at Firemoth).esp'
+  - name: '\[Official\](Adamantium Armor|Area Effect Arrows|Bitter Coast Sounds|Helm of Tohan|Entertainers|LeFemm Armor|Master Index|Siege at Firemoth)\.esp'
     url:
       - link: 'http://download.fliggerty.com/download-13-1079'
         name: 'Morrowind Official Plugins on fliggerty.com'
     group: *earlyLoadersGroup
 
-  - name: '(adamantiumarmor|[Official]Adamantium Armor)\.esp'
+  - name: '(adamantiumarmor|\[Official\]Adamantium Armor)\.esp'
     after:
       - 'AreaEffectArrows.esp'
       - 'bcsounds.esp'
@@ -156,9 +156,9 @@ plugins:
     msg:
       - <<: *useOnlyOneX
         subs: [ '"Adamantium Armor"' ]
-        condition: 'many("(adamantiumarmor|[Official]Adamantium Armor)\.esp")'
+        condition: 'many("(adamantiumarmor|\[Official\]Adamantium Armor)\.esp")'
 
-  - name: '(AreaEffectArrows|[Official]Area Effect Arrows)\.esp'
+  - name: '(AreaEffectArrows|\[Official\]Area Effect Arrows)\.esp'
     after:
       - 'bcsounds.esp'
       - 'entertainers.esp'
@@ -167,18 +167,18 @@ plugins:
     msg:
       - <<: *useOnlyOneX
         subs: [ '"Area Effect Arrows"' ]
-        condition: 'many("(AreaEffectArrows|[Official]Area Effect Arrows)\.esp")'
+        condition: 'many("(AreaEffectArrows|\[Official\]Area Effect Arrows)\.esp")'
 
-  - name: '(bcsounds|[Official]Bitter Coast Sounds)\.esp'
+  - name: '(bcsounds|\[Official\]Bitter Coast Sounds)\.esp'
     after:
       - 'entertainers.esp'
       - '[Official]Entertainers.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ '"Bitter Coast Sounds"' ]
-        condition: 'many("(bcsounds|[Official]Bitter Coast Sounds)\.esp")'
+        condition: 'many("(bcsounds|\[Official\]Bitter Coast Sounds)\.esp")'
 
-  - name: '(EBQ_Artifact|[Official]Helm of Tohan)\.esp'
+  - name: '(EBQ_Artifact|\[Official\]Helm of Tohan)\.esp'
     after:
       - 'AreaEffectArrows.esp'
       - 'bcsounds.esp'
@@ -189,19 +189,19 @@ plugins:
     msg:
       - <<: *useOnlyOneX
         subs: [ '"EBQ_Artifact" or "Helm of Tohan"' ]
-        condition: 'many("(EBQ_Artifact|[Official]Helm of Tohan)\.esp")'
+        condition: 'many("(EBQ_Artifact|\[Official\]Helm of Tohan)\.esp")'
 
-  - name: '(entertainers|[Official]Entertainers)\.esp'
+  - name: '(entertainers|\[Official\]Entertainers)\.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ '"Entertainers"' ]
-        condition: 'many("(entertainers|[Official]Entertainers)\.esp")'
+        condition: 'many("(entertainers|\[Official\]Entertainers)\.esp")'
 
   - name: 'LeFemmArmor.esp'
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/42560'
         name: 'Expanded LeFemm Armor'
-  - name: '(LeFemmArmor|[Official]LeFemm Armor)\.esp'
+  - name: '(LeFemmArmor|\[Official\]LeFemm Armor)\.esp'
     after:
       - 'AreaEffectArrows.esp'
       - 'bcsounds.esp'
@@ -216,9 +216,9 @@ plugins:
     msg:
       - <<: *useOnlyOneX
         subs: [ '"LeFemm Armor"' ]
-        condition: 'many("(LeFemmArmor|[Official]LeFemm Armor)\.esp")'
+        condition: 'many("(LeFemmArmor|\[Official\]LeFemm Armor)\.esp")'
 
-  - name: '(master_index|[Official]Master Index)\.esp'
+  - name: '(master_index|\[Official\]Master Index)\.esp'
     after:
       - 'AreaEffectArrows.esp'
       - 'bcsounds.esp'
@@ -231,9 +231,9 @@ plugins:
     msg:
       - <<: *useOnlyOneX
         subs: [ '"Master Index"' ]
-        condition: 'many("(master_index|[Official]Master Index)\.esp")'
+        condition: 'many("(master_index|\[Official\]Master Index)\.esp")'
 
-  - name: '(Siege at Firemoth|[Official]Siege at Firemoth)\.esp'
+  - name: '(Siege at Firemoth|\[Official\]Siege at Firemoth)\.esp'
     after:
       - 'adamantiumarmor.esp'
       - 'AreaEffectArrows.esp'
@@ -252,7 +252,7 @@ plugins:
     msg:
       - <<: *useOnlyOneX
         subs: [ '"Siege at Firemoth"' ]
-        condition: 'many("(Siege at Firemoth|[Official]Siege at Firemoth)\.esp")'
+        condition: 'many("(Siege at Firemoth|\[Official\]Siege at Firemoth)\.esp")'
 
 # Unofficial Patches
 
