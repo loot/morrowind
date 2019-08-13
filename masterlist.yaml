@@ -162,6 +162,8 @@ plugins:
       - link: 'http://download.fliggerty.com/download-13-1079'
         name: 'Morrowind Official Plugins on fliggerty.com'
     group: *earlyLoadersGroup
+    inc:
+      - 'Unofficial Morrowind Official Plugins Patched.ESP'
 
   - name: '(adamantiumarmor|\[Official\]Adamantium Armor)\.esp'
     after:
