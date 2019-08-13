@@ -24,6 +24,14 @@ common:
         text: 'Veraltet. Aktualisere zur letzten Version. %1%'
     subs: [ '' ]
 
+  - &useInstead
+    type: warn
+    content:
+      - lang: en
+        text: 'Use %1% instead.'
+      - lang: ja
+        text: '代わりに%1%を使用してください。'
+
 bash_tags: []
 
 globals:
@@ -194,11 +202,10 @@ plugins:
       - *obsolete
       - type: say
         content: 'Legacy version. Only recommended for old saves.'
-      - type: error
+      - <<: *useInstead
+        type: error
+        subs: [ 'Morrowind Patch Project 1.6.5 [For Rebirth].esm' ]
         condition: 'active("Morrowind Rebirth [Main].ESP")'
-        content:
-          - lang: en
-            text: 'Use "Morrowind Patch Project 1.6.5 [For Rebirth].esm" instead for Patch for Purists.'
       - type: error
         condition: 'active("gr_ScriptImprovements.esp") or active("gr_ScriptImprovements.esm")'
         content:
