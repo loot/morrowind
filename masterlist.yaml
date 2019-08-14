@@ -25,6 +25,26 @@ common:
       - lang: pt
         text: 'Apagar. Já incluído em %1%.'
 
+  - &deletePlugin
+    type: warn
+    content:
+      - lang: en
+        text: 'When using **%1%**. It''s recommended that you deactivate or delete this ESP file, but keep the resources (e.g. meshes, textures) installed with this mod. As they''re still required by **%1%**.'
+      - lang: ru
+        text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (meshes, textures). Т.к. они все еще требуются для **%1%**.'
+      - lang: de
+        text: 'Beim nutzen von **%1%** ist es empfohlen das Sie die ESP-Datei deaktivieren oder löschen, aber die mitgelieferten Mittel (z.B Meshes, Texturen) beibehalten die mit dieser Mod mitinstalliert wurden. Diese werden immer noch von **%1%** vorausgesetzt.'
+      - lang: ko
+        text: '**%1%** 모드를 사용중일 떈, 이 ESP 파일을 삭제하고 함께 설치된 리소스(예: 메쉬, 텍스쳐)만 남겨두는 걸 권장합니다. 리소스는 **%1%** 모드에서 필요로 합니다.'
+      - lang: en
+        text: '**%1%**を使用中の場合。このespファイルは無効化あるいは削除するのはおすすめしますが、このmodによってインストールされたリソース(メッシュ、テクスチャなど)はそのままにしておいてください。これらは**%1%**によって引き続き必要とされてます。'
+      - lang: pt
+        text: 'Ao utilizar **%1%**, é recomendado que você desative ou apage este ficheiro ESP, mas mantenha os recursos (ex. meshes, texturas) instalados por este mod. Sendo que os mesmos ainda são necessitados por **%1%**. '
+      - lang: pt_BR
+        text: 'Quando se usa **%1%**, é recomendado que você desative ou delete este arquivo ESP, mas que mantenha os recursos (ex. meshes, texturas) que vieram com esse mod.'
+      - lang: pl
+        text: 'Używając **%1%**, jest rekomendowane abyś dezaktywował lub usunął ten plik ESP, ale pozostawił zasoby (siatki, tekstury) zainstalowane z tym modem. Ponieważ są wciąż wymagane przez **%1%**.'
+
   - &obsolete
     type: say
     content:
@@ -129,13 +149,30 @@ plugins:
     url:
       - link: 'https://en.m.uesp.net/wiki/Morrowind:Plugins'
         name: 'Morrowind Official Plugins on UESP.net'
-      - link: 'http://download.fliggerty.com/download-13-1079'
-        name: 'Morrowind Official Plugins on fliggerty.com'
       - link: 'https://www.nexusmods.com/morrowind/mods/43931'
         name: 'Unofficial Morrowind Official Plugins Patched'
-
-  - name: 'adamantiumarmor.esp'
     group: *earlyLoadersGroup
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Unofficial Morrowind Official Plugins Patched' ]
+        condition: 'active("Unofficial Morrowind Official Plugins Patched.ESP")'
+      - <<: *deletePlugin
+        subs: [ '"Unofficial Morrowind Official Plugins Patched.ESP"' ]
+        condition: 'active("Unofficial Morrowind Official Plugins Patched.ESP")'
+
+  - name: '\[Official\](Adamantium Armor|Area Effect Arrows|Bitter Coast Sounds|Helm of Tohan|Entertainers|LeFemm Armor|Master Index|Siege at Firemoth)\.esp'
+    url:
+      - link: 'http://download.fliggerty.com/download-13-1079'
+        name: 'Morrowind Official Plugins on fliggerty.com'
+    group: *earlyLoadersGroup
+    inc:
+      - 'Unofficial Morrowind Official Plugins Patched.ESP'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Unofficial Morrowind Official Plugins Patched' ]
+        condition: 'active("Unofficial Morrowind Official Plugins Patched.ESP")'
+
+  - name: '(adamantiumarmor|\[Official\]Adamantium Armor)\.esp'
     after:
       - 'AreaEffectArrows.esp'
       - 'bcsounds.esp'
@@ -143,50 +180,93 @@ plugins:
       - 'entertainers.esp'
       - 'LeFemmArmor.esp'
       - 'master_index.esp'
+      - '[Official]Area Effect Arrows.esp'
+      - '[Official]Bitter Coast Sounds.esp'
+      - '[Official]Entertainers.esp'
+      - '[Official]Helm of Tohan.esp'
+      - '[Official]LeFemm Armor.esp'
+      - '[Official]Master Index.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"Adamantium Armor"' ]
+        condition: 'many("(adamantiumarmor|\[Official\]Adamantium Armor)\.esp")'
 
-  - name: 'AreaEffectArrows.esp'
-    group: *earlyLoadersGroup
+  - name: '(AreaEffectArrows|\[Official\]Area Effect Arrows)\.esp'
     after:
       - 'bcsounds.esp'
       - 'entertainers.esp'
+      - '[Official]Bitter Coast Sounds.esp'
+      - '[Official]Entertainers.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"Area Effect Arrows"' ]
+        condition: 'many("(AreaEffectArrows|\[Official\]Area Effect Arrows)\.esp")'
 
-  - name: 'bcsounds.esp'
-    group: *earlyLoadersGroup
+  - name: '(bcsounds|\[Official\]Bitter Coast Sounds)\.esp'
     after:
       - 'entertainers.esp'
+      - '[Official]Entertainers.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"Bitter Coast Sounds"' ]
+        condition: 'many("(bcsounds|\[Official\]Bitter Coast Sounds)\.esp")'
 
-  - name: 'EBQ_Artifact.esp'
-    group: *earlyLoadersGroup
+  - name: '(EBQ_Artifact|\[Official\]Helm of Tohan)\.esp'
     after:
       - 'AreaEffectArrows.esp'
       - 'bcsounds.esp'
       - 'entertainers.esp'
+      - '[Official]Area Effect Arrows.esp'
+      - '[Official]Bitter Coast Sounds.esp'
+      - '[Official]Entertainers.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"EBQ_Artifact" or "Helm of Tohan"' ]
+        condition: 'many("(EBQ_Artifact|\[Official\]Helm of Tohan)\.esp")'
 
-  - name: 'entertainers.esp'
-    group: *earlyLoadersGroup
+  - name: '(entertainers|\[Official\]Entertainers)\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"Entertainers"' ]
+        condition: 'many("(entertainers|\[Official\]Entertainers)\.esp")'
 
   - name: 'LeFemmArmor.esp'
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/42560'
         name: 'Expanded LeFemm Armor'
-    group: *earlyLoadersGroup
+  - name: '(LeFemmArmor|\[Official\]LeFemm Armor)\.esp'
     after:
       - 'AreaEffectArrows.esp'
       - 'bcsounds.esp'
       - 'EBQ_Artifact.esp'
       - 'entertainers.esp'
       - 'master_index.esp'
+      - '[Official]Area Effect Arrows.esp'
+      - '[Official]Bitter Coast Sounds.esp'
+      - '[Official]Entertainers.esp'
+      - '[Official]Helm of Tohan.esp'
+      - '[Official]Master Index.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"LeFemm Armor"' ]
+        condition: 'many("(LeFemmArmor|\[Official\]LeFemm Armor)\.esp")'
 
-  - name: 'master_index.esp'
-    group: *earlyLoadersGroup
+  - name: '(master_index|\[Official\]Master Index)\.esp'
     after:
       - 'AreaEffectArrows.esp'
       - 'bcsounds.esp'
       - 'EBQ_Artifact.esp'
       - 'entertainers.esp'
+      - '[Official]Area Effect Arrows.esp'
+      - '[Official]Bitter Coast Sounds.esp'
+      - '[Official]Entertainers.esp'
+      - '[Official]Helm of Tohan.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"Master Index"' ]
+        condition: 'many("(master_index|\[Official\]Master Index)\.esp")'
 
-  - name: 'Siege at Firemoth.esp'
-    group: *earlyLoadersGroup
+  - name: '(Siege at Firemoth|\[Official\]Siege at Firemoth)\.esp'
     after:
       - 'adamantiumarmor.esp'
       - 'AreaEffectArrows.esp'
@@ -195,6 +275,21 @@ plugins:
       - 'entertainers.esp'
       - 'LeFemmArmor.esp'
       - 'master_index.esp'
+      - '[Official]Adamantium Armor.esp'
+      - '[Official]Area Effect Arrows.esp'
+      - '[Official]Bitter Coast Sounds.esp'
+      - '[Official]Entertainers.esp'
+      - '[Official]Helm of Tohan.esp'
+      - '[Official]LeFemm Armor.esp'
+      - '[Official]Master Index.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"Siege at Firemoth"' ]
+        condition: 'many("(Siege at Firemoth|\[Official\]Siege at Firemoth)\.esp")'
+
+  - name: 'Unofficial Morrowind Official Plugins Patched.ESP'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/43931' ]
+    group: *earlyLoadersGroup
 
 # Unofficial Patches
 
