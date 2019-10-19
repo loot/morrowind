@@ -50,6 +50,8 @@ common:
         text: 'Quando se usa **%1%**, é recomendado que você desative ou delete este arquivo ESP, mas que mantenha os recursos (ex. meshes, texturas) que vieram com esse mod.'
       - lang: ru
         text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (meshes, textures). Т.к. они все еще требуются для **%1%**.'
+      - lang: sv
+        text: 'När du använder **%1%** är det rekommenderat att du avaktiverar eller tar bort denna ESP-fil, men behåll resurserna (meshar och texturer) installerade med denna mod. De krävs fortfarande av **%1%**.'
 
   - &obsolete
     type: say
@@ -68,6 +70,8 @@ common:
         text: '사용되지 않습니다. 최신 버전으로 업데이트하십시오. %1%'
       - lang: ru
         text: 'Устарело. Обновите до последней версии. %1%'
+      - lang: sv
+        text: 'Utdaterad. Uppdatera till den senaste versionen. %1%'
       - lang: zh_CN
         text: '已过时。请升级到最新版本。 %1%'
     subs: [ '' ]
@@ -129,6 +133,8 @@ globals:
         text: '[Postagem mais recente do LOOT](%1%).'
       - lang: ru
         text: '[Обсуждение LOOT "(Eng)"](%1%).'
+      - lang: sv
+        text: '[Senaste LOOT-tråd](%1%).'
       - lang: zh_CN
         text: '[最新的LOOT版本](%1%)。'
     subs: [ 'https://loot.github.io/latest-thread/' ]
