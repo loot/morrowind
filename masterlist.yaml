@@ -83,6 +83,8 @@ common:
     content:
       - lang: en
         text: 'Use %1% instead.'
+      - lang: de
+        text: 'Nutzen Sie %1% stattdessen.'
       - lang: ja
         text: '代わりに%1%を使用してください。'
 
@@ -341,14 +343,22 @@ plugins:
       - <<: *obsolete
         condition: 'version("Patch for Purists.esm", "3.1.2", <)'
       - type: say
-        content: 'Legacy version. Only recommended for old saves.'
+        content:
+          - lang: en
+            text: 'Legacy version. Only recommended for old saves.'
+          - lang: de
+            text: 'Alt-Version. Ausschließlich für alte Speicherstände empfohlen.'
         condition: 'version("Patch for Purists.esm", "3.1.2", <)'
 
   - name: 'Patch for Purists - (Base Patch|(Book|Dialogue|Statistic) Typos|Floating Rocks|Expansion Implementation|Dialogue Inconsistencies)\.esm'
     msg:
       - *obsolete
       - type: say
-        content: 'Legacy version. Only recommended for old saves.'
+        content:
+          - lang: en
+            text: 'Legacy version. Only recommended for old saves.'
+          - lang: de
+            text: 'Alt-Version. Ausschließlich für alte Speicherstände empfohlen.'
 
   - name: 'Patch for Purists - Base Patch.esm'
     after:
