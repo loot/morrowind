@@ -14,6 +14,8 @@ common:
         text: 'Löschen. Bereits in %1% enthalten.'
       - lang: es
         text: 'Borrar. Esta incluido en %1%.'
+      - lang: fi
+        text: 'Poista. %1% sisältää jo tämän.'
       - lang: ja
         text: '削除してください。既に%1%に含まれています。'
       - lang: ko
@@ -97,6 +99,8 @@ common:
         text: 'Nutzen Sie nur einen %1%.'
       - lang: es
         text: 'Utilizar solo un %1%.'
+      - lang: fi
+        text: 'Käytä vain yhtä: %1%.'
       - lang: ja
         text: '%1%は一つだけ使用してください。'
       - lang: ko
