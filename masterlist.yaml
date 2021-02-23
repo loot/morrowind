@@ -89,6 +89,8 @@ common:
         text: 'Nutzen Sie %1% stattdessen.'
       - lang: ja
         text: '代わりに%1%を使用してください。'
+      - lang: sv
+        text: 'Använd %1% istället.'
 
   - &useOnlyOneX
     type: say
