@@ -56,7 +56,7 @@ common:
         text: 'När du använder **%1%** är det rekommenderat att du avaktiverar eller tar bort denna ESP-fil, men behåll resurserna (meshar och texturer) installerade med denna mod. De krävs fortfarande av **%1%**.'
 
   - &obsolete
-    type: say
+    type: warn
     content:
       - lang: en
         text: 'Obsolete. Update to the latest version. %1%'
