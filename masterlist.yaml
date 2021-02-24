@@ -93,7 +93,7 @@ common:
         text: 'Använd %1% istället.'
 
   - &useOnlyOneX
-    type: say
+    type: error
     content:
       - lang: en
         text: 'Use only one %1%.'
