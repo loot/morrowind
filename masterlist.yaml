@@ -197,8 +197,7 @@ plugins:
       - link: 'http://download.fliggerty.com/download-13-1079'
         name: 'Morrowind Official Plugins on fliggerty.com'
     group: *earlyLoadersGroup
-    inc:
-      - 'Unofficial Morrowind Official Plugins Patched.ESP'
+    inc: [ 'Unofficial Morrowind Official Plugins Patched.ESP' ]
     msg:
       - <<: *alreadyInX
         subs: [ 'Unofficial Morrowind Official Plugins Patched' ]
