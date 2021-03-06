@@ -173,8 +173,7 @@ plugins:
 
   - name: 'Bloodmoon.esm'
     group: *dlcGroup
-    after:
-      - 'Tribunal.esm'
+    after: [ 'Tribunal.esm' ]
 
 # Official Mods
   - name: '(adamantiumarmor|AreaEffectArrows|bcsounds|EBQ_Artifact|entertainers|LeFemmArmor|master_index|Siege at Firemoth).esp'
@@ -368,8 +367,7 @@ plugins:
             text: 'Alt-Version. Ausschließlich für alte Speicherstände empfohlen.'
 
   - name: 'Patch for Purists - Base Patch.esm'
-    after:
-      - name: 'Patch for Purists - Dialogue Typos.esm'
+    after: [ 'Patch for Purists - Dialogue Typos.esm' ]
 
   - name: 'Patch for Purists - Book Typos.esm'
     after:
