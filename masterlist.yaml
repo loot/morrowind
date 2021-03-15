@@ -25,7 +25,7 @@ common:
       - lang: pt
         text: 'Apagar. Já incluído em %1%.'
       - lang: pt_BR
-        text: 'Delete. Já icluído em %1%'
+        text: 'Apague. Já incluído em %1%'
       - lang: ru
         text: 'Удалите. Уже включено в %1%.'
       - lang: sv
@@ -49,7 +49,7 @@ common:
       - lang: pt
         text: 'Ao utilizar **%1%**, é recomendado que você desative ou apage este ficheiro ESP, mas mantenha os recursos (ex. meshes, texturas) instalados por este mod.'
       - lang: pt_BR
-        text: 'Quando se usa **%1%**, é recomendado que você desative ou delete este arquivo ESP, mas que mantenha os recursos (ex. meshes, texturas) que vieram com esse mod.'
+        text: 'Quando se usa **%1%**, é recomendado que você desative ou apague este arquivo ESP mas que mantenha os recursos (por ex. meshes, textures) instalados com esse mod.'
       - lang: ru
         text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (meshes, textures).'
       - lang: sv
@@ -72,6 +72,8 @@ common:
         text: '폐기된 플러그인입니다. 최신 버전으로 업데이트하십시오. %1%'
       - lang: pl
         text: 'Przestarzały. Uaktualnij do ostatniej wersji. %1%'
+      - lang: pt_BR
+        text: 'Obsoleto. Atualize para a última versão %1%.'
       - lang: ru
         text: 'Устарело. Обновите до последней версии. %1%'
       - lang: sv
@@ -89,6 +91,8 @@ common:
         text: 'Nutzen Sie %1% stattdessen.'
       - lang: ja
         text: '代わりに%1%を使用してください。'
+      - lang: pt_BR
+        text: 'Use %1% ao invés disso.'
       - lang: sv
         text: 'Använd %1% istället.'
 
@@ -143,6 +147,8 @@ globals:
         text: '[Ostatni wątek LOOT](%1%).'
       - lang: pt
         text: '[Postagem mais recente do LOOT](%1%).'
+      - lang: pt_BR
+        text: '[Thread mais recento do LOOT](%1%).'
       - lang: ru
         text: '[Обсуждение LOOT "(Eng)"](%1%).'
       - lang: sv
