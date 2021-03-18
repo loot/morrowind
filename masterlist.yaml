@@ -8,6 +8,8 @@ common:
     content:
       - lang: en
         text: 'Delete. Already included in %1%.'
+      - lang: bg
+        text: 'За изтриване. Включена е в %1%.'
       - lang: da
         text: 'Slet. Allerede inkluderet i %1%.'
       - lang: de
@@ -38,6 +40,8 @@ common:
     content:
       - lang: en
         text: 'When using **%1%**, it''s recommended that you deactivate or delete this ESP file but keep the resources (e.g. meshes, textures) installed with this mod.'
+      - lang: bg
+        text: 'Когато използвате приставката **%1%**, трябва да деактивирате или изтриете този ESP файл, но да запазите неговите ресурси (триизмерни модели, текстури и други).'
       - lang: de
         text: 'Beim Nutzen von **%1%** ist es empfohlen, dass Sie die ESP-Datei deaktivieren oder löschen, aber die mitgelieferten Ressourcen (z.B Meshes, Texturen) beibehalten die mit dieser Mod mitinstalliert wurden.'
       - lang: ja
@@ -60,6 +64,8 @@ common:
     content:
       - lang: en
         text: 'Obsolete. Update to the latest version. %1%'
+      - lang: bg
+        text: 'Стара версия. Моля, обновете приставката. %1%'
       - lang: da
         text: 'Forældet. Opdatér til den nyeste version. %1%'
       - lang: de
@@ -87,6 +93,8 @@ common:
     content:
       - lang: en
         text: 'Use %1% instead.'
+      - lang: bg
+        text: 'Може да използвате %1%.'
       - lang: de
         text: 'Nutzen Sie %1% stattdessen.'
       - lang: ja
@@ -101,6 +109,8 @@ common:
     content:
       - lang: en
         text: 'Use only one %1%.'
+      - lang: bg
+        text: 'Използвайте само една %1%.'
       - lang: da
         text: 'Brug kun én %1%.'
       - lang: de
@@ -133,6 +143,8 @@ globals:
     content:
       - lang: en
         text: '[Latest LOOT thread](%1%).'
+      - lang: bg
+        text: '[Форумът на LOOT](%1%).'
       - lang: da
         text: '[Seneste LOOT-tråd](%1%).'
       - lang: de
