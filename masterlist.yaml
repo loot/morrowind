@@ -99,6 +99,8 @@ common:
         text: 'Nutzen Sie %1% stattdessen.'
       - lang: ja
         text: '代わりに%1%を使用してください。'
+      - lang: ko
+        text: '대신 %1%를 사용하십시오.'
       - lang: pt_BR
         text: 'Use %1% ao invés disso.'
       - lang: sv
