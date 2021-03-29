@@ -18,6 +18,8 @@ common:
         text: 'Borrar. Esta incluido en %1%.'
       - lang: fi
         text: 'Poista. %1% sisältää jo tämän.'
+      - lang: it
+        text: 'Cancella. Già incluso in %1%.'
       - lang: ja
         text: '削除してください。既に%1%に含まれています。'
       - lang: ko
@@ -44,6 +46,8 @@ common:
         text: 'Когато използвате приставката **%1%**, трябва да деактивирате или изтриете този ESP файл, но да запазите неговите ресурси (триизмерни модели, текстури и други).'
       - lang: de
         text: 'Beim Nutzen von **%1%** ist es empfohlen, dass Sie die ESP-Datei deaktivieren oder löschen, aber die mitgelieferten Ressourcen (z.B Meshes, Texturen) beibehalten die mit dieser Mod mitinstalliert wurden.'
+      - lang: it
+        text: 'Quando si utilizza **%1%**, è fortemente consigliato disattivare o eliminare questo file ESP ma mantenerne le risorse (ad es. mesh, texture) installate con questa mod.'
       - lang: ja
         text: '**%1%**を使用中の場合。このespファイルは無効化あるいは削除するのはおすすめしますが、このmodによってインストールされたリソース(メッシュ、テクスチャなど)はそのままにしておいてください。'
       - lang: ko
@@ -72,6 +76,8 @@ common:
         text: 'Veraltet. Aktualisieren Sie zur neusten Version. %1%'
       - lang: es
         text: 'Obsoleto. Actualizar a la última versión. %1%'
+      - lang: it
+        text: 'Obsoleto. Aggiorna all''ultima versione. %1%'
       - lang: ja
         text: '旧式のプラグインです。最新版に更新してください。 %1%'
       - lang: ko
@@ -97,6 +103,8 @@ common:
         text: 'Може да използвате %1%.'
       - lang: de
         text: 'Nutzen Sie %1% stattdessen.'
+      - lang: it
+        text: 'Utilizza %1% invece.'
       - lang: ja
         text: '代わりに%1%を使用してください。'
       - lang: ko
@@ -121,6 +129,8 @@ common:
         text: 'Utilizar solo un %1%.'
       - lang: fi
         text: 'Käytä vain yhtä: %1%.'
+      - lang: it
+        text: 'Usa solo un %1%.'
       - lang: ja
         text: '%1%は一つだけ使用してください。'
       - lang: ko
@@ -153,6 +163,8 @@ globals:
         text: '[Aktueller LOOT-Thread](%1%).'
       - lang: es
         text: '[Forum de LOOT](%1%).'
+      - lang: it
+        text: '[Ultimo thread di LOOT](%1%).'
       - lang: ja
         text: '[LOOTの最新スレッドを開く](%1%)（英語）。'
       - lang: ko
