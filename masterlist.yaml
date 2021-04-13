@@ -86,6 +86,8 @@ common:
         text: 'Przestarzały. Uaktualnij do ostatniej wersji. %1%'
       - lang: pt_BR
         text: 'Obsoleto. Atualize para a última versão %1%.'
+      - lang: pt_PT
+        text: 'Obsoleto. Atualize para a versão mais recente. %1%'
       - lang: ru
         text: 'Устарело. Обновите до последней версии. %1%'
       - lang: sv
@@ -111,6 +113,8 @@ common:
         text: '대신 %1%를 사용하십시오.'
       - lang: pt_BR
         text: 'Use %1% ao invés disso.'
+      - lang: pt_PT
+        text: 'Use %1% ao invés disto.'
       - lang: sv
         text: 'Använd %1% istället.'
 
