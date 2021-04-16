@@ -62,6 +62,8 @@ common:
         text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (meshes, textures).'
       - lang: sv
         text: 'När du använder **%1%** är det rekommenderat att du avaktiverar eller tar bort denna ESP-fil, men behåll resurserna (meshar och texturer) installerade med denna mod.'
+      - lang: zh_CN
+        text: '当使用**%1%**时，建议您禁用或删除这个ESP文件，但保留与此mod一起安装的资源(如网格，纹理等)。'
 
   - &obsolete
     type: warn
@@ -117,6 +119,8 @@ common:
         text: 'Use %1% ao invés disto.'
       - lang: sv
         text: 'Använd %1% istället.'
+      - lang: zh_CN
+        text: '使用%1%代替。'
 
   - &useOnlyOneX
     type: error
