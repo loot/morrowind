@@ -15,7 +15,7 @@ common:
       - lang: de
         text: 'Löschen. Bereits in %1% enthalten.'
       - lang: es
-        text: 'Borrar. Esta incluido en %1%.'
+        text: 'Eliminar. Está incluido en %1%.'
       - lang: fi
         text: 'Poista. %1% sisältää jo tämän.'
       - lang: it
@@ -46,6 +46,8 @@ common:
         text: 'Когато използвате приставката **%1%**, трябва да деактивирате или изтриете този ESP файл, но да запазите неговите ресурси (триизмерни модели, текстури и други).'
       - lang: de
         text: 'Beim Nutzen von **%1%** ist es empfohlen, dass Sie die ESP-Datei deaktivieren oder löschen, aber die mitgelieferten Ressourcen (z.B Meshes, Texturen) beibehalten die mit dieser Mod mitinstalliert wurden.'
+      - lang: es
+        text: 'Si usa **%1%**, se recomienda que desactive o elimine este archivo ESP pero que mantenga los recursos (ej. mallas, texturas) que se instalaron con él.'
       - lang: it
         text: 'Quando si utilizza **%1%**, è fortemente consigliato disattivare o eliminare questo file ESP ma mantenerne le risorse (ad es. mesh, texture) installate con questa mod.'
       - lang: ja
@@ -107,6 +109,8 @@ common:
         text: 'Може да използвате %1%.'
       - lang: de
         text: 'Nutzen Sie %1% stattdessen.'
+      - lang: es
+        text: 'Use %1% en su lugar.'
       - lang: it
         text: 'Utilizza %1% invece.'
       - lang: ja
@@ -134,7 +138,7 @@ common:
       - lang: de
         text: 'Nutzen Sie nur einen %1%.'
       - lang: es
-        text: 'Utilizar solo un %1%.'
+        text: 'Utilice solo uno %1%.'
       - lang: fi
         text: 'Käytä vain yhtä: %1%.'
       - lang: it
