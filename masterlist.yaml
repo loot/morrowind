@@ -34,6 +34,8 @@ common:
         text: 'Удалите. Уже включено в %1%.'
       - lang: sv
         text: 'Ta bort. Redan inkluderat i %1%.'
+      - lang: uk_UA
+        text: 'Видаліть. Уже додано у %1%.'
       - lang: zh_CN
         text: '删除。已包含在%1%中。'
 
@@ -61,9 +63,11 @@ common:
       - lang: pt_PT
         text: 'Ao utilizar **%1%**, é recomendado que você desative ou apage este ficheiro ESP, mas mantenha os recursos (ex. meshes, texturas) instalados por este mod.'
       - lang: ru
-        text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (meshes, textures).'
+        text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (меши, текстуры и тд).'
       - lang: sv
         text: 'När du använder **%1%** är det rekommenderat att du avaktiverar eller tar bort denna ESP-fil, men behåll resurserna (meshar och texturer) installerade med denna mod.'
+      - lang: uk_UA
+        text: 'Поки використовується **%1%**, рекомендується відключити чи деактивувати esp цього моду, але залишити встановлені ресурси (меші, текстури і тп).'
       - lang: zh_CN
         text: '当使用**%1%**时，建议您禁用或删除这个ESP文件，但保留与此mod一起安装的资源(如网格，纹理等)。'
 
@@ -96,6 +100,8 @@ common:
         text: 'Устарело. Обновите до последней версии. %1%'
       - lang: sv
         text: 'Utdaterad. Uppdatera till den senaste versionen. %1%'
+      - lang: uk_UA
+        text: 'Застаріло. Оновіть до останньої версії. %1%'
       - lang: zh_CN
         text: '已过时。请升级到最新版本。 %1%'
     subs: [ '' ]
@@ -121,8 +127,12 @@ common:
         text: 'Use %1% ao invés disso.'
       - lang: pt_PT
         text: 'Use %1% ao invés disto.'
+      - lang: ru
+        text: 'Вместо этого используйте %1%.'
       - lang: sv
         text: 'Använd %1% istället.'
+      - lang: uk_UA
+        text: 'Замість цього використовуйте: %1%.'
       - lang: zh_CN
         text: '使用%1%代替。'
 
@@ -157,6 +167,8 @@ common:
         text: 'Используйте только один %1%.'
       - lang: sv
         text: 'Använd endast en %1%.'
+      - lang: uk_UA
+        text: 'Використовуйте лише один %1%.'
       - lang: zh_CN
         text: '只使用一个%1%。'
 
@@ -191,6 +203,8 @@ globals:
         text: '[Обсуждение LOOT "(Eng)"](%1%).'
       - lang: sv
         text: '[Senaste LOOT-tråd](%1%).'
+      - lang: uk_UA
+        text: '[Обговорення LOOT "(Eng)"](%1%).'
       - lang: zh_CN
         text: '[最新的LOOT版本](%1%)。'
     subs: [ 'https://loot.github.io/latest-thread/' ]
