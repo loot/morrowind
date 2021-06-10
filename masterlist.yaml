@@ -63,7 +63,7 @@ common:
       - lang: pt_PT
         text: 'Ao utilizar **%1%**, é recomendado que você desative ou apage este ficheiro ESP, mas mantenha os recursos (ex. meshes, texturas) instalados por este mod.'
       - lang: ru
-        text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (meshes, textures).'
+        text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (меши, текстуры и тд).'
       - lang: sv
         text: 'När du använder **%1%** är det rekommenderat att du avaktiverar eller tar bort denna ESP-fil, men behåll resurserna (meshar och texturer) installerade med denna mod.'
       - lang: uk_UA
@@ -127,6 +127,8 @@ common:
         text: 'Use %1% ao invés disso.'
       - lang: pt_PT
         text: 'Use %1% ao invés disto.'
+      - lang: ru
+        text: 'Вместо этого используйте %1%.'
       - lang: sv
         text: 'Använd %1% istället.'
       - lang: uk_UA
