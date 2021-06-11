@@ -118,7 +118,7 @@ common:
       - lang: es
         text: 'Use %1% en su lugar.'
       - lang: it
-        text: 'Utilizza %1% invece.'
+        text: 'Utilizza %1% al suo posto.'
       - lang: ja
         text: '代わりに%1%を使用してください。'
       - lang: ko
