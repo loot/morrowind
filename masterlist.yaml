@@ -180,7 +180,7 @@ globals:
       - lang: en
         text: '[Latest LOOT thread](%1%).'
       - lang: bg
-        text: '[Форумът на LOOT](%1%).'
+        text: '[Форумът на "LOOT"](%1%).'
       - lang: da
         text: '[Seneste LOOT-tråd](%1%).'
       - lang: de
