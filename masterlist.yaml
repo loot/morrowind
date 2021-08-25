@@ -18,6 +18,8 @@ common:
         text: 'Eliminar. Está incluido en %1%.'
       - lang: fi
         text: 'Poista. %1% sisältää jo tämän.'
+      - lang: fr
+        text: 'Supprimer. Déjà inclus dans %1%.'
       - lang: it
         text: 'Cancella. Già incluso in %1%.'
       - lang: ja
@@ -50,6 +52,8 @@ common:
         text: 'Beim Nutzen von **%1%** ist es empfohlen, dass Sie die ESP-Datei deaktivieren oder löschen, aber die mitgelieferten Ressourcen (z.B Meshes, Texturen) beibehalten die mit dieser Mod mitinstalliert wurden.'
       - lang: es
         text: 'Si usa **%1%**, se recomienda que desactive o elimine este archivo ESP pero que mantenga los recursos (ej. mallas, texturas) que se instalaron con él.'
+      - lang: fr
+        text: 'Lorsque vous utilisez **%1%**, il est recommandé que vous désactivez, ou supprimez, cet ESP mais gardez les ressources (ex : meshes, textures) installés avec ce mod.'
       - lang: it
         text: 'Quando si utilizza **%1%**, è fortemente consigliato disattivare o eliminare questo file ESP ma mantenerne le risorse (ad es. mesh, texture) installate con questa mod.'
       - lang: ja
@@ -84,6 +88,8 @@ common:
         text: 'Veraltet. Aktualisieren Sie zur neusten Version. %1%'
       - lang: es
         text: 'Obsoleto. Actualizar a la última versión. %1%'
+      - lang: fr
+        text: 'Obsolète. Veuillez mettre ce fichier à jour. %1%'
       - lang: it
         text: 'Obsoleto. Aggiorna all''ultima versione. %1%'
       - lang: ja
@@ -117,6 +123,8 @@ common:
         text: 'Nutzen Sie %1% stattdessen.'
       - lang: es
         text: 'Use %1% en su lugar.'
+      - lang: fr
+        text: 'Utilisez %1% au lieu de celui-ci.'
       - lang: it
         text: 'Utilizza %1% al suo posto.'
       - lang: ja
@@ -151,6 +159,8 @@ common:
         text: 'Utilice solo uno %1%.'
       - lang: fi
         text: 'Käytä vain yhtä: %1%.'
+      - lang: fr
+        text: 'N''utilisez qu''un %1%.'
       - lang: it
         text: 'Usa solo un %1%.'
       - lang: ja
@@ -187,6 +197,8 @@ globals:
         text: '[Aktueller LOOT-Thread](%1%).'
       - lang: es
         text: '[Forum de LOOT](%1%).'
+      - lang: fr
+        text: '[Récent post sur le forum LOOT](%1%).'
       - lang: it
         text: '[Ultimo thread di LOOT](%1%).'
       - lang: ja
