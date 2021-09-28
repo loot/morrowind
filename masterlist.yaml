@@ -183,46 +183,49 @@ prelude:
         - lang: zh_CN
           text: '只使用一个%1%。'
 
+  # Global Anchors
+    - &latestLOOTThread
+      type: say
+      content:
+        - lang: en
+          text: '[Latest LOOT thread](%1%).'
+        - lang: bg
+          text: '[Форумът на "LOOT"](%1%).'
+        - lang: da
+          text: '[Seneste LOOT-tråd](%1%).'
+        - lang: de
+          text: '[Aktueller LOOT-Thread](%1%).'
+        - lang: es
+          text: '[Forum de LOOT](%1%).'
+        - lang: fr
+          text: '[Récent post sur le forum LOOT](%1%).'
+        - lang: it
+          text: '[Ultimo thread di LOOT](%1%).'
+        - lang: ja
+          text: '[LOOTの最新スレッドを開く](%1%)（英語）。'
+        - lang: ko
+          text: '[최신 LOOT 스레드](%1%).'
+        - lang: pl
+          text: '[Ostatni wątek LOOT](%1%).'
+        - lang: pt_BR
+          text: '[Thread mais recento do LOOT](%1%).'
+        - lang: pt_PT
+          text: '[Postagem mais recente do LOOT](%1%).'
+        - lang: ru
+          text: '[Обсуждение LOOT "(Eng)"](%1%).'
+        - lang: sv
+          text: '[Senaste LOOT-tråd](%1%).'
+        - lang: uk_UA
+          text: '[Обговорення LOOT "(Eng)"](%1%).'
+        - lang: zh_CN
+          text: '[最新的LOOT版本](%1%)。'
+      subs: [ 'https://loot.github.io/latest-thread/' ]
+
 common: []
 
 bash_tags: []
 
-globals:
-  - type: say
-    content:
-      - lang: en
-        text: '[Latest LOOT thread](%1%).'
-      - lang: bg
-        text: '[Форумът на "LOOT"](%1%).'
-      - lang: da
-        text: '[Seneste LOOT-tråd](%1%).'
-      - lang: de
-        text: '[Aktueller LOOT-Thread](%1%).'
-      - lang: es
-        text: '[Forum de LOOT](%1%).'
-      - lang: fr
-        text: '[Récent post sur le forum LOOT](%1%).'
-      - lang: it
-        text: '[Ultimo thread di LOOT](%1%).'
-      - lang: ja
-        text: '[LOOTの最新スレッドを開く](%1%)（英語）。'
-      - lang: ko
-        text: '[최신 LOOT 스레드](%1%).'
-      - lang: pl
-        text: '[Ostatni wątek LOOT](%1%).'
-      - lang: pt_BR
-        text: '[Thread mais recento do LOOT](%1%).'
-      - lang: pt_PT
-        text: '[Postagem mais recente do LOOT](%1%).'
-      - lang: ru
-        text: '[Обсуждение LOOT "(Eng)"](%1%).'
-      - lang: sv
-        text: '[Senaste LOOT-tråd](%1%).'
-      - lang: uk_UA
-        text: '[Обговорення LOOT "(Eng)"](%1%).'
-      - lang: zh_CN
-        text: '[最新的LOOT版本](%1%)。'
-    subs: [ 'https://loot.github.io/latest-thread/' ]
+globals: []
 
 groups:
   - name: &dlcGroup DLC
