@@ -3,187 +3,187 @@
 # data that gets re-used.
 prelude:
   common:
+  # Message Anchors
+    - &alreadyInX
+      type: error
+      content:
+        - lang: en
+          text: 'Delete. Already included in %1%.'
+        - lang: bg
+          text: 'За изтриване. Включена е в %1%.'
+        - lang: da
+          text: 'Slet. Allerede inkluderet i %1%.'
+        - lang: de
+          text: 'Löschen. Bereits in %1% enthalten.'
+        - lang: es
+          text: 'Eliminar. Está incluido en %1%.'
+        - lang: fi
+          text: 'Poista. %1% sisältää jo tämän.'
+        - lang: fr
+          text: 'Supprimer. Déjà inclus dans %1%.'
+        - lang: it
+          text: 'Cancella. Già incluso in %1%.'
+        - lang: ja
+          text: '削除してください。既に%1%に含まれています。'
+        - lang: ko
+          text: '삭제하십시오. 이미 %1%에 포함되어 있습니다.'
+        - lang: pl
+          text: 'Usuń. Już zawarte w %1%'
+        - lang: pt_BR
+          text: 'Apague. Já incluído em %1%'
+        - lang: pt_PT
+          text: 'Apagar. Já incluído em %1%.'
+        - lang: ru
+          text: 'Удалите. Уже включено в %1%.'
+        - lang: sv
+          text: 'Ta bort. Redan inkluderat i %1%.'
+        - lang: uk_UA
+          text: 'Видаліть. Уже додано у %1%.'
+        - lang: zh_CN
+          text: '删除。已包含在%1%中。'
 
-common:
-# Message Anchors
-  - &alreadyInX
-    type: error
-    content:
-      - lang: en
-        text: 'Delete. Already included in %1%.'
-      - lang: bg
-        text: 'За изтриване. Включена е в %1%.'
-      - lang: da
-        text: 'Slet. Allerede inkluderet i %1%.'
-      - lang: de
-        text: 'Löschen. Bereits in %1% enthalten.'
-      - lang: es
-        text: 'Eliminar. Está incluido en %1%.'
-      - lang: fi
-        text: 'Poista. %1% sisältää jo tämän.'
-      - lang: fr
-        text: 'Supprimer. Déjà inclus dans %1%.'
-      - lang: it
-        text: 'Cancella. Già incluso in %1%.'
-      - lang: ja
-        text: '削除してください。既に%1%に含まれています。'
-      - lang: ko
-        text: '삭제하십시오. 이미 %1%에 포함되어 있습니다.'
-      - lang: pl
-        text: 'Usuń. Już zawarte w %1%'
-      - lang: pt_BR
-        text: 'Apague. Já incluído em %1%'
-      - lang: pt_PT
-        text: 'Apagar. Já incluído em %1%.'
-      - lang: ru
-        text: 'Удалите. Уже включено в %1%.'
-      - lang: sv
-        text: 'Ta bort. Redan inkluderat i %1%.'
-      - lang: uk_UA
-        text: 'Видаліть. Уже додано у %1%.'
-      - lang: zh_CN
-        text: '删除。已包含在%1%中。'
+    - &deletePlugin
+      type: warn
+      content:
+        - lang: en
+          text: 'When using **%1%**, it''s recommended that you deactivate or delete this ESP file but keep the resources (e.g. meshes, textures) installed with this mod.'
+        - lang: bg
+          text: 'Когато използвате приставката **%1%**, трябва да деактивирате или изтриете този ESP файл, но да запазите неговите ресурси (триизмерни модели, текстури и други).'
+        - lang: de
+          text: 'Beim Nutzen von **%1%** ist es empfohlen, dass Sie die ESP-Datei deaktivieren oder löschen, aber die mitgelieferten Ressourcen (z.B Meshes, Texturen) beibehalten die mit dieser Mod mitinstalliert wurden.'
+        - lang: es
+          text: 'Si usa **%1%**, se recomienda que desactive o elimine este archivo ESP pero que mantenga los recursos (ej. mallas, texturas) que se instalaron con él.'
+        - lang: fr
+          text: 'Lorsque vous utilisez **%1%**, il est recommandé que vous désactivez, ou supprimez, cet ESP mais gardez les ressources (ex : meshes, textures) installés avec ce mod.'
+        - lang: it
+          text: 'Quando si utilizza **%1%**, è fortemente consigliato disattivare o eliminare questo file ESP ma mantenerne le risorse (ad es. mesh, texture) installate con questa mod.'
+        - lang: ja
+          text: '**%1%**を使用中の場合。このespファイルは無効化あるいは削除するのはおすすめしますが、このmodによってインストールされたリソース(メッシュ、テクスチャなど)はそのままにしておいてください。'
+        - lang: ko
+          text: '**%1%**를 사용할 때 이 ESP 파일을 비활성화하거나 삭제하되, 이 모드와 함께 설치된 리소스(예: 메쉬, 텍스쳐)는 유지하는 것을 권장합니다.'
+        - lang: pl
+          text: 'Używając **%1%**, jest rekomendowane abyś dezaktywował lub usunął ten plik ESP, ale pozostawił zasoby (siatki, tekstury) zainstalowane z tym modem.'
+        - lang: pt_BR
+          text: 'Quando se usa **%1%**, é recomendado que você desative ou apague este arquivo ESP mas que mantenha os recursos (por ex. meshes, textures) instalados com esse mod.'
+        - lang: pt_PT
+          text: 'Ao utilizar **%1%**, é recomendado que você desative ou apage este ficheiro ESP, mas mantenha os recursos (ex. meshes, texturas) instalados por este mod.'
+        - lang: ru
+          text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (меши, текстуры и тд).'
+        - lang: sv
+          text: 'När du använder **%1%** är det rekommenderat att du avaktiverar eller tar bort denna ESP-fil, men behåll resurserna (meshar och texturer) installerade med denna mod.'
+        - lang: uk_UA
+          text: 'Поки використовується **%1%**, рекомендується відключити чи деактивувати esp цього моду, але залишити встановлені ресурси (меші, текстури і тп).'
+        - lang: zh_CN
+          text: '当使用**%1%**时，建议您禁用或删除这个ESP文件，但保留与此mod一起安装的资源(如网格，纹理等)。'
 
-  - &deletePlugin
-    type: warn
-    content:
-      - lang: en
-        text: 'When using **%1%**, it''s recommended that you deactivate or delete this ESP file but keep the resources (e.g. meshes, textures) installed with this mod.'
-      - lang: bg
-        text: 'Когато използвате приставката **%1%**, трябва да деактивирате или изтриете този ESP файл, но да запазите неговите ресурси (триизмерни модели, текстури и други).'
-      - lang: de
-        text: 'Beim Nutzen von **%1%** ist es empfohlen, dass Sie die ESP-Datei deaktivieren oder löschen, aber die mitgelieferten Ressourcen (z.B Meshes, Texturen) beibehalten die mit dieser Mod mitinstalliert wurden.'
-      - lang: es
-        text: 'Si usa **%1%**, se recomienda que desactive o elimine este archivo ESP pero que mantenga los recursos (ej. mallas, texturas) que se instalaron con él.'
-      - lang: fr
-        text: 'Lorsque vous utilisez **%1%**, il est recommandé que vous désactivez, ou supprimez, cet ESP mais gardez les ressources (ex : meshes, textures) installés avec ce mod.'
-      - lang: it
-        text: 'Quando si utilizza **%1%**, è fortemente consigliato disattivare o eliminare questo file ESP ma mantenerne le risorse (ad es. mesh, texture) installate con questa mod.'
-      - lang: ja
-        text: '**%1%**を使用中の場合。このespファイルは無効化あるいは削除するのはおすすめしますが、このmodによってインストールされたリソース(メッシュ、テクスチャなど)はそのままにしておいてください。'
-      - lang: ko
-        text: '**%1%**를 사용할 때 이 ESP 파일을 비활성화하거나 삭제하되, 이 모드와 함께 설치된 리소스(예: 메쉬, 텍스쳐)는 유지하는 것을 권장합니다.'
-      - lang: pl
-        text: 'Używając **%1%**, jest rekomendowane abyś dezaktywował lub usunął ten plik ESP, ale pozostawił zasoby (siatki, tekstury) zainstalowane z tym modem.'
-      - lang: pt_BR
-        text: 'Quando se usa **%1%**, é recomendado que você desative ou apague este arquivo ESP mas que mantenha os recursos (por ex. meshes, textures) instalados com esse mod.'
-      - lang: pt_PT
-        text: 'Ao utilizar **%1%**, é recomendado que você desative ou apage este ficheiro ESP, mas mantenha os recursos (ex. meshes, texturas) instalados por este mod.'
-      - lang: ru
-        text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (меши, текстуры и тд).'
-      - lang: sv
-        text: 'När du använder **%1%** är det rekommenderat att du avaktiverar eller tar bort denna ESP-fil, men behåll resurserna (meshar och texturer) installerade med denna mod.'
-      - lang: uk_UA
-        text: 'Поки використовується **%1%**, рекомендується відключити чи деактивувати esp цього моду, але залишити встановлені ресурси (меші, текстури і тп).'
-      - lang: zh_CN
-        text: '当使用**%1%**时，建议您禁用或删除这个ESP文件，但保留与此mod一起安装的资源(如网格，纹理等)。'
+    - &obsolete
+      type: warn
+      content:
+        - lang: en
+          text: 'Obsolete. Update to the latest version. %1%'
+        - lang: bg
+          text: 'Стара версия. Моля, обновете приставката. %1%'
+        - lang: da
+          text: 'Forældet. Opdatér til den nyeste version. %1%'
+        - lang: de
+          text: 'Veraltet. Aktualisieren Sie zur neusten Version. %1%'
+        - lang: es
+          text: 'Obsoleto. Actualizar a la última versión. %1%'
+        - lang: fr
+          text: 'Obsolète. Veuillez mettre ce fichier à jour. %1%'
+        - lang: it
+          text: 'Obsoleto. Aggiorna all''ultima versione. %1%'
+        - lang: ja
+          text: '旧式のプラグインです。最新版に更新してください。 %1%'
+        - lang: ko
+          text: '폐기된 플러그인입니다. 최신 버전으로 업데이트하십시오. %1%'
+        - lang: pl
+          text: 'Przestarzały. Uaktualnij do ostatniej wersji. %1%'
+        - lang: pt_BR
+          text: 'Obsoleto. Atualize para a última versão %1%.'
+        - lang: pt_PT
+          text: 'Obsoleto. Atualize para a versão mais recente. %1%'
+        - lang: ru
+          text: 'Устарело. Обновите до последней версии. %1%'
+        - lang: sv
+          text: 'Utdaterad. Uppdatera till den senaste versionen. %1%'
+        - lang: uk_UA
+          text: 'Застаріло. Оновіть до останньої версії. %1%'
+        - lang: zh_CN
+          text: '已过时。请升级到最新版本。 %1%'
+      subs: [ '' ]
 
-  - &obsolete
-    type: warn
-    content:
-      - lang: en
-        text: 'Obsolete. Update to the latest version. %1%'
-      - lang: bg
-        text: 'Стара версия. Моля, обновете приставката. %1%'
-      - lang: da
-        text: 'Forældet. Opdatér til den nyeste version. %1%'
-      - lang: de
-        text: 'Veraltet. Aktualisieren Sie zur neusten Version. %1%'
-      - lang: es
-        text: 'Obsoleto. Actualizar a la última versión. %1%'
-      - lang: fr
-        text: 'Obsolète. Veuillez mettre ce fichier à jour. %1%'
-      - lang: it
-        text: 'Obsoleto. Aggiorna all''ultima versione. %1%'
-      - lang: ja
-        text: '旧式のプラグインです。最新版に更新してください。 %1%'
-      - lang: ko
-        text: '폐기된 플러그인입니다. 최신 버전으로 업데이트하십시오. %1%'
-      - lang: pl
-        text: 'Przestarzały. Uaktualnij do ostatniej wersji. %1%'
-      - lang: pt_BR
-        text: 'Obsoleto. Atualize para a última versão %1%.'
-      - lang: pt_PT
-        text: 'Obsoleto. Atualize para a versão mais recente. %1%'
-      - lang: ru
-        text: 'Устарело. Обновите до последней версии. %1%'
-      - lang: sv
-        text: 'Utdaterad. Uppdatera till den senaste versionen. %1%'
-      - lang: uk_UA
-        text: 'Застаріло. Оновіть до останньої версії. %1%'
-      - lang: zh_CN
-        text: '已过时。请升级到最新版本。 %1%'
-    subs: [ '' ]
+    - &useInstead
+      type: warn
+      content:
+        - lang: en
+          text: 'Use %1% instead.'
+        - lang: bg
+          text: 'Може да използвате %1%.'
+        - lang: de
+          text: 'Nutzen Sie %1% stattdessen.'
+        - lang: es
+          text: 'Use %1% en su lugar.'
+        - lang: fr
+          text: 'Utilisez %1% au lieu de celui-ci.'
+        - lang: it
+          text: 'Utilizza %1% al suo posto.'
+        - lang: ja
+          text: '代わりに%1%を使用してください。'
+        - lang: ko
+          text: '대신 %1%를 사용하십시오.'
+        - lang: pt_BR
+          text: 'Use %1% ao invés disso.'
+        - lang: pt_PT
+          text: 'Use %1% ao invés disto.'
+        - lang: ru
+          text: 'Вместо этого используйте %1%.'
+        - lang: sv
+          text: 'Använd %1% istället.'
+        - lang: uk_UA
+          text: 'Замість цього використовуйте: %1%.'
+        - lang: zh_CN
+          text: '使用%1%代替。'
 
-  - &useInstead
-    type: warn
-    content:
-      - lang: en
-        text: 'Use %1% instead.'
-      - lang: bg
-        text: 'Може да използвате %1%.'
-      - lang: de
-        text: 'Nutzen Sie %1% stattdessen.'
-      - lang: es
-        text: 'Use %1% en su lugar.'
-      - lang: fr
-        text: 'Utilisez %1% au lieu de celui-ci.'
-      - lang: it
-        text: 'Utilizza %1% al suo posto.'
-      - lang: ja
-        text: '代わりに%1%を使用してください。'
-      - lang: ko
-        text: '대신 %1%를 사용하십시오.'
-      - lang: pt_BR
-        text: 'Use %1% ao invés disso.'
-      - lang: pt_PT
-        text: 'Use %1% ao invés disto.'
-      - lang: ru
-        text: 'Вместо этого используйте %1%.'
-      - lang: sv
-        text: 'Använd %1% istället.'
-      - lang: uk_UA
-        text: 'Замість цього використовуйте: %1%.'
-      - lang: zh_CN
-        text: '使用%1%代替。'
+    - &useOnlyOneX
+      type: error
+      content:
+        - lang: en
+          text: 'Use only one %1%.'
+        - lang: bg
+          text: 'Използвайте само една %1%.'
+        - lang: da
+          text: 'Brug kun én %1%.'
+        - lang: de
+          text: 'Nutzen Sie nur einen %1%.'
+        - lang: es
+          text: 'Utilice solo uno %1%.'
+        - lang: fi
+          text: 'Käytä vain yhtä: %1%.'
+        - lang: fr
+          text: 'N''utilisez qu''un %1%.'
+        - lang: it
+          text: 'Usa solo un %1%.'
+        - lang: ja
+          text: '%1%は一つだけ使用してください。'
+        - lang: ko
+          text: '%1%을 한 개만 사용하십시오.'
+        - lang: pl
+          text: 'Używa tylko jednego %1%.'
+        - lang: pt_BR
+          text: 'Utilize apenas um %1%.'
+        - lang: pt_PT
+          text: 'Utilizar apenas um %1%.'
+        - lang: ru
+          text: 'Используйте только один %1%.'
+        - lang: sv
+          text: 'Använd endast en %1%.'
+        - lang: uk_UA
+          text: 'Використовуйте лише один %1%.'
+        - lang: zh_CN
+          text: '只使用一个%1%。'
 
-  - &useOnlyOneX
-    type: error
-    content:
-      - lang: en
-        text: 'Use only one %1%.'
-      - lang: bg
-        text: 'Използвайте само една %1%.'
-      - lang: da
-        text: 'Brug kun én %1%.'
-      - lang: de
-        text: 'Nutzen Sie nur einen %1%.'
-      - lang: es
-        text: 'Utilice solo uno %1%.'
-      - lang: fi
-        text: 'Käytä vain yhtä: %1%.'
-      - lang: fr
-        text: 'N''utilisez qu''un %1%.'
-      - lang: it
-        text: 'Usa solo un %1%.'
-      - lang: ja
-        text: '%1%は一つだけ使用してください。'
-      - lang: ko
-        text: '%1%을 한 개만 사용하십시오.'
-      - lang: pl
-        text: 'Używa tylko jednego %1%.'
-      - lang: pt_BR
-        text: 'Utilize apenas um %1%.'
-      - lang: pt_PT
-        text: 'Utilizar apenas um %1%.'
-      - lang: ru
-        text: 'Используйте только один %1%.'
-      - lang: sv
-        text: 'Använd endast en %1%.'
-      - lang: uk_UA
-        text: 'Використовуйте лише один %1%.'
-      - lang: zh_CN
-        text: '只使用一个%1%。'
+common: []
 
 bash_tags: []
 
