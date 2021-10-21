@@ -240,11 +240,11 @@ groups:
   - name: &earlyLoadersGroup Early Loaders
     after: [ *unofficialPatches ]
 
-  - name: &default default
+  - name: default
     after: [ *earlyLoadersGroup ]
 
   - name: &dynamicPatchGroup Dynamic Patches
-    after: [ *default ]
+    after: [ default ]
 
 plugins:
 # Official DLC
