@@ -240,11 +240,11 @@ groups:
   - name: &earlyLoadersGroup Early Loaders
     after: [ *unofficialPatches ]
 
-  - name: default
+  - name: &default default
     after: [ *earlyLoadersGroup ]
 
   - name: &dynamicPatchGroup Dynamic Patches
-    after: [ default ]
+    after: [ *default ]
 
 plugins:
 # Official DLC
@@ -525,7 +525,7 @@ plugins:
       - 'Graphic Herbalism TR Extra.ESP'
 
 #Any dynamic patches (not sure if multipatch is the  only one)
-  - name: 'multipatch.esp'
-    group: *dynamicPatchGroup
   - name: 'Merged Objects.esp'
+    group: *dynamicPatchGroup
+  - name: 'multipatch.esp'
     group: *dynamicPatchGroup
