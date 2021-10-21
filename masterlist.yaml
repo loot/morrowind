@@ -527,3 +527,5 @@ plugins:
 #Any dynamic patches (not sure if multipatch is the  only one)
   - name: 'multipatch.esp'
     group: *dynamicPatchGroup
+  - name: 'Merged Objects.esp'
+    group: *dynamicPatchGroup
