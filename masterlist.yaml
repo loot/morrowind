@@ -527,5 +527,11 @@ plugins:
 #Any dynamic patches (not sure if multipatch is the  only one)
   - name: 'Merged Objects.esp'
     group: *dynamicPatchGroup
+    msg:
+      - type: say
+        content:
+          - lang: en
+            text: 'Regenrate after adding or removing mods changing or adding in-game items. Use TES3Merge'
+            url: [https://www.nexusmods.com/morrowind/mods/46870]
   - name: 'multipatch.esp'
     group: *dynamicPatchGroup
