@@ -542,4 +542,4 @@ plugins:
       - type: say
         content:
           - lang: en
-            text: 'Regenrate after adding or removing mods or generating Merged Objects Patch.'
+            text: 'Regenerate after adding or removing mods or generating [Merged Objects.esp](https://www.nexusmods.com/morrowind/mods/46870/)'
