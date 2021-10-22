@@ -532,7 +532,7 @@ plugins:
       - type: say
         content:
           - lang: en
-            text: 'Regenerate after adding or removing mods changing or adding in-game items. Use [TES3Merge](https://www.nexusmods.com/morrowind/mods/46870/)'
+            text: 'Regenerate after adding or removing mods that change or add in-game items. Use [TES3Merge](https://www.nexusmods.com/morrowind/mods/46870/)'
 
   - name: 'multipatch.esp'
     group: *dynamicPatchGroup
