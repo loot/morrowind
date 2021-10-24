@@ -422,7 +422,6 @@ plugins:
         type: error
         subs: [ 'Morrowind Patch Project 1.6.5 [For Rebirth].esm' ]
         condition: 'active("Morrowind Rebirth [Main].ESP")'
-
   - name: 'Patch for Purists.esm'
     msg:
       - <<: *obsolete
@@ -434,7 +433,6 @@ plugins:
           - lang: de
             text: 'Alt-Version. Ausschließlich für alte Speicherstände empfohlen.'
         condition: 'version("Patch for Purists.esm", "3.1.2", <)'
-
   - name: 'Patch for Purists - (Base Patch|(Book|Dialogue|Statistic) Typos|Floating Rocks|Expansion Implementation|Dialogue Inconsistencies)\.esm'
     msg:
       - *obsolete
@@ -444,28 +442,23 @@ plugins:
             text: 'Legacy version. Only recommended for old saves.'
           - lang: de
             text: 'Alt-Version. Ausschließlich für alte Speicherstände empfohlen.'
-
   - name: 'Patch for Purists - Base Patch.esm'
     after: [ 'Patch for Purists - Dialogue Typos.esm' ]
-
   - name: 'Patch for Purists - Book Typos.esm'
     after:
       - name: 'Patch for Purists - Dialogue Typos.esm'
       - name: 'Patch for Purists - Base Patch.esm'
-
   - name: 'Patch for Purists - Floating Rocks.esm'
     after:
       - name: 'Patch for Purists - Dialogue Typos.esm'
       - name: 'Patch for Purists - Base Patch.esm'
       - name: 'Patch for Purists - Book Typos.esm'
-
   - name: 'Patch for Purists - Expansion Implementation.esm'
     after:
       - name: 'Patch for Purists - Dialogue Typos.esm'
       - name: 'Patch for Purists - Base Patch.esm'
       - name: 'Patch for Purists - Book Typos.esm'
       - name: 'Patch for Purists - Floating Rocks.esm'
-
   - name: 'Patch for Purists - Dialogue Inconsistencies.esm'
     after:
       - name: 'Patch for Purists - Dialogue Typos.esm'
@@ -473,7 +466,6 @@ plugins:
       - name: 'Patch for Purists - Book Typos.esm'
       - name: 'Patch for Purists - Floating Rocks.esm'
       - name: 'Patch for Purists - Expansion Implementation.esm'
-
   - name: 'Patch for Purists - Statistic Typos.esm'
     after:
       - name: 'Patch for Purists - Dialogue Typos.esm'
