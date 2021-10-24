@@ -483,6 +483,25 @@ plugins:
       - name: 'Patch for Purists - Expansion Implementation.esm'
       - name: 'Patch for Purists - Dialogue Inconsistencies.esm'
 
+###### Modding Tools - Generated Files ######
+  - name: 'Merged Objects.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/46870/' ]
+    group: *dynamicPatchGroup
+    msg:
+      - type: say
+        content:
+          - lang: en
+            text: 'Regenerate after adding or removing mods that change or add in-game items. Use [TES3Merge](https://www.nexusmods.com/morrowind/mods/46870/)'
+
+  - name: 'multipatch.esp'
+    group: *dynamicPatchGroup
+    after: [ 'Merged Objects.esp' ]
+    msg:
+      - type: say
+        content:
+          - lang: en
+            text: 'Regenerate after adding or removing mods or generating [Merged Objects.esp](https://www.nexusmods.com/morrowind/mods/46870/)'
+
 ###### Fixes ######
   - name: 'gr_ScriptImprovements.es(m|p)'
     url: [ 'https://www.nexusmods.com/morrowind/mods/43828' ]
@@ -522,23 +541,3 @@ plugins:
       - 'Graphic Herbalism Extra.esp'
       - 'Graphic Herbalism TR.ESP'
       - 'Graphic Herbalism TR Extra.ESP'
-
-###### Modding Tools - Generated Files ######
-  - name: 'Merged Objects.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/46870/' ]
-    group: *dynamicPatchGroup
-    msg:
-      - type: say
-        content:
-          - lang: en
-            text: 'Regenerate after adding or removing mods that change or add in-game items. Use [TES3Merge](https://www.nexusmods.com/morrowind/mods/46870/)'
-
-  - name: 'multipatch.esp'
-    group: *dynamicPatchGroup
-    after: [ 'Merged Objects.esp' ]
-    msg:
-      - type: say
-        content:
-          - lang: en
-            text: 'Regenerate after adding or removing mods or generating [Merged Objects.esp](https://www.nexusmods.com/morrowind/mods/46870/)'
-
