@@ -524,6 +524,22 @@ plugins:
       - 'Graphic Herbalism TR.ESP'
       - 'Graphic Herbalism TR Extra.ESP'
 
-#Any dynamic patches (not sure if multipatch is the  only one)
+###### Modding Tools - Generated Files ######
+  - name: 'Merged Objects.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/46870/' ]
+    group: *dynamicPatchGroup
+    msg:
+      - type: say
+        content:
+          - lang: en
+            text: 'Regenerate after adding or removing mods that change or add in-game items. Use [TES3Merge](https://www.nexusmods.com/morrowind/mods/46870/)'
+
   - name: 'multipatch.esp'
     group: *dynamicPatchGroup
+    after: [ 'Merged Objects.esp' ]
+    msg:
+      - type: say
+        content:
+          - lang: en
+            text: 'Regenerate after adding or removing mods or generating [Merged Objects.esp](https://www.nexusmods.com/morrowind/mods/46870/)'
+
