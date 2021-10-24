@@ -484,7 +484,7 @@ plugins:
       - name: 'Patch for Purists - Expansion Implementation.esm'
       - name: 'Patch for Purists - Dialogue Inconsistencies.esm'
 
-  # Other Fixes
+# Other Fixes
   - name: 'gr_ScriptImprovements.es(m|p)'
     url: [ 'https://www.nexusmods.com/morrowind/mods/43828' ]
     msg:
