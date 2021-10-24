@@ -260,7 +260,7 @@ plugins:
     url:
       - link: 'https://en.m.uesp.net/wiki/Morrowind:Plugins'
         name: 'Morrowind Official Plugins on UESP.net'
-      - link: 'https://www.nexusmods.com/morrowind/mods/43931'
+      - link: 'https://www.nexusmods.com/morrowind/mods/43931/'
         name: 'Unofficial Morrowind Official Plugins Patched'
     group: *earlyLoadersGroup
     msg:
@@ -342,7 +342,7 @@ plugins:
 
   - name: 'LeFemmArmor.esp'
     url:
-      - link: 'https://www.nexusmods.com/morrowind/mods/42560'
+      - link: 'https://www.nexusmods.com/morrowind/mods/42560/'
         name: 'Expanded LeFemm Armor'
   - name: '(LeFemmArmor|\[Official\]LeFemm Armor)\.esp'
     after:
@@ -398,12 +398,12 @@ plugins:
         condition: 'many("(Siege at Firemoth|\[Official\]Siege at Firemoth)\.esp")'
 
   - name: 'Unofficial Morrowind Official Plugins Patched.ESP'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/43931' ]
+    url: [ 'https://www.nexusmods.com/morrowind/mods/43931/' ]
     group: *earlyLoadersGroup
 
 ###### Unofficial Patches ######
   - name: 'Patch for Purists.*\.es(m|p)'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/45096' ]
+    url: [ 'https://www.nexusmods.com/morrowind/mods/45096/' ]
     group: *unofficialPatches
   - name: 'Patch for Purists( - Base Patch)?\.esm'
     inc:
@@ -496,7 +496,7 @@ plugins:
 
 ###### Fixes ######
   - name: 'gr_ScriptImprovements.es(m|p)'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/43828' ]
+    url: [ 'https://www.nexusmods.com/morrowind/mods/43828/' ]
     msg:
       - <<: *alreadyInX
         subs: [ 'Patch for Purists' ]
