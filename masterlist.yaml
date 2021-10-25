@@ -494,6 +494,10 @@ plugins:
           - lang: en
             text: 'Regenerate after adding or removing mods or generating [Merged Objects.esp](https://www.nexusmods.com/morrowind/mods/46870/)'
 
+###### Resources & Frameworks ######
+  - name: 'OAAB_Data.esm'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49042/' ]
+
 ###### Fixes ######
   - name: 'gr_ScriptImprovements.es(m|p)'
     url: [ 'https://www.nexusmods.com/morrowind/mods/43828/' ]
@@ -533,3 +537,4 @@ plugins:
       - 'Graphic Herbalism Extra.esp'
       - 'Graphic Herbalism TR.ESP'
       - 'Graphic Herbalism TR Extra.ESP'
+
