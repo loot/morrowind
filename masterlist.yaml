@@ -516,7 +516,12 @@ plugins:
 
 ###### Environment, Landscape & Flora ######
   - name: 'Better Landscapes Stonewood Pass (RP Edit).esp'
-
+    after:
+      - name: 'DD_Caldera_Expansion.esp'
+      - name: 'Walkers of Morrowind.esp'
+      - name: 'Foyada Mamaea Overhaul.ESP'
+      - name: 'DD_Caldera_Expansion.esp'
+      - name: 'Order_Of_Sanctity.ESP'
 ###### Anything new can go after this (If you're not sure where to put it) ######
   - name: 'Improved Argonians.esp'
     inc:
