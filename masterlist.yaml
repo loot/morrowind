@@ -516,6 +516,7 @@ plugins:
 
 ###### Environment, Landscape & Flora ######
   - name: 'Better Landscapes Stonewood Pass (RP Edit).esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49464/' ]
     after:
       - 'DD_Caldera_Expansion.esp'
       - 'Foyada Mamaea Overhaul.ESP'
