@@ -497,6 +497,7 @@ plugins:
 ###### Resources & Frameworks ######
   - name: 'OAAB_Data.esm'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49042/' ]
+    group: *earlyLoadersGroup
 
 ###### Fixes ######
   - name: 'gr_ScriptImprovements.es(m|p)'
@@ -537,4 +538,3 @@ plugins:
       - 'Graphic Herbalism Extra.esp'
       - 'Graphic Herbalism TR.ESP'
       - 'Graphic Herbalism TR Extra.ESP'
-
