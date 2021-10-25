@@ -514,6 +514,9 @@ plugins:
         subs: [ '"Script Improvements" version' ]
         condition: 'many("gr_ScriptImprovements.es(m|p)")'
 
+###### Environment, Landscape & Flora ######
+  - name: 'Better Landscapes Stonewood Pass (RP Edit).esp'
+
 ###### Anything new can go after this (If you're not sure where to put it) ######
   - name: 'Improved Argonians.esp'
     inc:
