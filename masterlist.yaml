@@ -530,20 +530,17 @@ plugins:
     after:
       - 'Better Landscapes Stonewood Pass (RP Edit).esp'
       - 'Morrowind Anti-Cheese.esp'
-
   - name: 'BOM_pathgrid_reset.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after:
       - name: 'Beautiful cities of Morrowind.ESP'
       - name: 'multipatch.esp'
-
   - name: 'BOM_OpenMW_plazas.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after:
       - name: 'Beautiful cities of Morrowind.ESP'
       - name: 'multipatch.esp'
       - name: 'BOM_pathgrid_reset.esp'
-
   - name: 'Interior exterior flag reset.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after:
