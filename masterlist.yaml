@@ -523,6 +523,32 @@ plugins:
       - 'Order_Of_Sanctity.ESP'
       - 'Walkers of Morrowind.esp'
 
+###### Locations - Overhauls ######
+  ###Beautiful cities of Morrowind###
+  - name: 'Beautiful cities of Morrowind.ESP'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after:
+      - 'Better Landscapes Stonewood Pass (RP Edit).esp'
+      - 'Morrowind Anti-Cheese.esp'
+  - name: 'BOM_pathgrid_reset.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after:
+      - 'Beautiful cities of Morrowind.ESP'
+      - 'multipatch.esp'
+  - name: 'BOM_OpenMW_plazas.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after:
+      - 'Beautiful cities of Morrowind.ESP'
+      - 'BOM_pathgrid_reset.esp'
+      - 'multipatch.esp'
+  - name: 'Interior exterior flag reset.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after:
+      - 'Beautiful cities of Morrowind.ESP'
+      - 'BOM_OpenMW_plazas.esp'
+      - 'BOM_pathgrid_reset.esp'
+      - 'multipatch.esp'
+
 ###### Anything new can go after this (If you're not sure where to put it) ######
   - name: 'Improved Argonians.esp'
     inc:
