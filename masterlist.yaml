@@ -549,6 +549,10 @@ plugins:
       - 'BOM_pathgrid_reset.esp'
       - 'multipatch.esp'
 
+  - name: 'BCOM_Suran Expansion.ESP'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after: [ 'BOM_pathgrid_reset.esp' ]
+
 ###### Anything new can go after this (If you're not sure where to put it) ######
   - name: 'Improved Argonians.esp'
     inc:
