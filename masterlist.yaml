@@ -76,6 +76,40 @@ prelude:
         - lang: zh_CN
           text: '删除。在%1%中已包含或修复。'
 
+    - &alsoUseX
+      type: say
+      content:
+        - lang: en
+          text: 'It''s highly recommended that you also use %1%.'
+        - lang: bg
+          text: 'Препоръчва се да използвате %1%.'
+        - lang: de
+          text: 'Es wird dringend empfohlen, dass Sie auch %1% benutzen.'
+        - lang: es
+          text: 'Se recomienda que también use %1%.'
+        - lang: fr
+          text: 'Il est vivement recommendé que vous utilisiez aussi %1%.'
+        - lang: it
+          text: 'Si consiglia vivamente di usare anche %1%.'
+        - lang: ja
+          text: '%1%の併用を強く推奨します。'
+        - lang: ko
+          text: '%1%도 함께 사용하는 것을 매우 권장합니다.'
+        - lang: pl
+          text: 'Jest wysoce wskazane abyś używał także %1%.'
+        - lang: pt_BR
+          text: 'É altamente recomendado que você também use %1%.'
+        - lang: pt_PT
+          text: 'É altamente recomendado que você também use %1%.'
+        - lang: ru
+          text: 'Настоятельно рекомендуется также использовать %1%.'
+        - lang: sv
+          text: 'Det är rekommenderat att du också använder %1%.'
+        - lang: uk_UA
+          text: 'Наполегливо рекомендуємо також використати %1%.'
+        - lang: zh_CN
+          text: '强烈建议您使用%1%。'
+
     - &deletePlugin
       type: warn
       content:
