@@ -317,6 +317,74 @@ prelude:
         - lang: zh_CN
           text: '只使用一个%1%。'
 
+    - &useVersion
+      type: error
+      content:
+        - lang: en
+          text: 'Use %1% version.'
+        - lang: bg
+          text: 'Използвайте версията %1%.'
+        - lang: de
+          text: 'Benutzen Sie die %1% Version.'
+        - lang: es
+          text: 'Use la versión diseñada para %1%.'
+        - lang: fr
+          text: 'Utilisez la version de %1%.'
+        - lang: it
+          text: 'Usa la versione %1%.'
+        - lang: ja
+          text: '%1%バージョンを使用してください。'
+        - lang: ko
+          text: '%1% 버전을 사용하십시오.'
+        - lang: pl
+          text: 'Użyj wersji %1%.'
+        - lang: pt_BR
+          text: 'Use a versão %1%.'
+        - lang: pt_PT
+          text: 'Use a versão %1%.'
+        - lang: ru
+          text: 'Используйте версию %1%.'
+        - lang: sv
+          text: 'Använd version %1%.'
+        - lang: uk_UA
+          text: 'Використовуйте версію %1%.'
+        - lang: zh_CN
+          text: '使用%1%版本。'
+
+    - &useVersionNon
+      type: error
+      content:
+        - lang: en
+          text: 'Use non-%1% version.'
+        - lang: bg
+          text: 'Използвайте версията, която не е за %1%.'
+        - lang: de
+          text: 'Benutzen Sie die Nicht-%1% Version.'
+        - lang: es
+          text: 'Use la versión que fue diseñada para funcionar sin %1%.'
+        - lang: fr
+          text: 'Utilisez la version sans %1%.'
+        - lang: it
+          text: 'Non usare la versione-%1%.'
+        - lang: ja
+          text: '%1%バージョン以外を使用してください。'
+        - lang: ko
+          text: '%1%가 아닌 버전을 사용하십시오.'
+        - lang: pl
+          text: 'Użyj wersji innej niż %1%.'
+        - lang: pt_BR
+          text: 'Use a versão não-%1%.'
+        - lang: pt_PT
+          text: 'Use a versão não-%1%.'
+        - lang: ru
+          text: 'Используйте не-%1% версию.'
+        - lang: sv
+          text: 'Använd en icke-%1% version.'
+        - lang: uk_UA
+          text: 'Використовуйте не-%1% версію.'
+        - lang: zh_CN
+          text: '使用%1%以外的版本。'
+
   # Global Anchors
     - &latestLOOTThread
       type: say
