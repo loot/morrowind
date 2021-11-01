@@ -889,7 +889,7 @@ plugins:
     after: [ 'BOM_pathgrid_reset.esp' ]
     msg:
       - <<: *requiresResources
-        subs: [ '[Brevur of Balmora - Finally Some Good Statue Mod.ESP](https://www.nexusmods.com/morrowind/mods/47557)' ]
+        subs: [ '[Brevur of Balmora - Finally Some Good Statue Mod](https://www.nexusmods.com/morrowind/mods/47557)' ]
 
 ###### Anything new can go after this (If you're not sure where to put it) ######
   - name: 'Improved Argonians.esp'
