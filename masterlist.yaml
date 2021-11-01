@@ -113,6 +113,40 @@ prelude:
           text: '已过时。请升级到最新版本。 %1%'
       subs: [ '' ]
 
+    - &patch3rdParty
+      type: say
+      content:
+        - lang: en
+          text: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A third party patch is available here: %2%'
+        - lang: bg
+          text: 'Използвате **%1%**, но се изисква кръпка за съвместимост. Тя е налична от: %2%'
+        - lang: de
+          text: 'Sie scheinen **%1%** zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Patch von Dritten ist hier verfügbar: %2%'
+        - lang: es
+          text: 'Parece que está usando **%1%**, pero no ha habilitado un parche de compatibilidad para este mod. Un parche de un tercero se encuentra disponible aquí: %2%'
+        - lang: fr
+          text: 'Vous utilisez **%1%**, mais vous n''avez pas activé le patch de compatibilité pour ce mod. Ce patch peut être trouvé ici : %2%'
+        - lang: it
+          text: 'Sembra che tu stia utilizzando **%1%**, ma non hai attivato la patch di compatibilità per questa mod. E'' disponibile una patch esterna qui: %2%'
+        - lang: ja
+          text: '**%1%**を使用しているようですが、このmodの互換性パッチが有効になっていません。サードパーティのパッチはここで入手できます:%2%'
+        - lang: ko
+          text: '**%1%** 모드와 사용하기 위한 호환성 패치가 작동 중이지 않습니다. 제3자 제공 호환성 패치는 여기에서 다운로드 가능합니다: %2%'
+        - lang: pl
+          text: 'Wygląda na to że używasz **%1%**, ale nie masz aktywnej łatki zgodności dla tego moda. Łatka trzeciej strony jest dostępna tutaj: %2%'
+        - lang: pt_BR
+          text: 'Você aparenta estar usando **%1%**, mas não habilitou o patch de compatibilidade para este mod. Um patch feito por terceiros está disponível aqui: %2%'
+        - lang: pt_PT
+          text: 'Você aparenta estar a utilizar **%1%**, mas não ativou o patch de compatibilidade para este mod. Um patch feito por terceiros está disponível aqui: %2%'
+        - lang: ru
+          text: 'Похоже, что вы используете **%1%**, но его патч совместимости не был включен. Сторонний патч можно найти здесь: %2%'
+        - lang: sv
+          text: 'Det verkar som att du använder **%1%**, men du har inte aktiverat en kompabilitetspatch för denna mod. En patch från en tredje part finns här: %2%.'
+        - lang: uk_UA
+          text: 'Схоже, що ви використовуєте **%1%**, але його патч сумісності не було ввімкнено. Сторонній патч можна знайти тут: %2%'
+        - lang: zh_CN
+          text: '您似乎使用了**%1%**，但没有启用这个mod的兼容性补丁。第三方补丁可以在这里找到:%2%'
+
     - &useInstead
       type: warn
       content:
