@@ -42,6 +42,40 @@ prelude:
         - lang: zh_CN
           text: '删除。已包含在%1%中。'
 
+    - &alreadyInOrFixedByX
+      type: error
+      content:
+        - lang: en
+          text: 'Delete. Already included or otherwise fixed in %1%.'
+        - lang: bg
+          text: 'За изтриване. Приложена е в %1%.'
+        - lang: de
+          text: 'Löschen. Bereits enthalten oder anderweitig korrigiert in %1%.'
+        - lang: es
+          text: 'Eliminar. Está incluido o arreglado en %1%.'
+        - lang: fr
+          text: 'Supprimer. Déjà inclus ou corrigé en %1%.'
+        - lang: it
+          text: 'Cancella. Già incluso o corretto in %1%.'
+        - lang: ja
+          text: '削除してください。%1%にすでに含まれているか修正されています。'
+        - lang: ko
+          text: '삭제하십시오. 이미 %1%에 포함되었거나 수정되었습니다.'
+        - lang: pl
+          text: 'Usuń. Już zawarte lub naprawione w %1%.'
+        - lang: pt_BR
+          text: 'Apague. Já incluído ou consertado em %1%.'
+        - lang: pt_PT
+          text: 'Apagar. Já incluído ou reparado em %1%.'
+        - lang: ru
+          text: 'Удалите. Уже включено в %1% или исправлено иным образом.'
+        - lang: sv
+          text: 'Ta bort. Redan inkluderat eller fixat i %1%.'
+        - lang: uk_UA
+          text: 'Видаліть. Уже включено або іншим чином виправлено у %1%.'
+        - lang: zh_CN
+          text: '删除。在%1%中已包含或修复。'
+
     - &deletePlugin
       type: warn
       content:
