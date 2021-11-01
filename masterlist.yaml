@@ -247,6 +247,40 @@ prelude:
         - lang: zh_CN
           text: '需要%1%的资源(如网格，纹理;非插件)。'
 
+    - &requiresX
+      type: warn
+      content:
+        - lang: en
+          text: 'Requires: %1%'
+        - lang: bg
+          text: 'Изисква: %1%'
+        - lang: de
+          text: 'Benötigt: %1%'
+        - lang: es
+          text: 'Requiere: %1%'
+        - lang: fr
+          text: 'Requiert : %1%'
+        - lang: it
+          text: 'Richiede: %1%'
+        - lang: ja
+          text: '要: %1%'
+        - lang: ko
+          text: '필요모드: %1%'
+        - lang: pl
+          text: 'Wymaga: %1%'
+        - lang: pt_BR
+          text: 'Requer: %1%'
+        - lang: pt_PT
+          text: 'Requer: %1%'
+        - lang: ru
+          text: 'Требуется: %1%'
+        - lang: sv
+          text: 'Kräver: %1%'
+        - lang: uk_UA
+          text: 'Потрібно: %1%'
+        - lang: zh_CN
+          text: '需要:%1%'
+
     - &useInstead
       type: warn
       content:
