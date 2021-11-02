@@ -844,16 +844,10 @@ plugins:
       - 'https://www.nexusmods.com/morrowind/mods/48225/'
       - 'https://www.nexusmods.com/morrowind/mods/49231/'
     after: [ 'Beautiful cities of Morrowind.ESP' ]
-    msg:
-      - <<: *requiresX
-        subs: [ '[Rise of House Telvanni.esm](https://www.nexusmods.com/morrowind/mods/27545/)' ]
-        condition: 'not active("Rise of House Telvanni.esm") and checksum("ROHT_2_0_8.ESP", AB2D2B3F)'
-      - <<: *useInstead
-        subs: [ '[ROHT_2_0_8.ESP](https://www.nexusmods.com/morrowind/mods/49231/)' ]
-        condition: 'file("Beautiful cities of Morrowind.ESP") and checksum("ROHT_2_0_8.ESP", AB2D2B3F)'
-      - <<: *useOnlyOneX
-        subs: [ 'Rise of House Telvanni' ]
-        condition: 'file("BOM_ROHT_Patch.ESP") and file("ROHT_2_0_8.esp")'
+    inc: [ 'BOM_ROHT_Patch.ESP' ]
+    req:
+      - name: 'Rise of House Telvanni.esm'
+        display: '[Rise of House Telvanni.esm](https://www.nexusmods.com/morrowind/mods/27545/)'
 
 ###### Locations - Overhauls ######
   ### Beautiful cities of Morrowind ###
