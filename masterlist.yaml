@@ -834,9 +834,7 @@ plugins:
 ###### Gameplay - Quests ######
   ### Rise of House Telvanni ###
   - name: 'Rise of House Telvanni.esm'
-    url:
-      - 'https://www.nexusmods.com/morrowind/mods/27545/'
-      - 'https://www.nexusmods.com/morrowind/mods/49231/'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/27545/' ]
     msg:
       - <<: *alsoUseX
         subs: [ '[BOM_ROHT_Patch.ESP](https://www.nexusmods.com/morrowind/mods/49231/)' ]
