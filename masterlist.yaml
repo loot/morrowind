@@ -831,6 +831,45 @@ plugins:
       - 'Order_Of_Sanctity.ESP'
       - 'Walkers of Morrowind.esp'
 
+   ###### Gameplay - Quests ######
+     ### Rise of House Telvanni ###
+  - name: 'Rise of House Telvanni.esm'
+    url:
+      - 'https://www.nexusmods.com/morrowind/mods/27545/'
+      - 'https://www.nexusmods.com/morrowind/mods/49231/'
+    msg:
+      - <<: *alsoUseX
+        subs: [ '[BOM_ROHT_Patch.ESP](https://www.nexusmods.com/morrowind/mods/49231/)' ]
+        condition: 'file("Rise of House Telvanni.esm") and file("Beautiful cities of Morrowind.ESP")'
+      - <<: *useOnlyOneX
+        subs: [ 'Rise of House Telvanni' ]
+        condition: 'file("BOM_ROHT_Patch.ESP") and file("ROHT_2_0_8.esp")'
+
+  - name: 'BOM_ROHT_Patch.ESP'
+    url:
+      - 'https://www.nexusmods.com/morrowind/mods/27545/'
+      - 'https://www.nexusmods.com/morrowind/mods/49231/'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Rise of House Telvanni' ]
+        condition: 'file("BOM_ROHT_Patch.ESP") and file("ROHT_2_0_8.esp")'
+
+  - name: 'ROHT_2_0_8.ESP'
+      url:
+      - 'https://www.nexusmods.com/morrowind/mods/48225/'
+      - 'https://www.nexusmods.com/morrowind/mods/49231/'
+    after: [ 'Beautiful cities of Morrowind.ESP' ]
+    msg:
+      - <<: *requiresX
+        subs: [ '[Rise of House Telvanni.esm](https://www.nexusmods.com/morrowind/mods/27545/)' ]
+        condition: 'not active("Rise of House Telvanni.esm") and checksum ("ROHT_2_0_8.ESP", AB2D2B3F)'
+      - <<: *useInstead
+        subs: [ '[ROHT_2_0_8.ESP](https://www.nexusmods.com/morrowind/mods/49231/)' ]
+        condition: 'file("Beautiful cities of Morrowind.ESP") and checksum ("ROHT_2_0_8.ESP", AB2D2B3F)'
+      - <<: *useOnlyOneX
+        subs: [ 'Rise of House Telvanni' ]
+        condition: 'file("BOM_ROHT_Patch.ESP") and file("ROHT_2_0_8.esp")'
+
 ###### Locations - Overhauls ######
   ### Beautiful cities of Morrowind ###
   - name: 'Beautiful cities of Morrowind.ESP'
