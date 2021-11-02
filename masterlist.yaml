@@ -838,20 +838,17 @@ plugins:
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after:
       - 'Beautiful cities of Morrowind.ESP'
-      - 'multipatch.esp'
   - name: 'BOM_OpenMW_plazas.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after:
       - 'Beautiful cities of Morrowind.ESP'
       - 'BOM_pathgrid_reset.esp'
-      - 'multipatch.esp'
   - name: 'Interior exterior flag reset.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after:
       - 'Beautiful cities of Morrowind.ESP'
       - 'BOM_OpenMW_plazas.esp'
       - 'BOM_pathgrid_reset.esp'
-      - 'multipatch.esp'
    ### BCOM - Optional files ###
   - name: 'BCOM_Suran Expansion.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
