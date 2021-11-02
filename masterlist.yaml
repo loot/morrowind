@@ -887,7 +887,7 @@ plugins:
         subs: [ '[Brevur of Balmora - Finally Some Good Statue Mod](https://www.nexusmods.com/morrowind/mods/47557)' ]
         condition: 'not file("textures/R0/Brevur.dds") and checksum("Brevur of Balmora - Finally Some Good Statue Mod.ESP", 38A76D1E)'
       - <<: *useInstead
-        subs: [ '[Brevur of Balmora - Finally Some Good Statue Mod.ESP]('https://www.nexusmods.com/morrowind/mods/49231/')' ]
+        subs: [ '[Brevur of Balmora - Finally Some Good Statue Mod.ESP](https://www.nexusmods.com/morrowind/mods/49231/)' ]
         condition: 'active("Beautiful cities of Morrowind.ESP") and checksum("Brevur of Balmora - Finally Some Good Statue Mod.ESP", 728FD2B8)'
 
 ###### Anything new can go after this (If you're not sure where to put it) ######
