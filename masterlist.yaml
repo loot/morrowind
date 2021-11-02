@@ -839,9 +839,6 @@ plugins:
       - <<: *alsoUseX
         subs: [ '[BOM_ROHT_Patch.ESP](https://www.nexusmods.com/morrowind/mods/49231/)' ]
         condition: 'file("Rise of House Telvanni.esm") and file("Beautiful cities of Morrowind.ESP")'
-      - <<: *useOnlyOneX
-        subs: [ 'Rise of House Telvanni' ]
-        condition: 'file("BOM_ROHT_Patch.ESP") and file("ROHT_2_0_8.esp")'
 
   - name: 'BOM_ROHT_Patch.ESP'
     url:
