@@ -831,8 +831,8 @@ plugins:
       - 'Order_Of_Sanctity.ESP'
       - 'Walkers of Morrowind.esp'
 
-   ###### Gameplay - Quests ######
-     ### Rise of House Telvanni ###
+###### Gameplay - Quests ######
+  ### Rise of House Telvanni ###
   - name: 'Rise of House Telvanni.esm'
     url:
       - 'https://www.nexusmods.com/morrowind/mods/27545/'
