@@ -801,6 +801,7 @@ plugins:
         content:
           - lang: en
             text: 'Delete before generating [Merged Objects.esp](https://www.nexusmods.com/morrowind/mods/46870/), to avoid cyclic dependency.'
+
 ###### Resources & Frameworks ######
   - name: 'OAAB_Data.esm'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49042/' ]
