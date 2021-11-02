@@ -890,7 +890,7 @@ plugins:
     msg:
       - <<: *requiresResources
         subs: [ '[Brevur of Balmora - Finally Some Good Statue Mod](https://www.nexusmods.com/morrowind/mods/47557)' ]
-
+        condition: 'not file("textures/R0/Brevur.dds")'
 ###### Anything new can go after this (If you're not sure where to put it) ######
   - name: 'Improved Argonians.esp'
     inc:
