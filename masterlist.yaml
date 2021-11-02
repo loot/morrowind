@@ -828,7 +828,7 @@ plugins:
       - 'Walkers of Morrowind.esp'
 
 ###### Locations - Overhauls ######
-  ###Beautiful cities of Morrowind###
+  ### Beautiful cities of Morrowind ###
   - name: 'Beautiful cities of Morrowind.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after:
@@ -852,10 +852,43 @@ plugins:
       - 'BOM_OpenMW_plazas.esp'
       - 'BOM_pathgrid_reset.esp'
       - 'multipatch.esp'
-
+   ### BCOM - Optional files ###
   - name: 'BCOM_Suran Expansion.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after: [ 'BOM_pathgrid_reset.esp' ]
+  - name: 'BOM_Stavs_MGO.ESP'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after: [ 'Beautiful cities of Morrowind.ESP' ]
+  - name: 'BOM - Taller Lighthouse.ESP'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after: [ 'BOM_pathgrid_reset.esp' ]
+  - name: 'BOM_White_Suran.ESP'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after:
+      - 'BCOM_Suran Expansion.esp'
+      - 'Beautiful cities of Morrowind.ESP'
+      - 'Suran_Underworld_v3.esp'
+  - name: 'SOP_Canal_02.ESP'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after: [ 'Beautiful cities of Morrowind.ESP' ]
+  - name: 'SOP_RichPlaza_IziStyle.ESP'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    inc: [ 'Brevur of Balmora - Finally Some Good Statue Mod.ESP' ]
+    after: [ 'BOM_pathgrid_reset.esp' ]
+
+  - name: 'Brevur of Balmora - Finally Some Good Statue Mod.ESP'
+    url:
+      - 'https://www.nexusmods.com/morrowind/mods/47557/'
+      - 'https://www.nexusmods.com/morrowind/mods/49231/'
+    inc: [ 'SOP_RichPlaza_IziStyle.ESP' ]
+    after: [ 'BOM_pathgrid_reset.esp' ]
+    msg:
+      - <<: *requiresResources
+        subs: [ '[Brevur of Balmora - Finally Some Good Statue Mod](https://www.nexusmods.com/morrowind/mods/47557)' ]
+        condition: 'not file("textures/R0/Brevur.dds")'
+      - <<: *useInstead
+        subs: [ '[Brevur of Balmora - Finally Some Good Statue Mod.ESP](https://www.nexusmods.com/morrowind/mods/49231/)' ]
+        condition: 'active("Beautiful cities of Morrowind.ESP") and checksum("Brevur of Balmora - Finally Some Good Statue Mod.ESP", 728FD2B8)'
 
 ###### Anything new can go after this (If you're not sure where to put it) ######
   - name: 'Improved Argonians.esp'
