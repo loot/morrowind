@@ -855,7 +855,7 @@ plugins:
         condition: 'file("BOM_ROHT_Patch.ESP") and file("ROHT_2_0_8.esp")'
 
   - name: 'ROHT_2_0_8.ESP'
-      url:
+    url:
       - 'https://www.nexusmods.com/morrowind/mods/48225/'
       - 'https://www.nexusmods.com/morrowind/mods/49231/'
     after: [ 'Beautiful cities of Morrowind.ESP' ]
