@@ -833,22 +833,6 @@ plugins:
 
 ###### Gameplay - Quests ######
   ### Rise of House Telvanni ###
-  - name: 'Rise of House Telvanni.esm'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/27545/' ]
-    msg:
-      - <<: *alsoUseX
-        subs: [ '[BOM_ROHT_Patch.ESP](https://www.nexusmods.com/morrowind/mods/49231/)' ]
-        condition: 'file("Rise of House Telvanni.esm") and file("Beautiful cities of Morrowind.ESP")'
-
-  - name: 'BOM_ROHT_Patch.ESP'
-    url:
-      - 'https://www.nexusmods.com/morrowind/mods/27545/'
-      - 'https://www.nexusmods.com/morrowind/mods/49231/'
-    msg:
-      - <<: *useOnlyOneX
-        subs: [ 'Rise of House Telvanni' ]
-        condition: 'file("BOM_ROHT_Patch.ESP") and file("ROHT_2_0_8.esp")'
-
   - name: 'ROHT_2_0_8.ESP'
     url:
       - 'https://www.nexusmods.com/morrowind/mods/48225/'
