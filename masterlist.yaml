@@ -797,6 +797,7 @@ plugins:
         content:
           - lang: en
             text: 'Regenerate after adding or removing mods or generating [Merged Objects.esp](https://www.nexusmods.com/morrowind/mods/46870/)'
+            text: 'Delete before generating [Merged Objects.esp](https://www.nexusmods.com/morrowind/mods/46870/), to avoid cyclic dependency'
 
 ###### Resources & Frameworks ######
   - name: 'OAAB_Data.esm'
