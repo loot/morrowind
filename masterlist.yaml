@@ -852,7 +852,7 @@ plugins:
       - 'Morrowind Anti-Cheese.esp'
     inc:
       - 'MDP*.esp'
-      - 'Duke's Throne Room Overhaul.ESP'
+      - 'Duke''s Throne Room Overhaul.ESP'
       - 'Ald-Ruhn Temple Expansion*.esp'
       - 'aldruhnmagesguildexpansion.esp'
       - 'AldRuhn_seat_of_power.ESP'
