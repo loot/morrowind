@@ -860,7 +860,7 @@ plugins:
       - 'Balmora Redecorated.esp'
       - 'Balmora_Rooftop_Apartments_1-0.esp'
       - 'Balmora_Seat of power.esm'
-      - 'Barabus' fireplaces*.ESP'
+      - 'Barabus'' fireplaces*.ESP'
       - 'bw_striderports.esp'
       - 'Caldera Mages Guild Expanded.ESP'
       - 'Clean DR115_TheDropoff.ESP'
