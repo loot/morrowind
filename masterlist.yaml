@@ -822,6 +822,17 @@ plugins:
         subs: [ '"Script Improvements" version' ]
         condition: 'many("gr_ScriptImprovements.es(m|p)")'
 
+###### Character Appearance - NPCs ######
+  - name: 'Improved Argonians.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/45918/' ]
+    after: [ 'New Argonian Bodies - Clean.esp' ]
+    inc:
+      - 'Slof''s BB neck fix.esp'
+      - 'Slof''s Better Beasts a.esp'
+      - 'Slof''s Better Beasts b.esp'
+      - 'Slof''s Civilised Beasts.esp'
+      - 'Wey_New_Argonians.ESP'
+
 ###### Environment, Landscape & Flora ######
   - name: 'Better Landscapes Stonewood Pass (RP Edit).esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49464/' ]
@@ -970,14 +981,6 @@ plugins:
         condition: 'active("Beautiful cities of Morrowind.ESP") and checksum("Brevur of Balmora - Finally Some Good Statue Mod.ESP", 728FD2B8)'
 
 ###### Anything new can go after this (If you're not sure where to put it) ######
-  - name: 'Improved Argonians.esp'
-    inc:
-      - 'Wey_New_Argonians.ESP'
-      - 'Slof''s Civilised Beasts.esp'
-      - 'Slof''s Better Beasts b.esp'
-      - 'Slof''s Better Beasts a.esp'
-      - 'Slof''s BB neck fix.esp'
-
   - name: 'correctUV Ore Replacer_fixed.esp'
     inc:
       - 'correctUV Ore Replacer_respawning.esp'
