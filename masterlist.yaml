@@ -825,13 +825,13 @@ plugins:
 ###### Character Appearance - NPCs ######
   - name: 'Improved Argonians.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/45918/' ]
+    after: [ 'New Argonian Bodies - Clean.esp' ]
     inc:
       - 'Slof''s BB neck fix.esp'
       - 'Slof''s Better Beasts a.esp'
       - 'Slof''s Better Beasts b.esp'
       - 'Slof''s Civilised Beasts.esp'
       - 'Wey_New_Argonians.ESP'
-    after: [ 'New Argonian Bodies - Clean.esp' ]
 
 ###### Environment, Landscape & Flora ######
   - name: 'Better Landscapes Stonewood Pass (RP Edit).esp'
