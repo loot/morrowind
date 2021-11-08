@@ -837,6 +837,7 @@ plugins:
     after:
       - 'Beautiful cities of Morrowind.ESP'
       - 'NX9_StuddedArmor.esp'
+
   - name: 'LuceEdit - Guild of Vampire Hunters.esp'
     url:
       - 'https://www.nexusmods.com/morrowind/mods/47224/'
