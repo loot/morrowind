@@ -832,6 +832,21 @@ plugins:
       - 'Walkers of Morrowind.esp'
 
 ###### Gameplay - Quests ######
+  - name: 'Guild of Vampire Hunters.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/45832/' ]
+    after:
+      - 'Beautiful cities of Morrowind.ESP'
+      - 'NX9_StuddedArmor.esp'
+  - name: 'LuceEdit - Guild of Vampire Hunters.esp'
+    url:
+      - 'https://www.nexusmods.com/morrowind/mods/47224/'
+      - 'https://www.nexusmods.com/morrowind/mods/49231/'
+    after:
+      - 'Beautiful cities of Morrowind.ESP'
+      - 'Glass Domes of Vivec.esp'
+      - 'Mixed Cantons of Vivec.esp'
+      - 'No-Frills Open Vivec.esp'
+
   ### Rise of House Telvanni ###
   - name: 'ROHT_2_0_8.ESP'
     url:
