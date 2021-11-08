@@ -859,6 +859,10 @@ plugins:
       - 'Mixed Cantons of Vivec.esp'
       - 'No-Frills Open Vivec.esp'
 
+  - name: 'Ministry_of_Clarity.ESP'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/46093/' ]
+    after: [ 'Clean_Mines & Caverns.esp' ]
+
   ### Rise of House Telvanni ###
   - name: 'ROHT_2_0_8.ESP'
     url:
