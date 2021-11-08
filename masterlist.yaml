@@ -845,7 +845,9 @@ plugins:
 ###### Gameplay - General ######
   - name: 'Immersive_corprus.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/44961/' ]
-    after: [ 'Sixth House.esp' ]
+    after:
+      - 'Main Quest Overhaul.esp'
+      - 'Sixth House.esp'
 
 ###### Gameplay - Quests ######
   - name: 'Guild of Vampire Hunters.esp'
