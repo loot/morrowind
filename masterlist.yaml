@@ -842,6 +842,11 @@ plugins:
       - 'Order_Of_Sanctity.ESP'
       - 'Walkers of Morrowind.esp'
 
+###### Gameplay - General ######
+  - name: 'Immersive_corprus.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/44961/' ]
+    after: [ 'Sixth House.esp' ]
+
 ###### Gameplay - Quests ######
   - name: 'Guild of Vampire Hunters.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/45832/' ]
