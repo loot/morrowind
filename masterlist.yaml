@@ -876,6 +876,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after:
       - 'Better Landscapes Stonewood Pass (RP Edit).esp'
+      - 'KS_Julan_Ashlander Companion_2.0.esp'
+      - 'KS_Julan_Ashlander Companion_3.0_beta.esp'
       - 'Morrowind Anti-Cheese.esp'
     inc:
       - 'MDP 2013.esp'
