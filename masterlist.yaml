@@ -870,6 +870,13 @@ plugins:
     url: [ 'https://www.nexusmods.com/morrowind/mods/46093/' ]
     after: [ 'Clean_Mines & Caverns.esp' ]
 
+  - name: 'Religions Elaborated.ESP'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/47843/' ]
+    after:
+      - 'Imperial_Legion_Expansion.esp'
+      - 'More Exclusive Factions.ESP'
+      - 'SwampFever.ESP'
+
   ### Rise of House Telvanni ###
   - name: 'ROHT_2_0_8.ESP'
     url:
