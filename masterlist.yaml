@@ -881,6 +881,35 @@ plugins:
       - name: 'Rise of House Telvanni.esm'
         display: '[Rise of House Telvanni.esm](https://www.nexusmods.com/morrowind/mods/27545/)'
 
+###### Locations - New Lands ######
+  ### Tamriel Rebuilt ###
+  - name: 'TR_Factions.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/42145/' ]
+    after: [ 'higher faction requirements - Full.ESP' ]
+  - name: 'TR_Travels.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/42145/' ]
+    after:
+      - 'Beautiful cities of Morrowind.ESP'
+      - 'Religions Elaborated.ESP'
+      - 'SwampFever.ESP'
+  - name: 'TR_Travels_(Preview_and_Mainland).esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/42145/' ]
+    after:
+      - 'Beautiful cities of Morrowind.ESP'
+      - 'TR_Travels.esp'
+  - name: 'TR_Travels Patch.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/42145/' ]
+    after:
+      - 'Beautiful cities of Morrowind.ESP'
+      - 'TR_Travels.esp'
+      - 'TR_Travels_(Preview_and_Mainland).esp'
+  - name: 'TR_Travels_(P_M) Patch.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/42145/' ]
+    after:
+      - 'Beautiful cities of Morrowind.ESP'
+      - 'TR_Travels.esp'
+      - 'TR_Travels_(Preview_and_Mainland).esp'
+      - 'TR_Travels Patch.esp'
 ###### Locations - Overhauls ######
   ### Beautiful cities of Morrowind ###
   - name: 'Beautiful cities of Morrowind.ESP'
