@@ -892,6 +892,7 @@ plugins:
       - 'Beautiful cities of Morrowind.ESP'
       - 'Religions Elaborated.ESP'
       - 'SwampFever.ESP'
+      - 'TR_Preview.esp'
   - name: 'TR_Travels_(Preview_and_Mainland).esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/42145/' ]
     after:
