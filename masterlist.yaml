@@ -1067,3 +1067,11 @@ plugins:
       - 'Graphic Herbalism Extra.esp'
       - 'Graphic Herbalism TR.ESP'
       - 'Graphic Herbalism TR Extra.ESP'
+
+  ### OAAB dependent mods ###
+  - name: 'OAAB - Tombs and Towers.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49131/' ]
+    inc:
+      - 'Mawia Overhaul.esp'
+      - 'Remiros'' Tombs Expansion.esp'
+      - 'Urshilaku Burial Caverns Overhaul.esp'
