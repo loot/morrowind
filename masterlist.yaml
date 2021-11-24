@@ -1000,6 +1000,13 @@ plugins:
       - 'BOM_OpenMW_plazas.esp'
       - 'BOM_pathgrid_reset.esp'
    ### BCOM - Optional files ###
+  - name: 'BOM_PfP_patch.ESP'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after:
+      - 'Beautiful cities of Morrowind.ESP'
+      - 'Patch for Purists.esm'
+      - 'Patch for Purists - Book Typos.ESP'
+      - 'Patch for Purists - Semi-Purist Fixes.ESP'
   - name: 'BCOM_Suran Expansion.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after: [ 'BOM_pathgrid_reset.esp' ]
