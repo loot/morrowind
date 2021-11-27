@@ -1092,7 +1092,7 @@ plugins:
 
   ### Needs of Morrowind ###
   - name: 'NOM 3.0.esp'
-    url: [ 'https://mw.modhistory.com/download-35-12114/' ]
+    url: [ 'https://mw.modhistory.com/download-35-12114' ]
     after:
       - 'ab01HousesMerged.esp'
       - 'ab01housesMergedNOM.esp'
