@@ -1153,7 +1153,7 @@ plugins:
       - 'NOM3.0.esp'
       - 'NOM3_PT SO.esp'
   - name: 'NoM_MC Compatibility Patch.esp'
-    url: [ 'https://mw.modhistory.com/download-35-12114/' ]
+    url: [ 'https://mw.modhistory.com/download-35-12114' ]
     after:
       - 'Morrowind Crafting 2-1.esp'
       - 'NOM3.0.esp'
