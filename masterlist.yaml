@@ -1143,7 +1143,7 @@ plugins:
       - 'NoM_Creatures Loot Standard.esp'
       - 'NoM_MC Compatibility Patch.esp'
   - name: 'NoM_Creatures Loot Standard.esp'
-    url: [ 'https://mw.modhistory.com/download-35-12114/' ]
+    url: [ 'https://mw.modhistory.com/download-35-12114' ]
     after:
       - 'NOM3.0.esp'
       - 'NOM3_PT SO.esp'
