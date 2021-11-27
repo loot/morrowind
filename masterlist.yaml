@@ -1148,7 +1148,7 @@ plugins:
       - 'NOM3.0.esp'
       - 'NOM3_PT SO.esp'
   - name: 'NoM_Creatures Loot PHW.esp'
-    url: [ 'https://mw.modhistory.com/download-35-12114/' ]
+    url: [ 'https://mw.modhistory.com/download-35-12114' ]
     after:
       - 'NOM3.0.esp'
       - 'NOM3_PT SO.esp'
