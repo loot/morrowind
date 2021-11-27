@@ -1135,7 +1135,7 @@ plugins:
       - 'Morrowind Crafting Houses.esp'
       - 'Sentinel+Serendipity.esp'
   - name: 'NoM_CoM Compatibility Patch.esp'
-    url: [ 'https://mw.modhistory.com/download-35-12114/' ]
+    url: [ 'https://mw.modhistory.com/download-35-12114' ]
     after:
       - 'MW_Children_1_0.esm'
       - 'NOM3.0.esp'
