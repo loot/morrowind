@@ -1156,6 +1156,7 @@ plugins:
     url: [ 'https://mw.modhistory.com/download-35-12114' ]
     after:
       - 'Morrowind Crafting 2-1.esp'
+      - 'Morrowind Crafting 3b1.ESP'
       - 'NOM3.0.esp'
       - 'NOM3_PT SO.esp'
       - 'NoM_Creatures Loot Standard.esp'
