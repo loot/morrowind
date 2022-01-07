@@ -460,7 +460,7 @@ plugins:
   - name: 'Tamriel_Data.esm'
     url: [ 'https://www.nexusmods.com/morrowind/mods/44537/' ]
     group: *earlyLoadersGroup
-    
+
 ###### Fixes ######
   - name: 'gr_ScriptImprovements.es(m|p)'
     url: [ 'https://www.nexusmods.com/morrowind/mods/43828/' ]
