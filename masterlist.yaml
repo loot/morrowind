@@ -814,4 +814,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/46364/'
         name: 'Pikas Miscellaneous Mods'
-    after: [ 'Better Propylon Teleport Warp.esp' ]
+    req:
+      - name: 'master_index.esp'
+        display: '[Master Index Official Plugin](https://en.uesp.net/wiki/Morrowind:Master_Index)'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Better Propylon Teleport Warp ESP' ]
+        condition: 'many("Better Propylon Teleport Warp(-Master Index)?\.esp")'
