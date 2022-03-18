@@ -811,5 +811,7 @@ plugins:
 
   ### Other Stuff (sort later) ###
   - name: 'Better Propylon Teleport Warp-Master Index.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/46364/' ]
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/46364/'
+        name: 'Pikas Miscellaneous Mods'
     after: [ 'Better Propylon Teleport Warp.esp' ]
