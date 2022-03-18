@@ -808,3 +808,8 @@ plugins:
       - 'NOM3.0.esp'
       - 'NOM3_PT SO.esp'
       - 'NoM_Creatures Loot Standard.esp'
+
+  ### Other Stuff (sort later) ###
+  - name: 'Better Propylon Teleport Warp-Master Index.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/46364/' ]
+    after: [ 'Better Propylon Teleport Warp.esp' ]
