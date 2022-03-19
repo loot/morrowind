@@ -829,7 +829,3 @@ plugins:
       - name: 'master_index.esp'
         condition: 'not active("MasterIndexRedux.esp")'
         display: '[Master Index Official Plugin](https://www.nexusmods.com/morrowind/mods/42985) or master-index.esp from [Unofficial Morrowind Official Plugins Patched.ESP](https://www.nexusmods.com/morrowind/mods/43931)'
-    msg:
-      - <<: *useOnlyOneX
-        subs: [ 'Better Propylon Teleport Warp ESP' ]
-        condition: 'many("Better Propylon Teleport Warp(-Master Index)?\.esp")'
