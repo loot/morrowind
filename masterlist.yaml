@@ -819,9 +819,7 @@ plugins:
         subs: [ 'Better Propylon Teleport Warp ESP' ]
         condition: 'many("Better Propylon Teleport Warp(-Master Index)?\.esp")'
   - name: 'Better Propylon Teleport Warp-Master Index.esp'
-    after:
-      - 'master_index.esp'
-      - 'MasterIndexRedux.esp'
+    after: [ 'MasterIndexRedux.esp' ]
     req:
       - name: 'master_index.esp'
         display: '[Master Index Plugin](https://www.nexusmods.com/morrowind/mods/42985/) **OR** [Unofficial Morrowind Official Plugins Patched](https://www.nexusmods.com/morrowind/mods/43931/) (**master-index.esp**)'
