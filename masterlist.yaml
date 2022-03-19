@@ -810,18 +810,15 @@ plugins:
       - 'NoM_Creatures Loot Standard.esp'
 
   ### Other Stuff (sort later) ###
-  - name: 'Better Propylon Teleport Warp-Master Index.esp'
+  - name: 'Better Propylon Teleport Warp.ESP'
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/46364/'
         name: 'Pikas Miscellaneous Mods'
-    req:
-      - name: 'master_index.esp'
-        display: '[Master Index Official Plugin](https://en.uesp.net/wiki/Morrowind:Master_Index) or master-index.esp from [Unofficial Morrowind Official Plugins Patched.ESP](https://www.nexusmods.com/morrowind/mods/43931)'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'Better Propylon Teleport Warp ESP' ]
         condition: 'many("Better Propylon Teleport Warp(-Master Index)?\.esp")'
-  - name: 'Better Propylon Teleport Warp ESP'
+  - name: 'Better Propylon Teleport Warp-Master Index.esp'
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/46364/'
         name: 'Pikas Miscellaneous Mods'
