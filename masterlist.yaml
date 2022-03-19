@@ -822,7 +822,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/46364/'
         name: 'Pikas Miscellaneous Mods'
-    after: [ 'MasterIndexRedux.esp' ]
+    after:
+      - 'master_index.esp'
+      - 'MasterIndexRedux.esp'
     req:
       - name: 'master_index.esp'
         condition: 'not active("MasterIndexRedux.esp")'
