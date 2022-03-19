@@ -810,7 +810,7 @@ plugins:
       - 'NoM_Creatures Loot Standard.esp'
 
   ### Other Stuff (sort later) ###
-  - name: 'Better Propylon Teleport Warp.ESP'
+  - name: 'Better Propylon Teleport Warp(-Master Index)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/46364/'
         name: 'Pikas Miscellaneous Mods'
