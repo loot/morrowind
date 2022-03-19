@@ -828,7 +828,7 @@ plugins:
   - name: 'The_Vanilla_Quest_Tweaks_RP_Choices_Consequences_Super_Mega_Package_-_Ultimate_Edition.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/47466' ]
     inc:
-      - 'A Cure for Vampirism - Skink's Solution.esp'
+      - 'A Cure for Vampirism - Skink''s Solution.esp'
       - 'Champion of Clutter.esp'
       - 'Duel of Honor - Improve the Chances.esp'
       - 'Fargoth in Distress.esp'
