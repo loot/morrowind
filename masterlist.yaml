@@ -826,7 +826,9 @@ plugins:
         condition: 'not active("MasterIndexRedux.esp")'
 
   - name: 'The_Vanilla_Quest_Tweaks_RP_Choices_Consequences_Super_Mega_Package_-_Ultimate_Edition.ESP'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/47466' ]
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/47466/'
+        name: 'The Vanilla Quest Tweaks RP Choices Consequences Super Mega Package - Ultimate Edition'
     inc:
       - 'A Cure for Vampirism - Skink''s Solution.esp'
       - 'Champion of Clutter.esp'
