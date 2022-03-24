@@ -569,10 +569,19 @@ plugins:
   - name: 'Beautiful cities of Morrowind.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after:
+      - 'BCOM West Gash.esp'
+      - 'Better Landscapes Stonewood Pass.esp'
+      - 'Better Landscapes Stonewood Pass (MD Edit).esp'
       - 'Better Landscapes Stonewood Pass (RP Edit).esp'
+      - 'DD_Caldera_Expansion v15 + Stonewood Pass Patch.ESP'
+      - 'Fighters_Guild_Questline_Overhaul.ESP'
+      - 'Foyada Mamaea Overhaul.ESP'
       - 'KS_Julan_Ashlander Companion_2.0.esp'
       - 'KS_Julan_Ashlander Companion_3.0_beta.esp'
       - 'Morrowind Anti-Cheese.esp'
+      - 'Trackless Grazeland.ESP'
+      - 'Unofficial Morrowind Official Plugins Patched.ESP'
+      - 'Uvirith''s Legacy_3.53.esp'
     inc:
       - 'MDP 2013.esp'
       - 'MDP 2013-CV.esp'
@@ -828,6 +837,10 @@ plugins:
       - name: 'master_index.esp'
         display: '[Master Index Plugin](https://www.nexusmods.com/morrowind/mods/42985/) **OR** [Unofficial Morrowind Official Plugins Patched](https://www.nexusmods.com/morrowind/mods/43931/) (**master-index.esp**)'
         condition: 'not active("MasterIndexRedux.esp")'
+
+  - name: 'MasterIndexRedux.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/48977/' ]
+    after: [ 'Beautiful cities of Morrowind.ESP' ]
 
   - name: 'The_Vanilla_Quest_Tweaks_RP_Choices_Consequences_Super_Mega_Package_-_Ultimate_Edition.ESP'
     url:
