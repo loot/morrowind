@@ -854,3 +854,4 @@ plugins:
       - 'The Frostmoth Smugglers - Properly Rewarded.ESP'
       - 'Thelas'' Pillows Overhaul.ESP'
       - 'Therana vs Trerayna.ESP'
+    after: [ 'Religions Elaborated.ESP' ]
