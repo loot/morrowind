@@ -833,6 +833,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/47466/'
         name: 'The Vanilla Quest Tweaks RP Choices Consequences Super Mega Package - Ultimate Edition'
+    after: [ 'Religions Elaborated.ESP' ]
     inc:
       - 'A Cure for Vampirism - Skink''s Solution.ESP'
       - 'Champion of Clutter.ESP'
@@ -854,4 +855,3 @@ plugins:
       - 'The Frostmoth Smugglers - Properly Rewarded.ESP'
       - 'Thelas'' Pillows Overhaul.ESP'
       - 'Therana vs Trerayna.ESP'
-    after: [ 'Religions Elaborated.ESP' ]
