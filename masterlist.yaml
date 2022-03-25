@@ -580,7 +580,6 @@ plugins:
       - 'KS_Julan_Ashlander Companion_3.0_beta.esp'
       - 'Morrowind Anti-Cheese.esp'
       - 'Trackless Grazeland.ESP'
-      - 'Unofficial Morrowind Official Plugins Patched.ESP'
       - 'Uvirith''s Legacy_3.53.esp'
     inc:
       - 'MDP 2013.esp'
