@@ -838,10 +838,6 @@ plugins:
         display: '[Master Index Plugin](https://www.nexusmods.com/morrowind/mods/42985/) **OR** [Unofficial Morrowind Official Plugins Patched](https://www.nexusmods.com/morrowind/mods/43931/) (**master-index.esp**)'
         condition: 'not active("MasterIndexRedux.esp")'
 
-  - name: 'MasterIndexRedux.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/48977/' ]
-    after: [ 'Beautiful cities of Morrowind.ESP' ]
-
   - name: 'The_Vanilla_Quest_Tweaks_RP_Choices_Consequences_Super_Mega_Package_-_Ultimate_Edition.ESP'
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/47466/'
