@@ -670,6 +670,15 @@ plugins:
   - name: 'BCOM_Suran Expansion.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after: [ 'BOM_pathgrid_reset.esp' ]
+  - name: 'BOM_White_Suran.ESP'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after:
+      - 'BCOM_Suran Expansion.esp'
+      - 'Beautiful cities of Morrowind.ESP'
+      - 'Suran_Underworld_v3.esp'
+  - name: 'BCOM_suran underworld_expansion patch.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after: [ 'BCOM_Suran Expansion.esp' ]
   - name: 'BOM_Stavs_MGO.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after: [ 'Beautiful cities of Morrowind.ESP' ]
@@ -679,12 +688,6 @@ plugins:
   - name: 'BOM_Vanilla Trees.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after: [ 'BOM_pathgrid_reset.esp' ]
-  - name: 'BOM_White_Suran.ESP'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
-    after:
-      - 'BCOM_Suran Expansion.esp'
-      - 'Beautiful cities of Morrowind.ESP'
-      - 'Suran_Underworld_v3.esp'
   - name: 'SOP_Canal_02.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after: [ 'Beautiful cities of Morrowind.ESP' ]
@@ -692,15 +695,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     inc: [ 'Brevur of Balmora - Finally Some Good Statue Mod.ESP' ]
     after: [ 'BOM_pathgrid_reset.esp' ]
-  - name: 'BCOM_Suran Expansion.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
-    after: [ 'BOM_pathgrid_reset.esp' ]
-  - name: 'BOM_White_Suran.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
-    after: [ 'BCOM_Suran Expansion.esp' ]
-  - name: 'BCOM_suran underworld_expansion patch.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
-    after: [ 'BCOM_Suran Expansion.esp' ]
 
   - name: 'Brevur of Balmora - Finally Some Good Statue Mod.ESP'
     url:
