@@ -692,6 +692,18 @@ plugins:
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     inc: [ 'Brevur of Balmora - Finally Some Good Statue Mod.ESP' ]
     after: [ 'BOM_pathgrid_reset.esp' ]
+  - name: 'BOM - Taller Lighthouse.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after: [ 'BOM_pathgrid_reset.esp' ]
+  - name: 'BCOM_Suran Expansion.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after: [ 'BOM_pathgrid_reset.esp' ]
+  - name: 'BOM_White_Suran.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after: [ 'BCOM_Suran Expansion.esp' ]
+  - name: 'BCOM_suran underworld_expansion patch.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after: [ 'BCOM_Suran Expansion.esp' ]
 
   - name: 'Brevur of Balmora - Finally Some Good Statue Mod.ESP'
     url:
