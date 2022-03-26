@@ -474,6 +474,26 @@ plugins:
         subs: [ '"Script Improvements" version' ]
         condition: 'many("gr_ScriptImprovements.es(m|p)")'
 
+  - name: 'correctUV Ore Replacer_fixed.esp'
+    inc:
+      - 'correctUV Ore Replacer_respawning.esp'
+      - 'Graphic Herbalism Extra (Correct UV).esp'
+      - 'correctUV Ore Replacer 1.0.esp'
+      - 'Graphic Herbalism.esp'
+      - 'Graphic Herbalism Extra.esp'
+      - 'Graphic Herbalism TR.ESP'
+      - 'Graphic Herbalism TR Extra.ESP'
+
+  - name: 'correctUV Ore Replacer_respawning.esp'
+    inc:
+      - 'correctUV Ore Replacer_fixed.esp'
+      - 'Graphic Herbalism Extra (Correct UV).esp'
+      - 'correctUV Ore Replacer 1.0.esp'
+      - 'Graphic Herbalism.esp'
+      - 'Graphic Herbalism Extra.esp'
+      - 'Graphic Herbalism TR.ESP'
+      - 'Graphic Herbalism TR Extra.ESP'
+
 ###### Character Appearance - NPCs ######
   - name: 'Improved Argonians.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/45918/' ]
@@ -715,26 +735,6 @@ plugins:
       - 'TR_Travels_(Preview_and_Mainland).esp'
       - 'TR_Travels Patch.esp'
 ###### Anything new can go after this (If you're not sure where to put it) ######
-  - name: 'correctUV Ore Replacer_fixed.esp'
-    inc:
-      - 'correctUV Ore Replacer_respawning.esp'
-      - 'Graphic Herbalism Extra (Correct UV).esp'
-      - 'correctUV Ore Replacer 1.0.esp'
-      - 'Graphic Herbalism.esp'
-      - 'Graphic Herbalism Extra.esp'
-      - 'Graphic Herbalism TR.ESP'
-      - 'Graphic Herbalism TR Extra.ESP'
-
-  - name: 'correctUV Ore Replacer_respawning.esp'
-    inc:
-      - 'correctUV Ore Replacer_fixed.esp'
-      - 'Graphic Herbalism Extra (Correct UV).esp'
-      - 'correctUV Ore Replacer 1.0.esp'
-      - 'Graphic Herbalism.esp'
-      - 'Graphic Herbalism Extra.esp'
-      - 'Graphic Herbalism TR.ESP'
-      - 'Graphic Herbalism TR Extra.ESP'
-
   ### OAAB dependent mods ###
   - name: 'OAAB - Tombs and Towers.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49131/' ]
