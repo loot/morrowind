@@ -569,10 +569,18 @@ plugins:
   - name: 'Beautiful cities of Morrowind.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after:
+      - 'BCOM West Gash.esp'
+      - 'Better Landscapes Stonewood Pass.esp'
+      - 'Better Landscapes Stonewood Pass (MD Edit).esp'
       - 'Better Landscapes Stonewood Pass (RP Edit).esp'
+      - 'DD_Caldera_Expansion v15 + Stonewood Pass Patch.ESP'
+      - 'Fighters_Guild_Questline_Overhaul.ESP'
+      - 'Foyada Mamaea Overhaul.ESP'
       - 'KS_Julan_Ashlander Companion_2.0.esp'
       - 'KS_Julan_Ashlander Companion_3.0_beta.esp'
       - 'Morrowind Anti-Cheese.esp'
+      - 'Trackless Grazeland.ESP'
+      - 'Uvirith''s Legacy_3.53.esp'
     inc:
       - 'MDP 2013.esp'
       - 'MDP 2013-CV.esp'
