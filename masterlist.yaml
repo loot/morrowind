@@ -881,3 +881,13 @@ plugins:
       - 'The Frostmoth Smugglers - Properly Rewarded.ESP'
       - 'Thelas'' Pillows Overhaul.ESP'
       - 'Therana vs Trerayna.ESP'
+
+  - name: 'Imperial Legion Expansion.esp'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/44469/'
+        name: 'Imperial Legion Expansion'
+    inc:
+      - 'dukesarmor.ESP'
+      - 'Imperial Legion Goods.esp'
+      - 'Legionpapers.esp'
+      - 'Publius_Claudius_Follower.ESP'
