@@ -464,6 +464,10 @@ plugins:
     group: *earlyLoadersGroup
 
 ###### Fixes ######
+  - name: 'correctUV Ore Replacer_(fixed|respawning)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/46599/'
+        name: 'Graphic Herbalism - MWSE and OpenMW Edition'
   - name: 'correctUV Ore Replacer_fixed.esp'
     inc:
       - 'correctUV Ore Replacer_respawning.esp'
