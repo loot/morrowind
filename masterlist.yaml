@@ -865,7 +865,9 @@ plugins:
       - 'Therana vs Trerayna.ESP'
 
   - name: 'Imperial Legion Expansion.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/44469/' ]
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/44469/'
+        name: 'Imperial Legion Expansion'
     after: [ 'Religions Elaborated.ESP' ]
     inc:
       - 'dukesarmor.esp'
