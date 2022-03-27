@@ -837,6 +837,24 @@ plugins:
         display: '[Master Index Plugin](https://www.nexusmods.com/morrowind/mods/42985/) **OR** [Unofficial Morrowind Official Plugins Patched](https://www.nexusmods.com/morrowind/mods/43931/) (**master-index.esp**)'
         condition: 'not active("MasterIndexRedux.esp")'
 
+  - name: 'Main_Quest_Overhaul.ESP'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/46913/'
+        name: 'Main Quest Overhaul'
+    inc:
+      - 'Ashlander Quests.ESP'
+      - 'Consequences for Looting the Andrano Tomb.ESP'
+      - 'Exterminate all the Brutes.ESP'
+      - 'Hortator.ESP'
+      - 'Imperialist Nerevarine.ESP'
+      - 'Joinable Sixth House - So to Speak.ESP'
+      - 'Living With Caius.ESP'
+      - 'Nationalist Nerevarine.ESP'
+      - 'Past Life Regressions.ESP'
+      - 'Refuse the Main Quest.ESP'
+      - 'Sixth House Smugglers.ESP'
+      - 'Vampire_Nerevarine.ESP'
+
   - name: 'The_Vanilla_Quest_Tweaks_RP_Choices_Consequences_Super_Mega_Package_-_Ultimate_Edition.ESP'
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/47466/'
