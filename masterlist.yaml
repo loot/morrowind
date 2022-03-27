@@ -870,7 +870,7 @@ plugins:
         name: 'Imperial Legion Expansion'
     after: [ 'Religions Elaborated.ESP' ]
     inc:
-      - 'dukesarmor.esp'
+      - 'dukesarmor.ESP'
       - 'Imperial Legion Goods.esp'
       - 'Legionpapers.esp'
       - 'Publius_Claudius_Follower.ESP'
