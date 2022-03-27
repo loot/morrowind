@@ -468,26 +468,17 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/46599/'
         name: 'Graphic Herbalism - MWSE and OpenMW Edition'
+    inc:
+      - 'correctUV Ore Replacer 1.0.esp'
+      - 'Graphic Herbalism.esp'
+      - 'Graphic Herbalism Extra.esp'
+      - 'Graphic Herbalism Extra (Correct UV).esp'
+      - 'Graphic Herbalism TR.ESP'
+      - 'Graphic Herbalism TR Extra.ESP'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'Correct UV Diverse Ore Replacer ESP' ]
         condition: 'many("correctUV Ore Replacer_(fixed|respawning)\.esp")'
-  - name: 'correctUV Ore Replacer_fixed.esp'
-    inc:
-      - 'Graphic Herbalism Extra (Correct UV).esp'
-      - 'correctUV Ore Replacer 1.0.esp'
-      - 'Graphic Herbalism.esp'
-      - 'Graphic Herbalism Extra.esp'
-      - 'Graphic Herbalism TR.ESP'
-      - 'Graphic Herbalism TR Extra.ESP'
-  - name: 'correctUV Ore Replacer_respawning.esp'
-    inc:
-      - 'Graphic Herbalism Extra (Correct UV).esp'
-      - 'correctUV Ore Replacer 1.0.esp'
-      - 'Graphic Herbalism.esp'
-      - 'Graphic Herbalism Extra.esp'
-      - 'Graphic Herbalism TR.ESP'
-      - 'Graphic Herbalism TR Extra.ESP'
 
   - name: 'gr_ScriptImprovements.es(m|p)'
     url: [ 'https://www.nexusmods.com/morrowind/mods/43828/' ]
