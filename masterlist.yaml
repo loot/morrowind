@@ -838,7 +838,9 @@ plugins:
         condition: 'not active("MasterIndexRedux.esp")'
 
   - name: 'Main_Quest_Overhaul.ESP'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/46913/' ]
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/46913/'
+        name: 'Main Quest Overhaul'
     inc:
       - 'Ashlander Quests.ESP'
       - 'Consequences for Looting the Andrano Tomb.ESP'
