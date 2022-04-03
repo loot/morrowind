@@ -887,3 +887,27 @@ plugins:
       - 'Imperial Legion Goods.esp'
       - 'Legionpapers.esp'
       - 'Publius_Claudius_Follower.ESP'
+
+  - name: 'Thieves_Guild_Overhaul.ESP'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/49944/'
+        name: 'Thieves'' Guild Overhaul'
+    inc:
+      - 'Bal Molagmer Add-on.ESP'
+      - 'Lore-Friendly Bal Molagmer Gloves.ESP'
+      - 'More Redoran Master Helms.ESP'
+      - 'Plunder the Dungeon.ESP'
+      - 'Smooth Moves - Romancing Ahnassi.esp'
+      - 'Thieves' Guild in Gnaar Mok.esp'
+      - 'Wanted Posters.ESP'
+  - name: ' Thieves_Guild_Overhaul - Purist Ahnassi Romance version.ESP'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/49944/'
+        name: 'Thieves'' Guild Overhaul'
+    inc:
+      - 'Bal Molagmer Add-on.ESP'
+      - 'Lore-Friendly Bal Molagmer Gloves.ESP'
+      - 'More Redoran Master Helms.ESP'
+      - 'Plunder the Dungeon.ESP'
+      - 'Thieves' Guild in Gnaar Mok.esp'
+      - 'Wanted Posters.ESP'
