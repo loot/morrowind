@@ -534,6 +534,29 @@ plugins:
       - 'Mixed Cantons of Vivec.esp'
       - 'No-Frills Open Vivec.esp'
 
+  - name: 'Ministry_of_Clarity.ESP'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/46093/' ]
+    after: [ 'Clean_Mines & Caverns.esp' ]
+
+  - name: 'Religions Elaborated.ESP'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/47843/' ]
+    after:
+      - 'Imperial_Legion_Expansion.esp'
+      - 'More Exclusive Factions.ESP'
+      - 'SwampFever.ESP'
+
+  ### Rise of House Telvanni ###
+  - name: 'ROHT_2_0_8.ESP'
+    url:
+      - 'https://www.nexusmods.com/morrowind/mods/48225/'
+      - 'https://www.nexusmods.com/morrowind/mods/49231/'
+    after: [ 'Beautiful cities of Morrowind.ESP' ]
+    inc: [ 'BOM_ROHT_Patch.ESP' ]
+    req:
+      - name: 'Rise of House Telvanni.esm'
+        display: '[Rise of House Telvanni.esm](https://www.nexusmods.com/morrowind/mods/27545/)'
+
+  ### Quest Overhauls ###
   - name: 'Main_Quest_Overhaul.ESP'
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/46913/'
@@ -551,17 +574,6 @@ plugins:
       - 'Refuse the Main Quest.ESP'
       - 'Sixth House Smugglers.ESP'
       - 'Vampire_Nerevarine.ESP'
-
-  - name: 'Ministry_of_Clarity.ESP'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/46093/' ]
-    after: [ 'Clean_Mines & Caverns.esp' ]
-
-  - name: 'Religions Elaborated.ESP'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/47843/' ]
-    after:
-      - 'Imperial_Legion_Expansion.esp'
-      - 'More Exclusive Factions.ESP'
-      - 'SwampFever.ESP'
 
   - name: 'The_Vanilla_Quest_Tweaks_RP_Choices_Consequences_Super_Mega_Package_-_Ultimate_Edition.ESP'
     url:
@@ -589,17 +601,6 @@ plugins:
       - 'The Frostmoth Smugglers - Properly Rewarded.ESP'
       - 'Thelas'' Pillows Overhaul.ESP'
       - 'Therana vs Trerayna.ESP'
-
-  ### Rise of House Telvanni ###
-  - name: 'ROHT_2_0_8.ESP'
-    url:
-      - 'https://www.nexusmods.com/morrowind/mods/48225/'
-      - 'https://www.nexusmods.com/morrowind/mods/49231/'
-    after: [ 'Beautiful cities of Morrowind.ESP' ]
-    inc: [ 'BOM_ROHT_Patch.ESP' ]
-    req:
-      - name: 'Rise of House Telvanni.esm'
-        display: '[Rise of House Telvanni.esm](https://www.nexusmods.com/morrowind/mods/27545/)'
 
 ###### Locations - New Lands ######
   ### Tamriel Rebuilt ###
