@@ -534,6 +534,24 @@ plugins:
       - 'Mixed Cantons of Vivec.esp'
       - 'No-Frills Open Vivec.esp'
 
+  - name: 'Main_Quest_Overhaul.ESP'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/46913/'
+        name: 'Main Quest Overhaul'
+    inc:
+      - 'Ashlander Quests.ESP'
+      - 'Consequences for Looting the Andrano Tomb.ESP'
+      - 'Exterminate all the Brutes.ESP'
+      - 'Hortator.ESP'
+      - 'Imperialist Nerevarine.ESP'
+      - 'Joinable Sixth House - So to Speak.ESP'
+      - 'Living With Caius.ESP'
+      - 'Nationalist Nerevarine.ESP'
+      - 'Past Life Regressions.ESP'
+      - 'Refuse the Main Quest.ESP'
+      - 'Sixth House Smugglers.ESP'
+      - 'Vampire_Nerevarine.ESP'
+
   - name: 'Ministry_of_Clarity.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/46093/' ]
     after: [ 'Clean_Mines & Caverns.esp' ]
@@ -555,6 +573,33 @@ plugins:
     req:
       - name: 'Rise of House Telvanni.esm'
         display: '[Rise of House Telvanni.esm](https://www.nexusmods.com/morrowind/mods/27545/)'
+
+  - name: 'The_Vanilla_Quest_Tweaks_RP_Choices_Consequences_Super_Mega_Package_-_Ultimate_Edition.ESP'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/47466/'
+        name: 'The Vanilla Quest Tweaks RP Choices Consequences Super Mega Package - Ultimate Edition'
+    after: [ 'Religions Elaborated.ESP' ]
+    inc:
+      - 'A Cure for Vampirism - Skink''s Solution.ESP'
+      - 'Champion of Clutter.ESP'
+      - 'Duel of Honor - Improve the Chances.ESP'
+      - 'Fargoth in Distress.ESP'
+      - 'Fort Moonmoth Fundraiser Dinner.ESP'
+      - 'Harvest''s End Festival.ESP'
+      - 'Hentus Needs Pants Overhaul.ESP'
+      - 'Hiring Guards for the Redoran Stronghold - Honorable Solution.ESP'
+      - 'Immersive Neloth Reward.ESP'
+      - 'Libertarian Magical Services.ESP'
+      - 'Morrowind - Immanuel Kant Edition.ESP'
+      - 'Oath to Saint Roris Instead.ESP'
+      - 'Pacifist Options - When it Makes Sense.ESP'
+      - 'Redoran Founder''s Helm Add On- Honor the Ancestors.ESP'
+      - 'Strange Man at Gindrala Hleran''s House Overhaul.ESP'
+      - 'Teach Nels Llendo a Lesson.ESP'
+      - 'The Corpse and the Skooma Pipe Overhaul.ESP'
+      - 'The Frostmoth Smugglers - Properly Rewarded.ESP'
+      - 'Thelas'' Pillows Overhaul.ESP'
+      - 'Therana vs Trerayna.ESP'
 
 ###### Locations - New Lands ######
   ### Tamriel Rebuilt ###
@@ -832,51 +877,6 @@ plugins:
       - name: 'master_index.esp'
         display: '[Master Index Plugin](https://www.nexusmods.com/morrowind/mods/42985/) **OR** [Unofficial Morrowind Official Plugins Patched](https://www.nexusmods.com/morrowind/mods/43931/) (**master-index.esp**)'
         condition: 'not active("MasterIndexRedux.esp")'
-
-  - name: 'Main_Quest_Overhaul.ESP'
-    url:
-      - link: 'https://www.nexusmods.com/morrowind/mods/46913/'
-        name: 'Main Quest Overhaul'
-    inc:
-      - 'Ashlander Quests.ESP'
-      - 'Consequences for Looting the Andrano Tomb.ESP'
-      - 'Exterminate all the Brutes.ESP'
-      - 'Hortator.ESP'
-      - 'Imperialist Nerevarine.ESP'
-      - 'Joinable Sixth House - So to Speak.ESP'
-      - 'Living With Caius.ESP'
-      - 'Nationalist Nerevarine.ESP'
-      - 'Past Life Regressions.ESP'
-      - 'Refuse the Main Quest.ESP'
-      - 'Sixth House Smugglers.ESP'
-      - 'Vampire_Nerevarine.ESP'
-
-  - name: 'The_Vanilla_Quest_Tweaks_RP_Choices_Consequences_Super_Mega_Package_-_Ultimate_Edition.ESP'
-    url:
-      - link: 'https://www.nexusmods.com/morrowind/mods/47466/'
-        name: 'The Vanilla Quest Tweaks RP Choices Consequences Super Mega Package - Ultimate Edition'
-    after: [ 'Religions Elaborated.ESP' ]
-    inc:
-      - 'A Cure for Vampirism - Skink''s Solution.ESP'
-      - 'Champion of Clutter.ESP'
-      - 'Duel of Honor - Improve the Chances.ESP'
-      - 'Fargoth in Distress.ESP'
-      - 'Fort Moonmoth Fundraiser Dinner.ESP'
-      - 'Harvest''s End Festival.ESP'
-      - 'Hentus Needs Pants Overhaul.ESP'
-      - 'Hiring Guards for the Redoran Stronghold - Honorable Solution.ESP'
-      - 'Immersive Neloth Reward.ESP'
-      - 'Libertarian Magical Services.ESP'
-      - 'Morrowind - Immanuel Kant Edition.ESP'
-      - 'Oath to Saint Roris Instead.ESP'
-      - 'Pacifist Options - When it Makes Sense.ESP'
-      - 'Redoran Founder''s Helm Add On- Honor the Ancestors.ESP'
-      - 'Strange Man at Gindrala Hleran''s House Overhaul.ESP'
-      - 'Teach Nels Llendo a Lesson.ESP'
-      - 'The Corpse and the Skooma Pipe Overhaul.ESP'
-      - 'The Frostmoth Smugglers - Properly Rewarded.ESP'
-      - 'Thelas'' Pillows Overhaul.ESP'
-      - 'Therana vs Trerayna.ESP'
 
   - name: 'Imperial Legion Expansion.esp'
     url:
