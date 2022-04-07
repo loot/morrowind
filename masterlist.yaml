@@ -517,6 +517,77 @@ plugins:
       - 'Main Quest Overhaul.esp'
       - 'Sixth House.esp'
 
+  ### Needs of Morrowind ###
+  - name: 'NOM 3.0.esp'
+    url: [ 'https://mw.modhistory.com/download-35-12114' ]
+    after:
+      - 'ab01HousesMerged.esp'
+      - 'ab01housesMergedNOM.esp'
+      - 'abotGuards.esp'
+      - 'abotGuardsBM.esp'
+      - 'abotGuardsTR2101.esp'
+      - 'Apothecary''s Demise.esp'
+      - 'ARCDX - Alternative Music.esp'
+      - 'ARCDX - Lightweight.esp'
+      - 'ARCDX - NOMv3 Compatible.esp'
+      - 'Ascadian Rose Cottage DX.esm'
+      - 'Ascadian_Rose_Cottage_ver1.0.esp'
+      - 'Better Clothes Complete.ESP'
+      - 'Better Clothes_v1.1.esp'
+      - 'Better Clothes_v1.1_nac.esp'
+      - 'Korobal.esp'
+      - 'Morrowind Crafting 2-1.esp'
+      - 'Morrowind Crafting Equipment.esp'
+      - 'Morrowind Crafting Houses.esp'
+      - 'Sentinel+Serendipity.esp'
+  - name: 'NOM3_PT SO.esp'
+    after:
+      - 'ab01HousesMerged.esp'
+      - 'ab01housesMergedNOM.esp'
+      - 'abotGuards.esp'
+      - 'abotGuardsBM.esp'
+      - 'abotGuardsTR2101.esp'
+      - 'Apothecary''s Demise.esp'
+      - 'ARCDX - Alternative Music.esp'
+      - 'ARCDX - Lightweight.esp'
+      - 'ARCDX - NOMv3 Compatible.esp'
+      - 'Ascadian Rose Cottage DX.esm'
+      - 'Ascadian_Rose_Cottage_ver1.0.esp'
+      - 'Better Clothes Complete.ESP'
+      - 'Better Clothes_v1.1.esp'
+      - 'Better Clothes_v1.1_nac.esp'
+      - 'Korobal.esp'
+      - 'Morrowind Crafting 2-1.esp'
+      - 'Morrowind Crafting Equipment.esp'
+      - 'Morrowind Crafting Houses.esp'
+      - 'Sentinel+Serendipity.esp'
+  - name: 'NoM_CoM Compatibility Patch.esp'
+    url: [ 'https://mw.modhistory.com/download-35-12114' ]
+    after:
+      - 'MW_Children_1_0.esm'
+      - 'NOM3.0.esp'
+      - 'NOM3_PT SO.esp'
+      - 'NoM_Creatures Loot Standard.esp'
+      - 'NoM_MC Compatibility Patch.esp'
+  - name: 'NoM_Creatures Loot Standard.esp'
+    url: [ 'https://mw.modhistory.com/download-35-12114' ]
+    after:
+      - 'NOM3.0.esp'
+      - 'NOM3_PT SO.esp'
+  - name: 'NoM_Creatures Loot PHW.esp'
+    url: [ 'https://mw.modhistory.com/download-35-12114' ]
+    after:
+      - 'NOM3.0.esp'
+      - 'NOM3_PT SO.esp'
+  - name: 'NoM_MC Compatibility Patch.esp'
+    url: [ 'https://mw.modhistory.com/download-35-12114' ]
+    after:
+      - 'Morrowind Crafting 2-1.esp'
+      - 'Morrowind Crafting 3b1.ESP'
+      - 'NOM3.0.esp'
+      - 'NOM3_PT SO.esp'
+      - 'NoM_Creatures Loot Standard.esp'
+
 ###### Gameplay - Quests ######
   - name: 'Guild of Vampire Hunters.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/45832/' ]
@@ -790,77 +861,6 @@ plugins:
   - name: 'OAAB_Tel Mora_Female Guards.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/46177/' ]
     after: [ 'OAAB_Tel Mora.esp' ]
-
-  ### Needs of Morrowind ###
-  - name: 'NOM 3.0.esp'
-    url: [ 'https://mw.modhistory.com/download-35-12114' ]
-    after:
-      - 'ab01HousesMerged.esp'
-      - 'ab01housesMergedNOM.esp'
-      - 'abotGuards.esp'
-      - 'abotGuardsBM.esp'
-      - 'abotGuardsTR2101.esp'
-      - 'Apothecary''s Demise.esp'
-      - 'ARCDX - Alternative Music.esp'
-      - 'ARCDX - Lightweight.esp'
-      - 'ARCDX - NOMv3 Compatible.esp'
-      - 'Ascadian Rose Cottage DX.esm'
-      - 'Ascadian_Rose_Cottage_ver1.0.esp'
-      - 'Better Clothes Complete.ESP'
-      - 'Better Clothes_v1.1.esp'
-      - 'Better Clothes_v1.1_nac.esp'
-      - 'Korobal.esp'
-      - 'Morrowind Crafting 2-1.esp'
-      - 'Morrowind Crafting Equipment.esp'
-      - 'Morrowind Crafting Houses.esp'
-      - 'Sentinel+Serendipity.esp'
-  - name: 'NOM3_PT SO.esp'
-    after:
-      - 'ab01HousesMerged.esp'
-      - 'ab01housesMergedNOM.esp'
-      - 'abotGuards.esp'
-      - 'abotGuardsBM.esp'
-      - 'abotGuardsTR2101.esp'
-      - 'Apothecary''s Demise.esp'
-      - 'ARCDX - Alternative Music.esp'
-      - 'ARCDX - Lightweight.esp'
-      - 'ARCDX - NOMv3 Compatible.esp'
-      - 'Ascadian Rose Cottage DX.esm'
-      - 'Ascadian_Rose_Cottage_ver1.0.esp'
-      - 'Better Clothes Complete.ESP'
-      - 'Better Clothes_v1.1.esp'
-      - 'Better Clothes_v1.1_nac.esp'
-      - 'Korobal.esp'
-      - 'Morrowind Crafting 2-1.esp'
-      - 'Morrowind Crafting Equipment.esp'
-      - 'Morrowind Crafting Houses.esp'
-      - 'Sentinel+Serendipity.esp'
-  - name: 'NoM_CoM Compatibility Patch.esp'
-    url: [ 'https://mw.modhistory.com/download-35-12114' ]
-    after:
-      - 'MW_Children_1_0.esm'
-      - 'NOM3.0.esp'
-      - 'NOM3_PT SO.esp'
-      - 'NoM_Creatures Loot Standard.esp'
-      - 'NoM_MC Compatibility Patch.esp'
-  - name: 'NoM_Creatures Loot Standard.esp'
-    url: [ 'https://mw.modhistory.com/download-35-12114' ]
-    after:
-      - 'NOM3.0.esp'
-      - 'NOM3_PT SO.esp'
-  - name: 'NoM_Creatures Loot PHW.esp'
-    url: [ 'https://mw.modhistory.com/download-35-12114' ]
-    after:
-      - 'NOM3.0.esp'
-      - 'NOM3_PT SO.esp'
-  - name: 'NoM_MC Compatibility Patch.esp'
-    url: [ 'https://mw.modhistory.com/download-35-12114' ]
-    after:
-      - 'Morrowind Crafting 2-1.esp'
-      - 'Morrowind Crafting 3b1.ESP'
-      - 'NOM3.0.esp'
-      - 'NOM3_PT SO.esp'
-      - 'NoM_Creatures Loot Standard.esp'
 
   ### Other Stuff (sort later) ###
   - name: 'Better Propylon Teleport Warp(-Master Index)?\.esp'
