@@ -829,6 +829,13 @@ plugins:
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     inc: [ 'Brevur of Balmora - Finally Some Good Statue Mod.ESP' ]
     after: [ 'BOM_pathgrid_reset.esp' ]
+  - name: 'TR_Travels_(P_M) Patch.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after:
+      - 'Beautiful cities of Morrowind.ESP'
+      - 'TR_Travels.esp'
+      - 'TR_Travels_(Preview_and_Mainland).esp'
+      - 'TR_Travels Patch.esp'
 
   - name: 'Brevur of Balmora - Finally Some Good Statue Mod.ESP'
     url:
@@ -844,13 +851,6 @@ plugins:
         subs: [ '[Brevur of Balmora - Finally Some Good Statue Mod.ESP](https://www.nexusmods.com/morrowind/mods/49231/)' ]
         condition: 'active("Beautiful cities of Morrowind.ESP") and checksum("Brevur of Balmora - Finally Some Good Statue Mod.ESP", 728FD2B8)'
 
-  - name: 'TR_Travels_(P_M) Patch.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
-    after:
-      - 'Beautiful cities of Morrowind.ESP'
-      - 'TR_Travels.esp'
-      - 'TR_Travels_(Preview_and_Mainland).esp'
-      - 'TR_Travels Patch.esp'
 ###### Anything new can go after this (If you're not sure where to put it) ######
   ### OAAB dependent mods ###
   - name: 'OAAB - Tombs and Towers.esp'
