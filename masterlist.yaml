@@ -494,6 +494,8 @@ plugins:
         subs: [ '"Script Improvements" version' ]
         condition: 'many("gr_ScriptImprovements.es(m|p)")'
 
+###### AudioVisual ######
+
 ###### Character Appearance - NPCs ######
   - name: 'Improved Argonians.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/45918/' ]
