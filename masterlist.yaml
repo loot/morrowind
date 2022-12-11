@@ -494,6 +494,23 @@ plugins:
         subs: [ '"Script Improvements" version' ]
         condition: 'many("gr_ScriptImprovements.es(m|p)")'
 
+###### AudioVisual ######
+  ### Pika's Miscellaneous Mods ###
+  - name: 'Better Propylon Teleport Warp(-Master Index)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/46364/'
+        name: 'Pikas Miscellaneous Mods'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Better Propylon Teleport Warp ESP' ]
+        condition: 'many("Better Propylon Teleport Warp(-Master Index)?\.esp")'
+  - name: 'Better Propylon Teleport Warp-Master Index.esp'
+    after: [ 'MasterIndexRedux.esp' ]
+    req:
+      - name: 'master_index.esp'
+        display: '[Master Index Plugin](https://www.nexusmods.com/morrowind/mods/42985/) **OR** [Unofficial Morrowind Official Plugins Patched](https://www.nexusmods.com/morrowind/mods/43931/) (**master-index.esp**)'
+        condition: 'not active("MasterIndexRedux.esp")'
+
 ###### Character Appearance - NPCs ######
   - name: 'Improved Argonians.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/45918/' ]
@@ -599,6 +616,16 @@ plugins:
       - 'Beautiful cities of Morrowind.ESP'
       - 'NX9_StuddedArmor.esp'
 
+  - name: 'Imperial Legion Expansion.esp'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/44469/'
+        name: 'Imperial Legion Expansion'
+    inc:
+      - 'dukesarmor.ESP'
+      - 'Imperial Legion Goods.esp'
+      - 'Legionpapers.esp'
+      - 'Publius_Claudius_Follower.ESP'
+
   - name: 'LuceEdit - Guild of Vampire Hunters.esp'
     url:
       - 'https://www.nexusmods.com/morrowind/mods/47224/'
@@ -675,6 +702,23 @@ plugins:
       - 'The Frostmoth Smugglers - Properly Rewarded.ESP'
       - 'Thelas'' Pillows Overhaul.ESP'
       - 'Therana vs Trerayna.ESP'
+
+  - name: 'Thieves_Guild_Overhaul( - Purist Ahnassi Romance version)?\.ESP'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/49944/'
+        name: 'Thieves'' Guild Overhaul'
+    inc:
+      - 'Bal Molagmer Add-on.ESP'
+      - 'Lore-friendly Bal Molagmer Gloves.ESP'
+      - 'More Redoran Master Helms.ESP'
+      - 'Plunder the Dungeon.ESP'
+      - 'Smooth Moves - Romancing Ahnassi.esp'
+      - 'Thieves Guild in Gnaar Mok.ESP'
+      - 'Wanted Posters.ESP'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Thieves'' Guild Overhaul ESP' ]
+        condition: 'many("Thieves_Guild_Overhaul( - Purist Ahnassi Romance version)?\.ESP")'
 
 ###### Locations - New Lands ######
   ### Tamriel Rebuilt ###
@@ -827,6 +871,13 @@ plugins:
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     inc: [ 'Brevur of Balmora - Finally Some Good Statue Mod.ESP' ]
     after: [ 'BOM_pathgrid_reset.esp' ]
+  - name: 'TR_Travels_(P_M) Patch.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
+    after:
+      - 'Beautiful cities of Morrowind.ESP'
+      - 'TR_Travels.esp'
+      - 'TR_Travels_(Preview_and_Mainland).esp'
+      - 'TR_Travels Patch.esp'
 
   - name: 'Brevur of Balmora - Finally Some Good Statue Mod.ESP'
     url:
@@ -842,22 +893,6 @@ plugins:
         subs: [ '[Brevur of Balmora - Finally Some Good Statue Mod.ESP](https://www.nexusmods.com/morrowind/mods/49231/)' ]
         condition: 'active("Beautiful cities of Morrowind.ESP") and checksum("Brevur of Balmora - Finally Some Good Statue Mod.ESP", 728FD2B8)'
 
-  - name: 'TR_Travels_(P_M) Patch.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
-    after:
-      - 'Beautiful cities of Morrowind.ESP'
-      - 'TR_Travels.esp'
-      - 'TR_Travels_(Preview_and_Mainland).esp'
-      - 'TR_Travels Patch.esp'
-###### Anything new can go after this (If you're not sure where to put it) ######
-  ### OAAB dependent mods ###
-  - name: 'OAAB - Tombs and Towers.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/49131/' ]
-    inc:
-      - 'Mawia Overhaul.esp'
-      - 'Remiros'' Tombs Expansion.esp'
-      - 'Urshilaku Burial Caverns Overhaul.esp'
-
   - name: 'OAAB_Tel Mora.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/46177/' ]
     after: [ 'NOM 3.0.esp' ]
@@ -865,45 +900,11 @@ plugins:
     url: [ 'https://www.nexusmods.com/morrowind/mods/46177/' ]
     after: [ 'OAAB_Tel Mora.esp' ]
 
-  ### Other Stuff (sort later) ###
-  - name: 'Better Propylon Teleport Warp(-Master Index)?\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/morrowind/mods/46364/'
-        name: 'Pikas Miscellaneous Mods'
-    msg:
-      - <<: *useOnlyOneX
-        subs: [ 'Better Propylon Teleport Warp ESP' ]
-        condition: 'many("Better Propylon Teleport Warp(-Master Index)?\.esp")'
-  - name: 'Better Propylon Teleport Warp-Master Index.esp'
-    after: [ 'MasterIndexRedux.esp' ]
-    req:
-      - name: 'master_index.esp'
-        display: '[Master Index Plugin](https://www.nexusmods.com/morrowind/mods/42985/) **OR** [Unofficial Morrowind Official Plugins Patched](https://www.nexusmods.com/morrowind/mods/43931/) (**master-index.esp**)'
-        condition: 'not active("MasterIndexRedux.esp")'
-
-  - name: 'Imperial Legion Expansion.esp'
-    url:
-      - link: 'https://www.nexusmods.com/morrowind/mods/44469/'
-        name: 'Imperial Legion Expansion'
+  - name: 'OAAB - Tombs and Towers.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/49131/' ]
     inc:
-      - 'dukesarmor.ESP'
-      - 'Imperial Legion Goods.esp'
-      - 'Legionpapers.esp'
-      - 'Publius_Claudius_Follower.ESP'
+      - 'Mawia Overhaul.esp'
+      - 'Remiros'' Tombs Expansion.esp'
+      - 'Urshilaku Burial Caverns Overhaul.esp'
 
-  - name: 'Thieves_Guild_Overhaul( - Purist Ahnassi Romance version)?\.ESP'
-    url:
-      - link: 'https://www.nexusmods.com/morrowind/mods/49944/'
-        name: 'Thieves'' Guild Overhaul'
-    inc:
-      - 'Bal Molagmer Add-on.ESP'
-      - 'Lore-friendly Bal Molagmer Gloves.ESP'
-      - 'More Redoran Master Helms.ESP'
-      - 'Plunder the Dungeon.ESP'
-      - 'Smooth Moves - Romancing Ahnassi.esp'
-      - 'Thieves Guild in Gnaar Mok.ESP'
-      - 'Wanted Posters.ESP'
-    msg:
-      - <<: *useOnlyOneX
-        subs: [ 'Thieves'' Guild Overhaul ESP' ]
-        condition: 'many("Thieves_Guild_Overhaul( - Purist Ahnassi Romance version)?\.ESP")'
+###### Anything new can go after this (If you're not sure where to put it) ######
