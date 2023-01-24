@@ -390,6 +390,8 @@ plugins:
         content:
           - lang: en
             text: 'Legacy version. Only recommended for old saves.'
+          - lang: bg
+            text: 'Версията е стара. Изисква се само за стари записи.'
           - lang: de
             text: 'Alt-Version. Ausschließlich für alte Speicherstände empfohlen.'
         condition: 'version("Patch for Purists.esm", "3.1.2", <)'
@@ -400,6 +402,8 @@ plugins:
         content:
           - lang: en
             text: 'Legacy version. Only recommended for old saves.'
+          - lang: bg
+            text: 'Версията е стара. Изисква се само за стари записи.'
           - lang: de
             text: 'Alt-Version. Ausschließlich für alte Speicherstände empfohlen.'
   - name: 'Patch for Purists - Base Patch.esm'
@@ -443,7 +447,10 @@ plugins:
       - type: say
         content:
           - lang: en
-            text: 'Regenerate after adding or removing mods that change or add in-game items. Use [TES3Merge](https://www.nexusmods.com/morrowind/mods/46870/)'
+            text: 'Regenerate after adding or removing mods that change or add in-game items. Use %1%.'
+          - lang: bg
+            text: 'Презаредете приставката след добавяне или премахване на модификации, които променят или добавят предмети в играта. Използвайте %1%.'
+        subs: [ '[TES3Merge](https://www.nexusmods.com/morrowind/mods/46870/)' ]
 
   - name: 'multipatch.esp'
     group: *dynamicPatchGroup
@@ -452,11 +459,17 @@ plugins:
       - type: say
         content:
           - lang: en
-            text: 'Regenerate after adding or removing mods or generating [Merged Objects.esp](https://www.nexusmods.com/morrowind/mods/46870/)'
+            text: 'Regenerate after adding or removing mods or generating %1%.'
+          - lang: bg
+            text: 'Презаредете приставката след добавяне или премахване на модификации, или промяна на %1%.'
+        subs: [ '[**Merged Objects.esp**](https://www.nexusmods.com/morrowind/mods/46870/)' ]
       - type: say
         content:
           - lang: en
-            text: 'Delete before generating [Merged Objects.esp](https://www.nexusmods.com/morrowind/mods/46870/), to avoid cyclic dependency.'
+            text: 'Delete before generating %1% to avoid cyclic dependency.'
+          - lang: bg
+            text: 'Изтрийте приставката, преди промяна на %1%, за да избегнете циклична зависимост.'
+        subs: [ '[**Merged Objects.esp**](https://www.nexusmods.com/morrowind/mods/46870/)' ]
 
 ###### Resources & Frameworks ######
   - name: 'OAAB_Data.esm'
