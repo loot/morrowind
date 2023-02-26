@@ -924,4 +924,92 @@ plugins:
       - 'Remiros'' Tombs Expansion.esp'
       - 'Urshilaku Burial Caverns Overhaul.esp'
 
+###### Translations ######
+  - name: 'Ja_Morrowind.esm'
+    url:
+      - link: 'http://www.geocities.jp/meisaku_asobu/japanizeMorrowind.html'
+        name: 'Ja_Morrowind'
+    group: *dlcGroup
+  - name: 'Japanized_kanji_GOTY.esm'
+    url:
+      - link: 'http://www.geocities.jp/meisaku_asobu/japanizeMorrowind.html'
+        name: 'Japanized_kanji_GOTY'
+    group: *dlcGroup
+  - name: 'Japanized_kanji_UMP.esp'
+    url:
+      - link: 'http://www.geocities.jp/meisaku_asobu/japanizeMorrowind.html'
+        name: 'Japanized_kanji_UMP'
+    after: [ 'Morrowind Patch v1.6.4.esm' ]
+  - name: '(Ja_GameSetting|Ja_GameSetting_GOTY|Ja_Introduce|Ja_Books)\.esp'
+    url:
+      - link: 'http://www.geocities.jp/meisaku_asobu/japanizeMorrowind.html'
+        name: 'Ja_et_cetera'
+    group: *earlyLoadersGroup
+  - name: 'Japanized_kanji_extra3.esm'
+    url:
+      - link: 'http://cid-927f0f7a9071c67c.skydrive.live.com/browse.aspx/%E5%85%AC%E9%96%8B'
+        name: 'Japanized_kanji_extra3'
+    group: *dlcGroup
+    after:
+      - 'Ja_Morrowind.esm'
+      - 'Japanized_kanji_GOTY.esm'
+  - name: 'JPMOD_Vanilla.esm'
+    group: *dlcGroup
+    after:
+      - 'Ja_Morrowind.esm'
+      - 'Japanized_kanji_GOTY.esm'
+      - 'Japanized_kanji_extra3.esm'
+  - name: 'JPMOD_Tribunal.esm'
+    group: *dlcGroup
+    after: [ 'JPMOD_Vanilla.esm' ]
+  - name: 'JPMOD_Bloodmoon.esm'
+    group: *dlcGroup
+    after: [ 'JPMOD_Tribunal.esm' ]
+  - name: 'JPScripts_Vanilla.esm'
+    group: *dlcGroup
+  - name: 'JPScripts_Tribunal.esm'
+    group: *dlcGroup
+    after: [ 'JPScripts_Vanilla.esm' ]
+  - name: 'JPScripts_Bloodmoon.esm'
+    group: *dlcGroup
+    after: [ 'JPScripts_Tribunal.esm' ]
+  - name: 'Ja_GameSettings_Alt_Achi.esp'
+    group: *earlyLoadersGroup
+    after: [ 'Ja_GameSetting_GOTY.esp' ]
+  - name: 'MorrowindJournal(\-J_V1.6|\-JupgTR_V1.2|\-JupgBM_V1.2)\.esp'
+    url:
+      - link: 'https://seesaawiki.jp/w/the_outlander/'
+        name: 'MorrowindJournal-J'
+    group: *earlyLoadersGroup
+  - name: 'TribunalJournal-J_V1.0.esp'
+    url:
+      - link: 'https://seesaawiki.jp/w/the_outlander/'
+        name: 'TribunalJournal-J_V1.0'
+    group: *earlyLoadersGroup
+  - name: 'BloodmoonJournal-J_V1.0.esp'
+    url:
+      - link: 'https://seesaawiki.jp/w/the_outlander/'
+        name: 'BloodmoonJournal-J_V1.0'
+    group: *earlyLoadersGroup
+  - name: 'nocorimono_(all|all_daedric_scrolls)\.esp'
+    url:
+      - link: 'https://wikiwiki.jp/morrowind/Books/nocorimono'
+        name: 'nocorimono_all'
+    group: *earlyLoadersGroup
+  - name: 'JP_Books_Oblivion_JPWiki.esp'
+    url:
+      - link: 'https://jpmod.oblivion.z49.org/?Vanilla/Books'
+        name: 'JP_Books_Oblivion_JPWiki'
+    group: *earlyLoadersGroup
+  - name: 'JP_Books_ShindaIsei.esp'
+    url:
+      - link: 'https://jpmod.oblivion.z49.org/?Vanilla/Books'
+        name: 'JP_Books_ShindaIsei'
+    group: *earlyLoadersGroup
+  - name: 'Nihongo_(TR|TR_O\-MOJI)\.esp'
+    url:
+      - link: 'http://www.hmx-12.net/~virgil7/morrowind/'
+        name: 'Nihongo_TR'
+    group: *earlyLoadersGroup
+
 ###### Anything new can go after this (If you're not sure where to put it) ######
