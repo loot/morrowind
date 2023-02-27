@@ -945,6 +945,7 @@ plugins:
       - link: 'http://www.geocities.jp/meisaku_asobu/japanizeMorrowind.html'
         name: 'Ja_et_cetera'
     group: *earlyLoadersGroup
+
   - name: 'Japanized_kanji_extra3.esm'
     url:
       - link: 'http://cid-927f0f7a9071c67c.skydrive.live.com/browse.aspx/%E5%85%AC%E9%96%8B'
@@ -953,29 +954,53 @@ plugins:
     after:
       - 'Ja_Morrowind.esm'
       - 'Japanized_kanji_GOTY.esm'
+
   - name: 'JPMOD_Vanilla.esm'
+    url:
+      - link: 'http://morrowindjptrans.blog.fc2.com'
+        name: 'Morrowind_JPTrans_by_achi'
     group: *dlcGroup
     after:
       - 'Ja_Morrowind.esm'
       - 'Japanized_kanji_GOTY.esm'
       - 'Japanized_kanji_extra3.esm'
   - name: 'JPMOD_Tribunal.esm'
+    url:
+      - link: 'http://morrowindjptrans.blog.fc2.com'
+        name: 'Morrowind_JPTrans_by_achi'
     group: *dlcGroup
     after: [ 'JPMOD_Vanilla.esm' ]
   - name: 'JPMOD_Bloodmoon.esm'
+    url:
+      - link: 'http://morrowindjptrans.blog.fc2.com'
+        name: 'Morrowind_JPTrans_by_achi'
     group: *dlcGroup
     after: [ 'JPMOD_Tribunal.esm' ]
   - name: 'JPScripts_Vanilla.esm'
+    url:
+      - link: 'http://morrowindjptrans.blog.fc2.com'
+        name: 'Morrowind_JPTrans_by_achi'
     group: *dlcGroup
   - name: 'JPScripts_Tribunal.esm'
+    url:
+      - link: 'http://morrowindjptrans.blog.fc2.com'
+        name: 'Morrowind_JPTrans_by_achi'
     group: *dlcGroup
     after: [ 'JPScripts_Vanilla.esm' ]
   - name: 'JPScripts_Bloodmoon.esm'
+    url:
+      - link: 'http://morrowindjptrans.blog.fc2.com'
+        name: 'Morrowind_JPTrans_by_achi'
     group: *dlcGroup
     after: [ 'JPScripts_Tribunal.esm' ]
   - name: 'Ja_GameSettings_Alt_Achi.esp'
+    url:
+      - link: 'http://morrowindjptrans.blog.fc2.com'
+        name: 'Morrowind_JPTrans_by_achi'
+    group: *dlcGroup
     group: *earlyLoadersGroup
     after: [ 'Ja_GameSetting_GOTY.esp' ]
+
   - name: 'MorrowindJournal(\-J_V1.6|\-JupgTR_V1.2|\-JupgBM_V1.2)\.esp'
     url:
       - link: 'https://seesaawiki.jp/w/the_outlander/'
@@ -991,11 +1016,13 @@ plugins:
       - link: 'https://seesaawiki.jp/w/the_outlander/'
         name: 'BloodmoonJournal-J_V1.0'
     group: *earlyLoadersGroup
+
   - name: 'nocorimono_(all|all_daedric_scrolls)\.esp'
     url:
       - link: 'https://wikiwiki.jp/morrowind/Books/nocorimono'
         name: 'nocorimono_all'
     group: *earlyLoadersGroup
+
   - name: 'JP_Books_Oblivion_JPWiki.esp'
     url:
       - link: 'https://jpmod.oblivion.z49.org/?Vanilla/Books'
@@ -1006,6 +1033,7 @@ plugins:
       - link: 'https://jpmod.oblivion.z49.org/?Vanilla/Books'
         name: 'JP_Books_ShindaIsei'
     group: *earlyLoadersGroup
+
   - name: 'Nihongo_(TR|TR_O\-MOJI)\.esp'
     url:
       - link: 'http://www.hmx-12.net/~virgil7/morrowind/'
