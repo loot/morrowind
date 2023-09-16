@@ -191,11 +191,11 @@ prelude:
 
     - &versionXIncY
       type: error
-      content: 'Your installed version of {0} is not compatible with your version of %2%.'
+      content: 'Your installed version of {0} is not compatible with your version of {1}.'
 
     - &versionXofYorGreaterRequired
       type: error
-      content: 'Requires version **{0}** or greater of **%2%**.'
+      content: 'Requires version **{0}** or greater of **{1}**.'
 
   # Global Anchors
     - &latestLOOTThread
