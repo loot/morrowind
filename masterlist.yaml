@@ -534,7 +534,6 @@ plugins:
         condition: 'many("gr_ScriptImprovements.es(m|p)")'
 
 ###### AudioVisual ######
-  ### Pika's Miscellaneous Mods ###
   - name: 'Better Propylon Teleport Warp(-Master Index)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/46364/'
@@ -555,10 +554,8 @@ plugins:
 ###### AudioVisual - Sound & Music ######
 ###### AudioVisual - Water ######
 ###### AudioVisual - Weather & Lighting ######
-###### Character Appearance - Body,face & hair ######
-###### Character Appearance - Children ######
 
-###### Character Appearance - NPCs ######
+###### Character Appearance ######
   - name: 'Improved Argonians.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/45918/' ]
     after: [ 'New Argonian Bodies - Clean.esp' ]
@@ -568,8 +565,6 @@ plugins:
       - 'Slof''s Better Beasts b.esp'
       - 'Slof''s Civilised Beasts.esp'
       - 'Wey_New_Argonians.ESP'
-
-###### Character Appearance - Presets ######
 
 ###### Environment, Landscape & Flora ######
   - name: 'Better Landscapes Stonewood Pass (RP Edit).esp'
@@ -587,7 +582,6 @@ plugins:
       - 'Main Quest Overhaul.esp'
       - 'Sixth House.esp'
 
-  ### Needs of Morrowind ###
   - name: 'NOM 3.0.esp'
     url: [ 'https://mw.modhistory.com/download-35-12114' ]
     after:
@@ -658,7 +652,6 @@ plugins:
       - 'NOM3_PT SO.esp'
       - 'NoM_Creatures Loot Standard.esp'
 
-###### Gameplay - Abilities ######
 ###### Gameplay - Character Classes & Races ######
 ###### Gameplay - Combat ######
 ###### Gameplay - Crafting & Harvesting ######
@@ -723,7 +716,6 @@ plugins:
       - 'More Exclusive Factions.ESP'
       - 'SwampFever.ESP'
 
-  ### Rise of House Telvanni ###
   - name: 'ROHT_2_0_8.ESP'
     url:
       - 'https://www.nexusmods.com/morrowind/mods/48225/'
@@ -778,13 +770,12 @@ plugins:
         subs: [ 'Thieves'' Guild Overhaul ESP' ]
         condition: 'many("Thieves_Guild_Overhaul( - Purist Ahnassi Romance version)?\.ESP")'
 
-###### Gameplay - Skills & Perks ######
+###### Gameplay - Skills & Abilities ######
 ###### Gameplay - User Interface ######
 ###### Gameplay - User Interface - Map markers ######
 ###### Gameplay - User Interface - Maps ######
 
 ###### Locations - New Lands ######
-  ### Tamriel Rebuilt ###
   - name: 'TR_Factions.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/42145/' ]
     after: [ 'higher faction requirements - Full.ESP' ]
@@ -810,7 +801,6 @@ plugins:
 ###### Locations - New Structures & Landmarks ######
 
 ###### Locations - Overhauls ######
-  ### Beautiful cities of Morrowind ###
   - name: 'Beautiful cities of Morrowind.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after:
@@ -903,7 +893,7 @@ plugins:
       - 'Beautiful cities of Morrowind.ESP'
       - 'BOM_OpenMW_plazas.esp'
       - 'BOM_pathgrid_reset.esp'
-   ### BCOM - Optional files ###
+  ### BCOM - Optional files ###
   - name: 'BOM_PfP_patch.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after:
