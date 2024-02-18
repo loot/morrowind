@@ -385,7 +385,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/morrowind/mods/43931/' ]
     group: *earlyLoadersGroup
 
-###### Unofficial Patches ######
+###### Base Game Patches ######
   - name: 'Patch for Purists.*\.es(m|p)'
     url: [ 'https://www.nexusmods.com/morrowind/mods/45096/' ]
     group: *unofficialPatches
@@ -463,6 +463,8 @@ plugins:
       - name: 'Patch for Purists - Expansion Implementation.esm'
       - name: 'Patch for Purists - Dialogue Inconsistencies.esm'
 
+###### Modding Tools - Resources ######
+
 ###### Modding Tools - Generated Files ######
   - name: 'Merged Objects.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/46870/' ]
@@ -532,7 +534,6 @@ plugins:
         condition: 'many("gr_ScriptImprovements.es(m|p)")'
 
 ###### AudioVisual ######
-  ### Pika's Miscellaneous Mods ###
   - name: 'Better Propylon Teleport Warp(-Master Index)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/46364/'
@@ -548,7 +549,13 @@ plugins:
         display: '[Master Index Plugin](https://www.nexusmods.com/morrowind/mods/42985/) **OR** [Unofficial Morrowind Official Plugins Patched](https://www.nexusmods.com/morrowind/mods/43931/) (**master-index.esp**)'
         condition: 'not active("MasterIndexRedux.esp")'
 
-###### Character Appearance - NPCs ######
+###### AudioVisual - Animations & Physics ######
+###### AudioVisual - Models & Textures ######
+###### AudioVisual - Sound & Music ######
+###### AudioVisual - Water ######
+###### AudioVisual - Weather & Lighting ######
+
+###### Character Appearance ######
   - name: 'Improved Argonians.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/45918/' ]
     after: [ 'New Argonian Bodies - Clean.esp' ]
@@ -568,14 +575,13 @@ plugins:
       - 'Order_Of_Sanctity.ESP'
       - 'Walkers of Morrowind.esp'
 
-###### Gameplay - General ######
+###### Gameplay ######
   - name: 'Immersive_corprus.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/44961/' ]
     after:
       - 'Main Quest Overhaul.esp'
       - 'Sixth House.esp'
 
-  ### Needs of Morrowind ###
   - name: 'NOM 3.0.esp'
     url: [ 'https://mw.modhistory.com/download-35-12114' ]
     after:
@@ -646,6 +652,14 @@ plugins:
       - 'NOM3_PT SO.esp'
       - 'NoM_Creatures Loot Standard.esp'
 
+###### Gameplay - Character Classes & Races ######
+###### Gameplay - Combat ######
+###### Gameplay - Crafting & Harvesting ######
+###### Gameplay - Economy & Item Balance ######
+###### Gameplay - Mount & Follower Managers ######
+###### Gameplay - NPC Balance & Distribution ######
+###### Gameplay - NPC Behaviour & Dialogue ######
+
 ###### Gameplay - Quests ######
   - name: 'Guild of Vampire Hunters.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/45832/' ]
@@ -702,7 +716,6 @@ plugins:
       - 'More Exclusive Factions.ESP'
       - 'SwampFever.ESP'
 
-  ### Rise of House Telvanni ###
   - name: 'ROHT_2_0_8.ESP'
     url:
       - 'https://www.nexusmods.com/morrowind/mods/48225/'
@@ -757,8 +770,12 @@ plugins:
         subs: [ 'Thieves'' Guild Overhaul ESP' ]
         condition: 'many("Thieves_Guild_Overhaul( - Purist Ahnassi Romance version)?\.ESP")'
 
+###### Gameplay - Skills & Abilities ######
+###### Gameplay - User Interface ######
+###### Gameplay - User Interface - Map markers ######
+###### Gameplay - User Interface - Maps ######
+
 ###### Locations - New Lands ######
-  ### Tamriel Rebuilt ###
   - name: 'TR_Factions.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/42145/' ]
     after: [ 'higher faction requirements - Full.ESP' ]
@@ -781,8 +798,9 @@ plugins:
       - 'TR_Travels.esp'
       - 'TR_Travels_(Preview_and_Mainland).esp'
 
+###### Locations - New Structures & Landmarks ######
+
 ###### Locations - Overhauls ######
-  ### Beautiful cities of Morrowind ###
   - name: 'Beautiful cities of Morrowind.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after:
@@ -875,7 +893,7 @@ plugins:
       - 'Beautiful cities of Morrowind.ESP'
       - 'BOM_OpenMW_plazas.esp'
       - 'BOM_pathgrid_reset.esp'
-   ### BCOM - Optional files ###
+  ### BCOM - Optional files ###
   - name: 'BOM_PfP_patch.ESP'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49231/' ]
     after:
@@ -943,5 +961,12 @@ plugins:
       - 'Mawia Overhaul.esp'
       - 'Remiros'' Tombs Expansion.esp'
       - 'Urshilaku Burial Caverns Overhaul.esp'
+
+###### Locations - Player Homes ######
+###### New Characters - Allies ######
+###### New Characters - Enemies ######
+###### New Characters - Neutrals ######
+###### New Items ######
+###### 3RD Party Patches ######
 
 ###### Anything new can go after this (If you're not sure where to put it) ######
