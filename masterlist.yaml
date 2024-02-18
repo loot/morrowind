@@ -463,6 +463,8 @@ plugins:
       - name: 'Patch for Purists - Expansion Implementation.esm'
       - name: 'Patch for Purists - Dialogue Inconsistencies.esm'
 
+###### Modding Tools - Resources ######
+
 ###### Modding Tools - Generated Files ######
   - name: 'Merged Objects.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/46870/' ]
@@ -548,6 +550,14 @@ plugins:
         display: '[Master Index Plugin](https://www.nexusmods.com/morrowind/mods/42985/) **OR** [Unofficial Morrowind Official Plugins Patched](https://www.nexusmods.com/morrowind/mods/43931/) (**master-index.esp**)'
         condition: 'not active("MasterIndexRedux.esp")'
 
+###### AudioVisual - Animations & Physics ######
+###### AudioVisual - Models & Textures ######
+###### AudioVisual - Sound & Music ######
+###### AudioVisual - Water ######
+###### AudioVisual - Weather & Lighting ######
+###### Character Appearance - Body,face & hair ######
+###### Character Appearance - Children ######
+
 ###### Character Appearance - NPCs ######
   - name: 'Improved Argonians.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/45918/' ]
@@ -558,6 +568,8 @@ plugins:
       - 'Slof''s Better Beasts b.esp'
       - 'Slof''s Civilised Beasts.esp'
       - 'Wey_New_Argonians.ESP'
+
+###### Character Appearance - Presets ######
 
 ###### Environment, Landscape & Flora ######
   - name: 'Better Landscapes Stonewood Pass (RP Edit).esp'
@@ -645,6 +657,15 @@ plugins:
       - 'NOM3.0.esp'
       - 'NOM3_PT SO.esp'
       - 'NoM_Creatures Loot Standard.esp'
+
+###### Gameplay - Abilities ######
+###### Gameplay - Character Classes & Races ######
+###### Gameplay - Combat ######
+###### Gameplay - Crafting & Harvesting ######
+###### Gameplay - Economy & Item Balance ######
+###### Gameplay - Mount & Follower Managers ######
+###### Gameplay - NPC Balance & Distribution ######
+###### Gameplay - NPC Behaviour & Dialogue ######
 
 ###### Gameplay - Quests ######
   - name: 'Guild of Vampire Hunters.esp'
@@ -757,6 +778,11 @@ plugins:
         subs: [ 'Thieves'' Guild Overhaul ESP' ]
         condition: 'many("Thieves_Guild_Overhaul( - Purist Ahnassi Romance version)?\.ESP")'
 
+###### Gameplay - Skills & Perks ######
+###### Gameplay - User Interface ######
+###### Gameplay - User Interface - Map markers ######
+###### Gameplay - User Interface - Maps ######
+
 ###### Locations - New Lands ######
   ### Tamriel Rebuilt ###
   - name: 'TR_Factions.esp'
@@ -780,6 +806,8 @@ plugins:
       - 'Beautiful cities of Morrowind.ESP'
       - 'TR_Travels.esp'
       - 'TR_Travels_(Preview_and_Mainland).esp'
+
+###### Locations - New Structures & Landmarks ######
 
 ###### Locations - Overhauls ######
   ### Beautiful cities of Morrowind ###
@@ -943,5 +971,12 @@ plugins:
       - 'Mawia Overhaul.esp'
       - 'Remiros'' Tombs Expansion.esp'
       - 'Urshilaku Burial Caverns Overhaul.esp'
+
+###### Locations - Player Homes ######
+###### New Characters - Allies ######
+###### New Characters - Enemies ######
+###### New Characters - Neutrals ######
+###### New Items ######
+###### 3RD Party Patches ######
 
 ###### Anything new can go after this (If you're not sure where to put it) ######
