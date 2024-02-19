@@ -799,8 +799,11 @@ plugins:
 ###### Gameplay - User Interface - Maps ######
 
 ###### Locations - New Lands ######
+  - name: 'TR_(Mainland|Factions|Firemoth_Vanilla_patch)\.es[mp]'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/42145/'
+        name: 'Tamriel Rebuilt'
   - name: 'TR_Factions.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/42145/' ]
     after: [ 'higher faction requirements - Full.ESP' ]
 
 ###### Locations - New Structures & Landmarks ######
