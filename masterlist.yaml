@@ -805,6 +805,11 @@ plugins:
         name: 'Tamriel Rebuilt'
   - name: 'TR_Factions.esp'
     after: [ 'higher faction requirements - Full.ESP' ]
+  - name: 'TR_Firemoth_Vanilla_patch.esp'
+    req:
+      - name: 'Siege at Firemoth.esp'
+        display: '[Siege at Firemoth](https://www.nexusmods.com/morrowind/mods/42982/) or [Unofficial Morrowind Official Plugins Patched](https://www.nexusmods.com/morrowind/mods/43931/)'
+        condition: 'not file("Unofficial Morrowind Official Plugins Patched.ESP") and not file("[Official]Siege at Firemoth.esp")'
 
 ###### Locations - New Structures & Landmarks ######
 
