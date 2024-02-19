@@ -467,7 +467,9 @@ plugins:
 
 ###### Modding Tools - Generated Files ######
   - name: 'Merged Objects.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/46870/' ]
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/46870/'
+        name: 'TES3Merge'
     group: *dynamicPatchGroup
     msg:
       - type: say
@@ -479,6 +481,9 @@ plugins:
         subs: [ '[TES3Merge](https://www.nexusmods.com/morrowind/mods/46870/)' ]
 
   - name: 'multipatch.esp'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/46870/'
+        name: 'TES3Merge'
     group: *dynamicPatchGroup
     after: [ 'Merged Objects.esp' ]
     msg:
