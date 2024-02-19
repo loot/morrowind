@@ -222,11 +222,12 @@ groups:
   - name: &dlcGroup DLC
     after: [ *veryEarlyGroup ]
 
-  - name: &unofficialPatches Unofficial Patches
+  - name: &fixesGroup Fixes
+    description: 'A group for modules that fix issues and bugs.'
     after: [ *dlcGroup ]
 
   - name: &earlyLoadersGroup Early Loaders
-    after: [ *unofficialPatches ]
+    after: [ *fixesGroup ]
 
   - name: default
     after: [ *earlyLoadersGroup ]
@@ -392,7 +393,7 @@ plugins:
 ###### Base Game Patches ######
   - name: 'Patch for Purists.*\.es(m|p)'
     url: [ 'https://www.nexusmods.com/morrowind/mods/45096/' ]
-    group: *unofficialPatches
+    group: *fixesGroup
   - name: 'Patch for Purists( - Base Patch)?\.esm'
     inc:
       - 'gr_ScriptImprovements.esm'
