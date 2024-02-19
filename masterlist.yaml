@@ -803,6 +803,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/42145/'
         name: 'Tamriel Rebuilt'
+    msg:
+      - <<: *patchIncluded
+        subs: [ 'Siege at Firemoth' ]
+        condition: '(active("Siege at Firemoth.esp") or active("Unofficial Morrowind Official Plugins Patched.ESP")) and not active("TR_Firemoth_Vanilla_patch.esp")'
   - name: 'TR_Factions.esp'
     after: [ 'higher faction requirements - Full.ESP' ]
   - name: 'TR_Firemoth_Vanilla_patch.esp'
