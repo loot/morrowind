@@ -799,27 +799,22 @@ plugins:
 ###### Gameplay - User Interface - Maps ######
 
 ###### Locations - New Lands ######
+  - name: 'TR_(Mainland|Factions|Firemoth_Vanilla_patch)\.es[mp]'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/42145/'
+        name: 'Tamriel Rebuilt'
+  - name: 'TR_Mainland.esm'
+    msg:
+      - <<: *patchIncluded
+        subs: [ 'Siege at Firemoth' ]
+        condition: '(active("Siege at Firemoth.esp") or active("Unofficial Morrowind Official Plugins Patched.ESP")) and not active("TR_Firemoth_Vanilla_patch.esp")'
   - name: 'TR_Factions.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/42145/' ]
     after: [ 'higher faction requirements - Full.ESP' ]
-  - name: 'TR_Travels.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/42145/' ]
-    after:
-      - 'Beautiful cities of Morrowind.ESP'
-      - 'Religions Elaborated.ESP'
-      - 'SwampFever.ESP'
-      - 'TR_Preview.esp'
-  - name: 'TR_Travels_(Preview_and_Mainland).esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/42145/' ]
-    after:
-      - 'Beautiful cities of Morrowind.ESP'
-      - 'TR_Travels.esp'
-  - name: 'TR_Travels Patch.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/42145/' ]
-    after:
-      - 'Beautiful cities of Morrowind.ESP'
-      - 'TR_Travels.esp'
-      - 'TR_Travels_(Preview_and_Mainland).esp'
+  - name: 'TR_Firemoth_Vanilla_patch.esp'
+    req:
+      - name: 'Siege at Firemoth.esp'
+        display: '[Siege at Firemoth](https://www.nexusmods.com/morrowind/mods/42982/) or [Unofficial Morrowind Official Plugins Patched](https://www.nexusmods.com/morrowind/mods/43931/)'
+        condition: 'not file("Unofficial Morrowind Official Plugins Patched.ESP") or not file("[Official]Siege at Firemoth.esp")'
 
 ###### Locations - New Structures & Landmarks ######
 
