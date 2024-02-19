@@ -803,6 +803,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/42145/'
         name: 'Tamriel Rebuilt'
+  - name: 'TR_Mainland.esm'
     msg:
       - <<: *patchIncluded
         subs: [ 'Siege at Firemoth' ]
