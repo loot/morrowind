@@ -227,6 +227,7 @@ groups:
     after: [ *dlcGroup ]
 
   - name: &earlyLoadersGroup Early Loaders
+    description: 'A group for modules that should load early before most other mods.'
     after: [ *fixesGroup ]
 
   - name: default
