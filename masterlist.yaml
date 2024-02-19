@@ -466,9 +466,12 @@ plugins:
 ###### Modding Tools - Resources ######
 
 ###### Modding Tools - Generated Files ######
-  - name: 'Merged Objects.esp'
-    url: [ 'https://www.nexusmods.com/morrowind/mods/46870/' ]
+  - name: '(Merged Objects|multipatch)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/46870/'
+        name: 'TES3Merge'
     group: *dynamicPatchGroup
+  - name: 'Merged Objects.esp'
     msg:
       - type: say
         content:
@@ -477,9 +480,7 @@ plugins:
           - lang: bg
             text: 'Презаредете приставката след добавяне или премахване на модификации, които променят или добавят предмети в играта. Използвайте {0}.'
         subs: [ '[TES3Merge](https://www.nexusmods.com/morrowind/mods/46870/)' ]
-
   - name: 'multipatch.esp'
-    group: *dynamicPatchGroup
     after: [ 'Merged Objects.esp' ]
     msg:
       - type: say
