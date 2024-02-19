@@ -595,6 +595,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/50796/'
         name: 'Distant Seafloor for OpenMW'
+    group: *veryEarlyGroup
 
 ###### Gameplay ######
   - name: 'Immersive_corprus.esp'
