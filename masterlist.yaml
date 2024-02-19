@@ -216,7 +216,11 @@ globals:
   - *latestLOOTThread
 
 groups:
+  - name: &veryEarlyGroup Very Early Loaders
+    description: 'A group for modules that need to load early before DLC files.'
+
   - name: &dlcGroup DLC
+    after: [ *veryEarlyGroup ]
 
   - name: &unofficialPatches Unofficial Patches
     after: [ *dlcGroup ]
