@@ -557,6 +557,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/49278/'
         name: 'Kirel''s Interior Weather'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Kirel''s Interior Weather ESP' ]
+        condition: 'many("k_weather( \(louder sounds\))?\.esp")'
 
 ###### AudioVisual - Water ######
 ###### AudioVisual - Weather & Lighting ######
