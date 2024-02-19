@@ -591,6 +591,11 @@ plugins:
       - 'Order_Of_Sanctity.ESP'
       - 'Walkers of Morrowind.esp'
 
+  - name: 'distant_seafloor_2.00.esm'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/50796/'
+        name: 'Distant Seafloor for OpenMW'
+
 ###### Gameplay ######
   - name: 'Immersive_corprus.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/44961/' ]
