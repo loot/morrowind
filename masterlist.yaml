@@ -480,7 +480,6 @@ plugins:
           - lang: bg
             text: 'Презаредете приставката след добавяне или премахване на модификации, които променят или добавят предмети в играта. Използвайте {0}.'
         subs: [ '[TES3Merge](https://www.nexusmods.com/morrowind/mods/46870/)' ]
-
   - name: 'multipatch.esp'
     after: [ 'Merged Objects.esp' ]
     msg:
