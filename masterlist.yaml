@@ -216,13 +216,19 @@ globals:
   - *latestLOOTThread
 
 groups:
-  - name: &dlcGroup DLC
+  - name: &veryEarlyGroup Very Early Loaders
+    description: 'A group for modules that need to load early before DLC files.'
 
-  - name: &unofficialPatches Unofficial Patches
+  - name: &dlcGroup DLC
+    after: [ *veryEarlyGroup ]
+
+  - name: &fixesGroup Fixes
+    description: 'A group for modules that fix issues and bugs.'
     after: [ *dlcGroup ]
 
   - name: &earlyLoadersGroup Early Loaders
-    after: [ *unofficialPatches ]
+    description: 'A group for modules that should load early before most other mods.'
+    after: [ *fixesGroup ]
 
   - name: default
     after: [ *earlyLoadersGroup ]
@@ -388,7 +394,7 @@ plugins:
 ###### Base Game Patches ######
   - name: 'Patch for Purists.*\.es(m|p)'
     url: [ 'https://www.nexusmods.com/morrowind/mods/45096/' ]
-    group: *unofficialPatches
+    group: *fixesGroup
   - name: 'Patch for Purists( - Base Patch)?\.esm'
     inc:
       - 'gr_ScriptImprovements.esm'
