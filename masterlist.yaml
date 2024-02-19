@@ -813,7 +813,7 @@ plugins:
     req:
       - name: 'Siege at Firemoth.esp'
         display: '[Siege at Firemoth](https://www.nexusmods.com/morrowind/mods/42982/) or [Unofficial Morrowind Official Plugins Patched](https://www.nexusmods.com/morrowind/mods/43931/)'
-        condition: 'not file("Unofficial Morrowind Official Plugins Patched.ESP") or not file("[Official]Siege at Firemoth.esp")'
+        condition: 'not file("Unofficial Morrowind Official Plugins Patched.ESP")'
 
 ###### Locations - New Structures & Landmarks ######
 
