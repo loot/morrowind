@@ -202,6 +202,10 @@ prelude:
       content: 'Requires version **{0}** or greater of **{1}**.'
 
   # Global Anchors
+    - &incompatible
+      type: error
+      content: '{0} is incompatible with {1}, but both are present.'
+
     - &latestLOOTThread
       type: say
       content: '[Latest LOOT thread]({0}).'
