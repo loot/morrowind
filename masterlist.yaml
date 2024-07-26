@@ -281,6 +281,7 @@ plugins:
       - link: 'https://www.nexusmods.com/morrowind/mods/51107/'
         name: 'Bethesda Official Plugins Naturalized'
     group: *earlyLoadersGroup
+    inc: [ 'Unofficial Morrowind Official Plugins Patched.ESP' ]
 
   - name: '(adamantiumarmor|\[Official\]Adamantium Armor)\.esp'
     after:
