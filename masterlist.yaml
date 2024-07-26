@@ -297,6 +297,9 @@ plugins:
       - '[Official]Helm of Tohan.esp'
       - '[Official]LeFemm Armor.esp'
       - '[Official]Master Index.esp'
+      - 'Area Effect Arrows Naturalized.esp'
+      - 'Helm of Tohan Naturalized.esp'
+      - 'Master Index Naturalized.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ '"Adamantium Armor"' ]
@@ -330,6 +333,7 @@ plugins:
       - '[Official]Area Effect Arrows.esp'
       - '[Official]Bitter Coast Sounds.esp'
       - '[Official]Entertainers.esp'
+      - 'Area Effect Arrows Naturalized.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ '"EBQ_Artifact" or "Helm of Tohan"' ]
@@ -357,6 +361,9 @@ plugins:
       - '[Official]Entertainers.esp'
       - '[Official]Helm of Tohan.esp'
       - '[Official]Master Index.esp'
+      - 'Area Effect Arrows Naturalized.esp'
+      - 'Helm of Tohan Naturalized.esp'
+      - 'Master Index Naturalized.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ '"LeFemm Armor"' ]
@@ -372,6 +379,8 @@ plugins:
       - '[Official]Bitter Coast Sounds.esp'
       - '[Official]Entertainers.esp'
       - '[Official]Helm of Tohan.esp'
+      - 'Area Effect Arrows Naturalized.esp'
+      - 'Helm of Tohan Naturalized.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ '"Master Index"' ]
@@ -393,6 +402,10 @@ plugins:
       - '[Official]Helm of Tohan.esp'
       - '[Official]LeFemm Armor.esp'
       - '[Official]Master Index.esp'
+      - 'Adamantium Armor Naturalized.esp'
+      - 'Area Effect Arrows Naturalized.esp'
+      - 'Helm of Tohan Naturalized.esp'
+      - 'Master Index Naturalized.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ '"Siege at Firemoth"' ]
