@@ -277,6 +277,9 @@ plugins:
         condition: 'active("Unofficial Morrowind Official Plugins Patched.ESP")'
 
   - name: '(Adamantium Armor|Area Effect Arrows|Helm of Tohan|Master Index|Siege at Firemoth) Naturalized\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/51107/'
+        name: 'Bethesda Official Plugins Naturalized'
 
   - name: '(adamantiumarmor|\[Official\]Adamantium Armor)\.esp'
     after:
