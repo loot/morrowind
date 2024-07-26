@@ -708,6 +708,10 @@ plugins:
       - link: 'https://www.nexusmods.com/morrowind/mods/48051/'
         name: 'Ownership Overhaul'
     group: *fixesGroup
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Ownership Overhaul plugin' ]
+        condition: 'many("Ownership Overhaul\.es[mp]")'
 
 ###### Gameplay - Mount & Follower Managers ######
 ###### Gameplay - NPC Balance & Distribution ######
