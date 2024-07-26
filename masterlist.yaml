@@ -703,6 +703,11 @@ plugins:
 ###### Gameplay - Combat ######
 ###### Gameplay - Crafting & Harvesting ######
 ###### Gameplay - Economy & Item Balance ######
+  - name: 'Ownership Overhaul\.es[mp]'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/48051/'
+        name: 'Ownership Overhaul'
+
 ###### Gameplay - Mount & Follower Managers ######
 ###### Gameplay - NPC Balance & Distribution ######
 ###### Gameplay - NPC Behaviour & Dialogue ######
