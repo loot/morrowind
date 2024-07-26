@@ -707,6 +707,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/48051/'
         name: 'Ownership Overhaul'
+    group: *fixesGroup
 
 ###### Gameplay - Mount & Follower Managers ######
 ###### Gameplay - NPC Balance & Distribution ######
