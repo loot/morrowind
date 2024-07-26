@@ -283,7 +283,7 @@ plugins:
     group: *earlyLoadersGroup
     inc: [ 'Unofficial Morrowind Official Plugins Patched.ESP' ]
 
-  - name: '(adamantiumarmor|\[Official\]Adamantium Armor)\.esp'
+  - name: '(adamantiumarmor|(\[Official\])?Adamantium Armor( Naturalized)?)\.esp'
     after:
       - 'AreaEffectArrows.esp'
       - 'bcsounds.esp'
@@ -302,7 +302,7 @@ plugins:
         subs: [ '"Adamantium Armor"' ]
         condition: 'many("(adamantiumarmor|\[Official\]Adamantium Armor)\.esp")'
 
-  - name: '(AreaEffectArrows|\[Official\]Area Effect Arrows)\.esp'
+  - name: '(AreaEffectArrows|(\[Official\])?Area Effect Arrows( Naturalized)?)\.esp'
     after:
       - 'bcsounds.esp'
       - 'entertainers.esp'
@@ -322,7 +322,7 @@ plugins:
         subs: [ '"Bitter Coast Sounds"' ]
         condition: 'many("(bcsounds|\[Official\]Bitter Coast Sounds)\.esp")'
 
-  - name: '(EBQ_Artifact|\[Official\]Helm of Tohan)\.esp'
+  - name: '(EBQ_Artifact|(\[Official\])?Helm of Tohan( Naturalized)?)\.esp'
     after:
       - 'AreaEffectArrows.esp'
       - 'bcsounds.esp'
@@ -362,7 +362,7 @@ plugins:
         subs: [ '"LeFemm Armor"' ]
         condition: 'many("(LeFemmArmor|\[Official\]LeFemm Armor)\.esp")'
 
-  - name: '(master_index|\[Official\]Master Index)\.esp'
+  - name: '(master_index|(\[Official\])?Master Index( Naturalized)?)\.esp'
     after:
       - 'AreaEffectArrows.esp'
       - 'bcsounds.esp'
@@ -377,7 +377,7 @@ plugins:
         subs: [ '"Master Index"' ]
         condition: 'many("(master_index|\[Official\]Master Index)\.esp")'
 
-  - name: '(Siege at Firemoth|\[Official\]Siege at Firemoth)\.esp'
+  - name: '(\[Official\])?Siege at Firemoth( Naturalized)?\.esp'
     after:
       - 'adamantiumarmor.esp'
       - 'AreaEffectArrows.esp'
