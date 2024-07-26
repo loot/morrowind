@@ -276,6 +276,8 @@ plugins:
         subs: [ 'Unofficial Morrowind Official Plugins Patched' ]
         condition: 'active("Unofficial Morrowind Official Plugins Patched.ESP")'
 
+  - name: '(Adamantium Armor|Area Effect Arrows|Helm of Tohan|Master Index|Siege at Firemoth) Naturalized\.esp'
+
   - name: '(adamantiumarmor|\[Official\]Adamantium Armor)\.esp'
     after:
       - 'AreaEffectArrows.esp'
