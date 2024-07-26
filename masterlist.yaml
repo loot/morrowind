@@ -498,6 +498,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/46733/'
         name: 'Remiros'' Groundcover'
+    msg:
+      - <<: *moddingPlugin
+        condition: 'active("Rem_(A[CILT]|BC|GL|LOCM?|RR|Solstheim|VM|WG)(_TR)?\.esp")'
 
 ###### Modding Tools - Generated Files ######
   - name: '(Merged Objects|multipatch)\.esp'
