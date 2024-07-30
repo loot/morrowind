@@ -720,6 +720,11 @@ plugins:
         subs: [ 'Ownership Overhaul plugin' ]
         condition: 'many("Ownership Overhaul\.es[mp]")'
 
+  - name: 'Playable Game of Ur.esp'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/53914/'
+        name: 'Playable Game of Ur'
+
 ###### Gameplay - Mount & Follower Managers ######
 ###### Gameplay - NPC Balance & Distribution ######
 ###### Gameplay - NPC Behaviour & Dialogue ######
