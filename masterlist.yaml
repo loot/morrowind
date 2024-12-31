@@ -614,6 +614,10 @@ plugins:
       - 'Wey_New_Argonians.ESP'
 
 ###### Environment, Landscape & Flora ######
+  - name: 'Baan_Binif.ESP'
+    url: 'https://www.nexusmods.com/morrowind/mods/51419'
+    after:
+      - 'Bal''laku - The Lonely Towers.esp'
   - name: 'Better Landscapes Stonewood Pass (RP Edit).esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/49464/' ]
     after:
