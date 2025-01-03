@@ -844,6 +844,10 @@ plugins:
         subs: [ 'Thieves'' Guild Overhaul ESP' ]
         condition: 'many("Thieves_Guild_Overhaul( - Purist Ahnassi Romance version)?\.ESP")'
 
+  - name: 'Vivec Lighthouse Questline.esp'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/52120/' ]
+    after: [ 'Vivec_Lighthouse.ESP' ]
+
 ###### Gameplay - Skills & Abilities ######
 ###### Gameplay - User Interface ######
 ###### Gameplay - User Interface - Map markers ######
