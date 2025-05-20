@@ -710,6 +710,11 @@ plugins:
       - 'NOM3.0.esp'
       - 'NOM3_PT SO.esp'
       - 'NoM_Creatures Loot Standard.esp'
+  - name: 'Vampire Masquerade - A Detailed Overhaul(?: TR)?\.ESP'
+    url: [ 'https://www.nexusmods.com/morrowind/mods/56101/' ]
+    after:
+      - 'LDM - Context Matters 1.7.ESP'
+      - 'Quest Voice Greetings.ESP'
 
 ###### Gameplay - Character Classes & Races ######
 ###### Gameplay - Combat ######
