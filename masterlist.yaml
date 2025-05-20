@@ -504,6 +504,11 @@ plugins:
         condition: 'active("Rem_(A[CILT]|BC|GL|LOCM?|RR|Solstheim|VM|WG)(_TR)?\.esp")'
 
 ###### Modding Tools - Generated Files ######
+  - name: 'delta_plugin.esp'
+    url:
+      - link: 'https://gitlab.com/bmwinger/delta-plugin/'
+        name: 'DeltaPlugin'
+    group: *dynamicPatchesGroup
   - name: '(Merged Objects|multipatch)\.esp'
     url:
       - link: 'https://www.nexusmods.com/morrowind/mods/46870/'
