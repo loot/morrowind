@@ -92,6 +92,13 @@ REQ_PATTERNS = set()
 INC_PATTERNS = set()
 BLUE_MESSAGE_CONTENT = set()
 
+# These are global caches used to deduplicate objects in memory, so that shared
+# objects will be anchored/aliased when emitted as YAML.
+# The keys are hashes and the values are the objects that produce those hashes.
+INTERNED_MESSAGES = {}
+INTERNED_FILES = {}
+INTERNED_STRINGS = {}
+
 class RuleType(Enum):
     NEAR_START = auto()
     NEAR_END = auto()
@@ -568,6 +575,21 @@ def find_matching_plugin_names(filename: str, known_filenames: set[str]):
 # End of plugins index code, start of conversion to LOOT metadata code
 ################################################################################
 
+# PyYAML doesn't anchor/alias string scalars, only objects, so use an object
+# that gets serialised as a string scalar for strings that should be
+# anchored/aliased when repeated.
+class InternedString:
+    value: str
+
+    def __init__(self, val):
+        self.value = val
+
+def interned_string_representer(dumper, data):
+    return dumper.represent_scalar('tag:yaml.org,2002:str', data.value)
+
+def intern_string(string: str) -> InternedString:
+    return INTERNED_STRINGS.setdefault(hash(string), InternedString(string))
+
 def is_valid_filename(filename: str):
     return '?' not in filename and '*' not in filename and '<VER>' not in filename
 
@@ -802,7 +824,7 @@ def to_loot_message(message: Message, condition: str | None = None):
 
     loot_message = {
         'type': 'say',
-        'content': escape_markdown_ascii_punctuation(text)
+        'content': intern_string(escape_markdown_ascii_punctuation(text))
     }
 
     if message.highlight == Highlight.RED:
@@ -813,9 +835,15 @@ def to_loot_message(message: Message, condition: str | None = None):
         logging.info(f"LOOT does not support message highlighting equivalent to mlox's blue highlighting, the following message will be treated as not highlighted: \"{text}\"")
 
     if condition:
-        loot_message['condition'] = condition
+        loot_message['condition'] = intern_string(condition)
 
-    return loot_message
+    message_hash = hash((
+        loot_message['type'],
+        loot_message['content'],
+        loot_message['condition'] if 'condition' in loot_message else None,
+    ))
+
+    return INTERNED_MESSAGES.setdefault(message_hash, loot_message)
 
 def append_message(plugin, message):
     if 'msg' not in plugin:
@@ -911,15 +939,22 @@ def to_file_metadata(filename, detail, condition, constraint = None):
     }
 
     if detail:
-        file['detail'] = detail
+        file['detail'] = intern_string(detail)
 
     if condition:
-        file['condition'] = condition
+        file['condition'] = intern_string(condition)
 
     if constraint:
-        file['constraint'] = constraint
+        file['constraint'] = intern_string(constraint)
 
-    return file
+    file_hash = hash((
+        file['name'],
+        file['detail'] if 'detail' in file else None,
+        file['condition'] if 'condition' in file else None,
+        file['constraint'] if 'constraint' in file else None
+    ))
+
+    return INTERNED_FILES.setdefault(file_hash, file)
 
 def convert_requirement(dependent_plugins, detail_text, consequent_expression, known_filenames: set[str], shared_condition = None):
     if is_unary_expression(consequent_expression):
@@ -1250,6 +1285,8 @@ if __name__ == "__main__":
     logging.info(f'There are {len(masterlist['globals'])} globals and {len(masterlist['plugins'])} plugin entries in the masterlist')
 
     output_path = args.output_path if args.output_path else str(args.input_path) + ".yaml"
+
+    yaml.add_representer(InternedString, interned_string_representer)
 
     with open(output_path, mode='w', encoding='utf8') as output:
         yaml.dump(masterlist, output, allow_unicode=True, width=math.inf, sort_keys=False)
