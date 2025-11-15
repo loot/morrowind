@@ -78,8 +78,6 @@ import re
 import yaml
 
 VER_REGEX_STR = r'(\d+(?:[_.-]?\d+)*[a-z]?)'
-# Taken from <https://github.com/loot/loot/blob/0.24.1/src/gui/state/game/helpers.cpp#L113> with the following characters removed as they don't seem to trigger special behaviour: "$%'(),/:;?@^{}
-MARKDOWN_ASCII_PUNCTUATION_REGEX = re.compile("([!\"#&*+\\-.<=>\\[\\\\\\]_`|~])")
 HIDE_TAGS_REGEX = re.compile(" <hide>[^<]+</hide>")
 GROUP_NEAR_START = 'Near Start'
 GROUP_NEAR_END = 'Near End'
@@ -810,9 +808,43 @@ def convert_order(rule: OrderRule, masterlist, known_filenames: set[str]):
 
     return True
 
+# Taken from <https://github.com/loot/loot/blob/0.24.1/src/gui/state/game/helpers.cpp#L113> with the following characters removed as they don't seem to trigger special behaviour: "$%'(),/:;?@^{}.
+# Other characters have also been removed but are dealt with in more specific context-aware regexes.
+MARKDOWN_ASCII_PUNCTUATION_REGEX = re.compile(r"([*<\[\\`|])")
+# <https://spec.commonmark.org/0.31.2/#entity-and-numeric-character-references>
+ENTITY_REFERENCE = re.compile(r'(&.+;)')
+# <https://spec.commonmark.org/0.31.2/#atx-headings>
+ATX_HEADING_OPENING = re.compile(r'((?:^|\n)[ ]{0,3})(#{1,6})(?=[ \t]+|\n)')
+# <https://spec.commonmark.org/0.31.2/#setext-headings>
+SETEXT_HEADING = re.compile(r'((?:^|\n)[ ]{0,3})(-+|=+)(?=[ \t]*(?:\n|$))')
+# <https://spec.commonmark.org/0.31.2/#list-items>
+BULLET_LIST_MARKER = re.compile(r'(^|[^A-Za-z0-9")/!\]\' ] +)([-*+])(?=\s)')
+ORDERED_LIST_MARKER = re.compile(r'((?:^|[^A-Za-z,\]]\s+)\d{1,9})([.)])(?=\s)')
+# <https://spec.commonmark.org/0.31.2/#links>
+LINK_TEXT_CLOSE = re.compile(r'(\])(?=\(|\[)')
+# <https://spec.commonmark.org/0.31.2/#fenced-code-blocks>
+FENCED_CODE_BLOCK = re.compile(r'(~{3}|`{3})')
+# <https://spec.commonmark.org/0.31.2/#block-quotes>
+BLOCK_QUOTE = re.compile(r'((?:^|\n)[ ]{0,3})(>)')
+
 def escape_markdown_ascii_punctuation(text: str):
-    # TODO: Reduce the number of characters that are escaped unnecessarily.
-    return MARKDOWN_ASCII_PUNCTUATION_REGEX.sub(r'\\\1', text)
+    text = MARKDOWN_ASCII_PUNCTUATION_REGEX.sub(r'\\\1', text)
+    text = ENTITY_REFERENCE.sub(r'\\\1', text)
+    text = ATX_HEADING_OPENING.sub(r'\1\\\2', text)
+    text = SETEXT_HEADING.sub(r'\1\\\2', text)
+    text = BULLET_LIST_MARKER.sub(r'\1\\\2', text)
+    text = ORDERED_LIST_MARKER.sub(r'\1\\\2', text)
+    text = LINK_TEXT_CLOSE.sub(r'\\\1', text)
+    text = FENCED_CODE_BLOCK.sub(r'\\\1', text)
+    text = BLOCK_QUOTE.sub(r'\1\\\2', text)
+
+    underscore_count = text.count('_')
+    if underscore_count > 1:
+        # It's OK to leave one underscore unescaped as it doesn't have special
+        # meaning on its own.
+        text = text.replace('_', '\\_', underscore_count - 1)
+
+    return text
 
 def to_loot_message(message: Message, condition: str | None = None):
     match = HIDE_TAGS_REGEX.search(message.text)
