@@ -77,7 +77,9 @@
 # It's possible to provide this script with TSV (CSV, but tab-separated) files
 # that have modId, fileName and url column headings. Any filenames in the TSV
 # files will be added to the set of known filenames, and the URLs will be used
-# to add URL metadata to any LOOT metadata entries for those filenames.
+# to add URL metadata to any LOOT metadata entries for those filenames. If the
+# TSV data has a modName column, it will be used to set the name field of the
+# relevant location metadata.
 
 import argparse
 import csv
@@ -200,6 +202,7 @@ type Rule = NearStartRule | NearEndRule | OrderRule | NoteRule | RequiresRule | 
 
 class ModPlugin(NamedTuple):
     mod_id: str
+    mod_name: str | None
     plugin_name: str
     url: str
 
@@ -1418,7 +1421,12 @@ def convert_rules(rules: list[Rule], masterlist, known_filenames: set[str]):
 def read_plugins_index(input) -> list[ModPlugin]:
     reader = csv.DictReader(input, delimiter='\t')
 
-    return [ModPlugin(row["modId"], row["fileName"], row["url"]) for row in reader]
+    return [ModPlugin(
+            row["modId"],
+            row['modName'] if 'modName' in row else None,
+            row["fileName"],
+            row["url"]
+        ) for row in reader]
 
 def add_urls_to_masterlist(masterlist_plugins, plugins_index: list[ModPlugin]):
     # Create a map for much faster lookups for non-regex plugin entries.
@@ -1431,12 +1439,24 @@ def add_urls_to_masterlist(masterlist_plugins, plugins_index: list[ModPlugin]):
             plugins_index_map[folded_name] = [entry]
 
     for plugin in masterlist_plugins:
-        urls = set()
+        urls = {}
         for mod_plugin in find_matching_plugins(plugin["name"], plugins_index, plugins_index_map):
-            urls.add(mod_plugin.url)
+            if mod_plugin.url not in urls:
+                if mod_plugin.mod_name:
+                    urls[mod_plugin.url] = {
+                        'link': mod_plugin.url,
+                        'name': mod_plugin.mod_name
+                    }
+                else:
+                    urls[mod_plugin.url] = mod_plugin.url
+            elif mod_plugin.mod_name:
+                urls[mod_plugin.url] = {
+                    'link': mod_plugin.url,
+                    'name': mod_plugin.mod_name
+                }
 
         if urls:
-            plugin["url"] = sorted(urls)
+            plugin["url"] = sorted(urls.values(), key=lambda x: x if isinstance(x, str) else x['link'])
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
