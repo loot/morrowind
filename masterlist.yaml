@@ -860,6 +860,14 @@ plugins:
     after: [ 'Vivec_Lighthouse.ESP' ]
 
 ###### Gameplay - Skills & Abilities ######
+  - name: 'ncg\.omw(scripts|addon)'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/57801/'
+        name: 'Natural Character Growth'
+    after:
+      - 'StatsWindow.ESP'
+      - 'StatsWindow.omwscripts'
+
 ###### Gameplay - User Interface ######
 ###### Gameplay - User Interface - Map markers ######
 ###### Gameplay - User Interface - Maps ######
