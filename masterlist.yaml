@@ -875,6 +875,14 @@ plugins:
       - 'StatsWindow.ESP'
       - 'StatsWindow.omwscripts'
 
+  - name: 'skill-evolution\.omw(scripts|addon)'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/57802/'
+        name: 'Skill Evolution'
+    after:
+      - 'StatsWindow.ESP'
+      - 'StatsWindow.omwscripts'
+
 ###### Gameplay - User Interface ######
 ###### Gameplay - User Interface - Map markers ######
 ###### Gameplay - User Interface - Maps ######
