@@ -640,6 +640,13 @@ plugins:
     after: ['Tribunal.esm']
 
 ###### Gameplay ######
+  - name: 'Bardcraft\.(ESP|omwscripts)'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/56814/'
+        name: 'Bardcraft'
+    after:
+      - 'SkillFramework.omwscripts'
+
   - name: 'Immersive_corprus.esp'
     url: [ 'https://www.nexusmods.com/morrowind/mods/44961/' ]
     after:
