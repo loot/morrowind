@@ -883,6 +883,14 @@ plugins:
       - 'StatsWindow.ESP'
       - 'StatsWindow.omwscripts'
 
+  - name: 'SkillFramework\.omwscripts'
+    url:
+      - link: 'https://www.nexusmods.com/morrowind/mods/57765/'
+        name: 'Skill Framework'
+    after:
+      - 'StatsWindow.ESP'
+      - 'StatsWindow.omwscripts'
+
 ###### Gameplay - User Interface ######
 ###### Gameplay - User Interface - Map markers ######
 ###### Gameplay - User Interface - Maps ######
