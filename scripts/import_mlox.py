@@ -851,6 +851,10 @@ def expression_to_condition(expression: Expression, known_filenames: set[str]) -
             else:
                 logging.warning(f'Converting a VER predicate that uses a filename pattern, LOOT will ignore any version in the plugin description: {expression}')
 
+                # This is a hack to work around unsupported data that appears in <https://github.com/mlox/mlox/blob/bd5b39e4704d4574e2a7be3d0a598a686a646214/data/mlox_base.txt>. The repository is effectively abandoned, so this can't be changed upstream.
+                if file == "Nevena's Twin Lamps & Slave Hunters *.esp":
+                    file = "Nevena's Twin Lamps & Slave Hunters <VER>.esp"
+
                 if '<VER>' not in file:
                     logging.error(f'Found a VER predicate that uses a filename pattern that does not contain the <VER> construct: "{expression}". There is no equivalent LOOT condition.')
                     raise RuntimeError(f'Found a VER predicate that uses a filename pattern that does not contain the <VER> construct: "{expression}". There is no equivalent LOOT condition. Matching known filenames are: {find_matching_plugin_names(file, known_filenames)}')
