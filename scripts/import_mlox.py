@@ -7,6 +7,13 @@
 # This script parses the mlox rules into an abstract representation, then
 # converts that to LOOT metadata objects, which are then serialised as YAML.
 #
+# The YAML serialisation is done either using libloot or using PyYAML: the
+# latter is easier to install (it's on PyPI) but produces YAML of a very
+# different style to LOOT's masterlists. libloot must be built from source (see
+# <https://github.com/loot/libloot/blob/master/python/README.md>) and then made
+# available to this script, e.g. using
+# `uv run --with libloot@../libloot/target/wheels/libloot-0.28.4-cp314-cp314-win_amd64.whl --python python -- scripts/import_mlox.py ...`.
+#
 # This script doesn't attempt to match mlox's parser behaviour exactly (e.g.
 # mlox treats whitespace as optional in more places), but instead targets the
 # syntax that is actually in use in the https://github.com/mlox/mlox and
@@ -70,12 +77,18 @@
 import argparse
 from enum import auto, Enum
 from pathlib import Path
-from typing import NamedTuple
+from typing import Any, NamedTuple
 import logging
 import math
 import re
 
-import yaml
+try:
+    import loot
+    loot_found = True
+except ImportError:
+    print(f'Failed to import the loot module, the yaml module will be used to write YAML instead')
+    loot_found = False
+    import yaml
 
 VER_REGEX_STR = r'(\d+(?:[_.-]?\d+)*[a-z]?)'
 HIDE_TAGS_REGEX = re.compile(" <hide>[^<]+</hide>")
@@ -570,7 +583,131 @@ def find_matching_plugin_names(filename: str, known_filenames: set[str]):
 
 
 ################################################################################
-# End of plugins index code, start of conversion to LOOT metadata code
+# End of plugins index code, start of YAML emitter code
+################################################################################
+
+def write_masterlist(masterlist, output_path: str):
+    if loot_found:
+        # This writes YAML that's a closer match to the style of
+        # manually-written masterlist entries, except that multi-line messages
+        # have their line breaks escaped.
+        game = loot.Game(loot.GameType.Morrowind, '.')
+        db = game.database()
+
+        set_db_groups(db, masterlist)
+
+        set_db_general_messages(db, masterlist)
+
+        set_db_plugins(db, masterlist)
+
+        options = loot.MetadataWriteOptions()
+        options.truncate = True
+        options.write_anchors = True
+        options.write_common_section = True
+        options.anchor_file_strings = False
+
+        db.write_user_metadata(output_path, options)
+
+        # Sanity check that the metadata is valid.
+        db.load_userlist(output_path)
+    else:
+        # This is a bit faster but the style is very different to
+        # manually-written masterlist entries.
+        with open(output_path, mode='w', encoding='utf8') as output:
+            yaml.add_representer(InternedString, interned_string_representer)
+            yaml.dump(masterlist, output, allow_unicode=True, width=math.inf, sort_keys=False)
+
+def set_db_groups(db, masterlist):
+    db_groups = [to_db_group(g) for g in masterlist['groups']]
+    db.set_user_groups(db_groups)
+
+def to_db_group(group):
+    description = some_or_none(group, 'description')
+    after = some_or_none(group, 'after')
+
+    return loot.Group(group['name'], description, after)
+
+def set_db_general_messages(db, masterlist):
+    if masterlist['globals']:
+        db_messages = [to_db_message(m) for m in masterlist['globals']]
+        db.set_user_general_messages(db_messages)
+
+def set_db_plugins(db, masterlist):
+    for plugin in masterlist['plugins']:
+        db_plugin = to_db_plugin(plugin)
+        db.set_plugin_user_metadata(db_plugin)
+
+def to_db_plugin(plugin):
+    db_plugin = loot.PluginMetadata(plugin['name'])
+
+    db_plugin.group = some_or_none(plugin, 'group')
+
+    if 'after' in plugin:
+        db_plugin.load_after_files = [to_db_file(f) for f in plugin['after']]
+
+    if 'req' in plugin:
+        db_plugin.requirements = [to_db_file(f) for f in plugin['req']]
+
+    if 'inc' in plugin:
+        db_plugin.incompatibilities = [to_db_file(f) for f in plugin['inc']]
+
+    if 'msg' in plugin:
+        db_plugin.messages = [to_db_message(m) for m in plugin['msg']]
+
+    if 'url' in plugin:
+        db_plugin.locations = [to_db_location(u) for u in plugin['url']]
+
+    return db_plugin
+
+def to_db_file(file):
+    if isinstance(file, str):
+        return loot.File(file)
+
+    display = some_or_none(file, 'display')
+    detail = some_or_none(file, 'detail')
+    condition = some_or_none(file, 'condition')
+    constraint = some_or_none(file, 'constraint')
+
+    if isinstance(detail, str):
+        detail = [loot.MessageContent(detail)]
+    elif detail:
+        raise RuntimeError('Support for multilingual file details is unimplemented!')
+
+    return loot.File(file['name'], display, detail, condition, constraint)
+
+def to_db_message(message):
+    if message['type'] == 'say':
+        message_type = loot.MessageType.Say
+    elif message['type'] == 'warn':
+        message_type = loot.MessageType.Warn
+    elif message['type'] == 'error':
+        message_type = loot.MessageType.Error
+
+    if isinstance(message['content'], InternedString):
+        contents = message['content'].value
+    else:
+        raise RuntimeError('Support for multilingual messages is unimplemented!')
+
+    condition = some_or_none(message, 'condition')
+
+    return loot.Message(message_type, contents, condition)
+
+def to_db_location(location):
+    if isinstance(location, str):
+        return loot.Location(location)
+    else:
+        return loot.Location(location['link'], location['name'])
+
+def some_or_none(dict: dict[str, Any], key: str):
+    value = dict[key] if key in dict and dict[key] else None
+
+    if isinstance(value, InternedString):
+        return value.value
+
+    return value
+
+################################################################################
+# End of YAML emitter code, start of conversion to LOOT metadata code
 ################################################################################
 
 # PyYAML doesn't anchor/alias string scalars, only objects, so use an object
@@ -1318,7 +1455,4 @@ if __name__ == "__main__":
 
     output_path = args.output_path if args.output_path else str(args.input_path) + ".yaml"
 
-    yaml.add_representer(InternedString, interned_string_representer)
-
-    with open(output_path, mode='w', encoding='utf8') as output:
-        yaml.dump(masterlist, output, allow_unicode=True, width=math.inf, sort_keys=False)
+    write_masterlist(masterlist, output_path)
