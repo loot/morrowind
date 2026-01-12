@@ -76,7 +76,8 @@
 #
 # It's possible to provide this script with TSV (CSV, but tab-separated) files
 # that have modId, fileName and url column headings. Any filenames in the TSV
-# files will be added to the set of known filenames.
+# files will be added to the set of known filenames, and the URLs will be used
+# to add URL metadata to any LOOT metadata entries for those filenames.
 
 import argparse
 import csv
@@ -578,6 +579,22 @@ def get_filenames(rules: list[Rule]) -> set[str]:
                 raise RuntimeError(f'Unrecognised rule type: {type(rule)}')
 
     return filenames
+
+def find_matching_plugins(filename: str, plugins_index: list[ModPlugin], plugins_index_map: dict[str, list[ModPlugin]]):
+    logging.debug(f'Looking for matches for the filename {filename} in the plugins index')
+
+    if is_valid_filename(filename):
+        folded_filename = filename.casefold()
+        if folded_filename in plugins_index_map:
+            return plugins_index_map[folded_filename]
+        else:
+            return []
+
+    # This filename doesn't need to be expanded because it comes from an
+    # already-converted LOOT plugin metadata entry.
+    pattern = re.compile(filename, flags=re.IGNORECASE)
+
+    return [p for p in plugins_index if pattern.fullmatch(p.plugin_name)]
 
 def find_matching_plugin_names(filename: str, known_filenames: set[str]):
     logging.debug(f'Looking for matches for the filename {filename} in the set of known filenames')
@@ -1403,6 +1420,24 @@ def read_plugins_index(input) -> list[ModPlugin]:
 
     return [ModPlugin(row["modId"], row["fileName"], row["url"]) for row in reader]
 
+def add_urls_to_masterlist(masterlist_plugins, plugins_index: list[ModPlugin]):
+    # Create a map for much faster lookups for non-regex plugin entries.
+    plugins_index_map = {}
+    for entry in plugins_index:
+        folded_name = entry.plugin_name.casefold()
+        if folded_name in plugins_index_map:
+            plugins_index_map[folded_name].append(entry)
+        else:
+            plugins_index_map[folded_name] = [entry]
+
+    for plugin in masterlist_plugins:
+        urls = set()
+        for mod_plugin in find_matching_plugins(plugin["name"], plugins_index, plugins_index_map):
+            urls.add(mod_plugin.url)
+
+        if urls:
+            plugin["url"] = sorted(urls)
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--input-path', default=Path.cwd() / 'mlox' / 'mlox_base.txt')
@@ -1473,6 +1508,8 @@ if __name__ == "__main__":
 
     # Now convert the plugins to a list.
     masterlist['plugins'] = list(v for v in masterlist['plugins'].values())
+
+    add_urls_to_masterlist(masterlist['plugins'], plugins_index)
 
     logging.info(f'There are {len(masterlist['globals'])} globals and {len(masterlist['plugins'])} plugin entries in the masterlist')
 
