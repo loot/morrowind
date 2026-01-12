@@ -73,8 +73,13 @@
 #
 # The known filenames that the script attempts to match patterns against are the
 # non-pattern filenames that appear in the input mlox rules.
+#
+# It's possible to provide this script with TSV (CSV, but tab-separated) files
+# that have modId, fileName and url column headings. Any filenames in the TSV
+# files will be added to the set of known filenames.
 
 import argparse
+import csv
 from enum import auto, Enum
 from pathlib import Path
 from typing import Any, NamedTuple
@@ -191,6 +196,11 @@ class PatchRule(NamedTuple):
     original: Expression
 
 type Rule = NearStartRule | NearEndRule | OrderRule | NoteRule | RequiresRule | ConflictRule | PatchRule
+
+class ModPlugin(NamedTuple):
+    mod_id: str
+    plugin_name: str
+    url: str
 
 def find_end_of_plugin_filename(string: str, start_pos: int):
     window_size = 5
@@ -1388,22 +1398,35 @@ def convert_rules(rules: list[Rule], masterlist, known_filenames: set[str]):
 
     return unconverted_rules
 
+def read_plugins_index(input) -> list[ModPlugin]:
+    reader = csv.DictReader(input, delimiter='\t')
+
+    return [ModPlugin(row["modId"], row["fileName"], row["url"]) for row in reader]
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--input-path', default=Path.cwd() / 'mlox' / 'mlox_base.txt')
     parser.add_argument('-o', '--output-path')
     parser.add_argument('-l', '--log-path', default=Path(__file__).with_suffix('.log'))
     parser.add_argument('-s', '--log-severity', default='info', choices=['debug', 'info', 'warning', 'error'])
+    parser.add_argument('-p', '--plugins-index-paths', action='append', default=[])
     args = parser.parse_args()
 
     logging.basicConfig(filename=args.log_path, filemode='w', level=args.log_severity.upper())
     logging.getLogger().addHandler(logging.StreamHandler())
 
+    plugins_index = []
+    for plugins_index_path in args.plugins_index_paths:
+        with open(plugins_index_path, encoding='utf8') as input:
+            plugins_index.extend(read_plugins_index(input))
+
+    known_filenames = set(p.plugin_name for p in plugins_index)
+
     rules = []
     with open(args.input_path, encoding='utf8') as input:
         rules = read_rules(input)
 
-    known_filenames = get_filenames(rules)
+    known_filenames.update(get_filenames(rules))
 
     masterlist = {
         'groups': [
