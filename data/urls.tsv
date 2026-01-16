@@ -1,16 +1,16 @@
 url	status	replacement	replacement_source	comment
-http://cowguru.silgrad.com/downloads.html	DANGEROUS_HOSTNAME			
+http://cowguru.silgrad.com/downloads.html	DANGEROUS_HOSTNAME	https://web.archive.org/web/20110814011237/http://cowguru.silgrad.com/downloads.html	MANUAL	The 1.2 patch download link doesn't work on the Wayback Machine.
 http://emma.ufrealms.net/index.php?dir=&file=BM_S_Inn.zip	DANGEROUS_HOSTNAME			
-http://wiki.theassimilationlab.com/mmw/TES3cmd#Multipatch	DANGEROUS_HOSTNAME			
-http://wiki.theassimilationlab.com/mmw/TESTool#Suggestions_for_use	DANGEROUS_HOSTNAME			
+http://wiki.theassimilationlab.com/mmw/TES3cmd#Multipatch	DANGEROUS_HOSTNAME	https://web.archive.org/web/20201111224033/http://wiki.theassimilationlab.com/mmw/TES3cmd#Multipatch	MANUAL	
+http://wiki.theassimilationlab.com/mmw/TESTool#Suggestions_for_use	DANGEROUS_HOSTNAME	http://web.archive.org/web/20200224083647/http://wiki.theassimilationlab.com/mmw/TESTool#Suggestions_for_use	MANUAL	
 http://wolflore.net/viewtopic.php?f=15&t=2086&sid=cdfbf3957d2d88de3f2c5a4ccda2b76f	DANGEROUS_HOSTNAME			
-http://wrye.ufrealms.net/LCV.html	DANGEROUS_HOSTNAME			
-http://www.fileplanet.com/144267/140000/fileinfo/Music-Mod-v1.1	DANGEROUS_HOSTNAME			
-http://www.fileplanet.com/167255/160000/fileinfo/Elder-Scrolls-III:-Morrowind---Silgrad-Tower-1-4_6-update	DANGEROUS_HOSTNAME			
-http://www.ladymoiraine.com/forum/index.php?action=downloads	DANGEROUS_HOSTNAME			
-http://www.mw.yacoby.net/Mods/VampireDoorsBugfix.htm	DANGEROUS_HOSTNAME			
-http://www.ornitocopter.net/mo_wiki/index.php?title=Credits	DANGEROUS_HOSTNAME			
-http://www.theassimilationlab.com/forums/files/file/1050-previous-patches-unofficial-morrowind-patch/	DANGEROUS_HOSTNAME			
+http://wrye.ufrealms.net/LCV.html	DANGEROUS_HOSTNAME	http://web.archive.org/web/20090904213008/http://wrye.ufrealms.net/LCV.html	MANUAL	
+http://www.fileplanet.com/144267/140000/fileinfo/Music-Mod-v1.1	DANGEROUS_HOSTNAME	http://web.archive.org/web/20090108010829/http://www.fileplanet.com/144267/140000/fileinfo/Music-Mod-v1.1	MANUAL	The download button doesn't work on the Wayback Machine, it wants you to log in first, but you can't do that.
+http://www.fileplanet.com/167255/160000/fileinfo/Elder-Scrolls-III:-Morrowind---Silgrad-Tower-1-4_6-update	DANGEROUS_HOSTNAME	https://web.archive.org/web/20090602055225/http://www.fileplanet.com/167255/160000/fileinfo/Elder-Scrolls-III:-Morrowind---Silgrad-Tower-1-4_6-update	MANUAL	
+http://www.ladymoiraine.com/forum/index.php?action=downloads	DANGEROUS_HOSTNAME	https://web.archive.org/web/20150427032930/http://www.ladymoiraine.com/forum/index.php?action=downloads	MANUAL	
+http://www.mw.yacoby.net/Mods/VampireDoorsBugfix.htm	DANGEROUS_HOSTNAME	https://web.archive.org/web/20141124091755/http://mw.yacoby.net/Mods/VampireDoorsBugfix.htm	MANUAL	The download button doesn't work on the Wayback Machine.
+http://www.ornitocopter.net/mo_wiki/index.php?title=Credits	DANGEROUS_HOSTNAME	https://web.archive.org/web/20160418233008/http://www.ornitocopter.net/mo_wiki/index.php?title=Credits	MANUAL	
+http://www.theassimilationlab.com/forums/files/file/1050-previous-patches-unofficial-morrowind-patch/	DANGEROUS_HOSTNAME	https://web.archive.org/web/20151112021938/http://www.theassimilationlab.com/forums/files/file/1050-previous-patches-unofficial-morrowind-patch/	MANUAL	The download button doesn't work on the Wayback Machine.
 http://z13.invisionfree.com/Pirate_Lords_Mods/index.php?showtopic=35	DANGEROUS_HOSTNAME			
 http://arcimaestroantares.webs.com/antaresbigmod.htm	DEFUNCT_HOSTNAME	https://web.archive.org/web/20160905084506/http://arcimaestroantares.webs.com/antaresbigmod.htm	REQUEST	The DNS query errors.
 http://baratheon79.rpgmods.com/	DEFUNCT_HOSTNAME	https://web.archive.org/web/20240904233239/http://www.baratheon79.rpgmods.com/	REQUEST	The DNS query errors.
