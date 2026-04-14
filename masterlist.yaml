@@ -440,7 +440,7 @@ plugins:
   - name: 'Patch for Purists.esm'
     msg:
       - <<: *obsolete
-        condition: 'version("Patch for Purists.esm", "3.1.2", <)'
+        condition: 'version("Patch for Purists.esm", <, "3.1.2")'
       - type: say
         content:
           - lang: en
@@ -449,7 +449,7 @@ plugins:
             text: 'Версията е стара. Изисква се само за стари записи.'
           - lang: de
             text: 'Alt-Version. Ausschließlich für alte Speicherstände empfohlen.'
-        condition: 'version("Patch for Purists.esm", "3.1.2", <)'
+        condition: 'version("Patch for Purists.esm", <, "3.1.2")'
   - name: 'Patch for Purists - (Base Patch|(Book|Dialogue|Statistic) Typos|Floating Rocks|Expansion Implementation|Dialogue Inconsistencies)\.esm'
     msg:
       - *obsolete
