@@ -3,7 +3,7 @@ Contributing To The Masterlist
 
 ## Filing Issues
 
-If you're about to file an issue for some suggested change, please consider instead making the change yourself and submitting it as a pull request. Pull requests are much more likely to be quickly acted on, so they're the best way `to get your change into the masterlist.
+If you're about to file an issue for some suggested change, please consider instead making the change yourself and submitting it as a pull request. Pull requests are much more likely to be quickly acted on, so they're the best way to get your change into the masterlist.
 
 ## Making Changes
 
